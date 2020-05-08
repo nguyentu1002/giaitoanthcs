@@ -186,16 +186,17 @@ a.article:hover {
 }
 /*-------------chuong-----------------*/
 .chuong{
-    background-color: #c9d5db;
+    background-color: #7386D5;
+    margin-bottom: 25px;
 }
 .bai{
-    background-color: rgb(128, 171, 211);
+    background-color: #7386D6;
     margin-left: 15px;
     padding-bottom: 25px;
 }
 .dang{
     border-radius: 20px;
-    background-color: #7d8192;
+    /* background-color: #487eb0; */
     margin: 25px 25px 20px 20px;
     
 }
@@ -203,18 +204,4 @@ a.article:hover {
     color: black;
 }
 
-/* .question-box{
-    width: 240px;
-    display: block;
-    float: left;
-    border: 1px solid#d4d4d4;
-    min-height: 146px;
-}
-.answer-box{
-    width: 240px;
-    display: block;
-    float: right;
-    border: 1px solid#d4d4d4;
-    min-height: 146px;
-} */
 

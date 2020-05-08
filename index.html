@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Giai Toan Nhanh</title>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <a href="#"><img class="logo" src="./resources/img/Logo.jpg" alt="Logo"></a>
+            <ul class="main-nav">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#khoilop">Giải Toán Nhanh</a></li> 
+                <li><a href="#hdsd">Hướng dẫn sử dụng</a></li>
+                <li><a href="#container">Đăng nhập</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <p class="heading-main-text">Phương pháp giải bài tập Toán<br>nhanh chóng, chính xác và thuận tiện<br>các khối THCS</p>
+    </header>
+    
+    <div class="container" id="container">
+        <h2>Đăng nhập</h2>
+        <div class="form-container sign-up-container">
+            <form action="#" method="post">
+                <h1>Tạo tài khoản</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+
+                </div>
+                <span>hoặc sử dụng email của bạn</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button >Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="form-login" action="#" method="post">
+                <h1>Đăng nhập</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span>hoặc tài khoản của bạn</span>
+                <input type="email" placeholder="Email" id="email" name="email" required />
+                <input type="password" placeholder="Password" id="password" name="password" required />
+                <a href="#">Quên mật khẩu?</a>
+                <button type="submit" >Đăng nhập</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Chào mừng bạn!</h1>
+                    <p>Vui lòng đăng nhập với thông tin của bạn</p>
+                    <button class="ghost" id="signIn">Đăng nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Chào mừng bạn!</h1>
+                    <p>Nhập thông tin của bạn để bắt đầu trải nghiệm</p>
+                    <button class="ghost" id="signUp">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="khoilop" class="khoilop">
+        <h2>Bài toán</h2>
+        <div class="row">
+            <div class="col span-1-of-4">
+                <div class="lop">
+                    <h3>Lớp 6</h3>
+                    <p class="sochuong"> 3 chương </p>
+                    <ol>
+                        <li>Ôn tập bổ túc về số tự nhiên</li>
+                        <li>Số nguyên</li>
+                        <li>Phân số</li>
+                    </ol>
+                    <a href="/lop6/lop6.html" class="btn">Thử ngay</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="lop">
+                    <h3>Lớp 7</h3>
+                    <p class="sochuong"> 4 chương</p>
+                    <ol>
+                        <li>Số hữu tỷ. Số thực</li>
+                        <li>Hàm số và đồ thị</li>
+                        <li>Thống kê</li>
+                        <li>Biểu thức đại số</li>
+                    </ol>
+                    <a href="/lop7/lop7.html" class="btn">Thử ngay</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="lop">
+                    <h3>Lớp 8</h3>
+                    <p class="sochuong"> 4 chương </p>
+                    <ol>
+                        <li>Phép nhân và phép chia các đa thức</li>
+                        <li>Phân thức đại số</li>
+                        <li>Phương trình bậc nhất một ẩn</li>
+                        <li>Bất phương trình bậc nhất một ẩn</li>
+                    </ol>
+                    <a href="/lop8/lop8.html" class="btn">Thử ngay</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="lop">
+                    <h3>Lớp 9</h3>
+                    <p class="sochuong"> 4 chương</p>
+                    <ol>
+                        <li>Căn bậc hai. Căn bậc ba</li>
+                        <li>Hàm số bậc nhất</li>
+                        <li>Hệ hai phương trình bậc nhất hai ẩn</li>
+                        <li>Phương trình bậc hai một ẩn</li>
+                    </ol>
+                    <a href="/lop9/lop9.html" class="btn">Thử ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hdsd" id="hdsd">
+        <h2>Hướng dẫn sử dụng </h2>
+    </div>
+    <footer>
+        <p>
+            Copyright &copy;2020 by Nguyen Van Tu & Bui Minh Duc
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/scripts.js"></script>
+        <script src="/resources/js/dangnhap.js"></script>
+</body>
+
+</html>

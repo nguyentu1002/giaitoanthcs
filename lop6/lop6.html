@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ứng dụng giải toán</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/resources/css/style1.css">
+    <script src="lop6.js"></script>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Giải toán</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Toán lớp 6</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương 1
+                        - Ôn tập bổ túc về số tự nhiên</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#bai1">Tập hợp. Phần tử của tập hợp</a>
+                        </li>
+                        <li>
+                            <a href="#bai2">Tập hợp các số tự nhiên</a>
+                        </li>
+                        <li>
+                            <a href="#bai3">Ghi số tự nhiên</a>
+                        </li>
+                        <li>
+                            <a href="#bai4">Số phần tử của tập hợp. Tập hợp con</a>
+                        </li>
+                        <li>
+                            <a href="#bai5">Phép cộng và phép nhân</a>
+                        </li>
+                        <li>
+                            <a href="#bai6">Phép trừ và phép chia</a>
+                        </li>
+                        <li>
+                            <a href="#bai7">Lũy thừa với số mũ tự nhiên</a>
+                        </li>
+                        <li>
+                            <a href="#bai8">Chia hai lũy thừa cùng cơ số</a>
+                        </li>
+                        <li>
+                            <a href="#bai9">Thứ tự thực hiện phép tính</a>
+                        </li>
+                        <li>
+                            <a href="#bai10">Tính chất chia hết của một tổng</a>
+                        </li>
+                        <li>
+                            <a href="#bai11">Dấu hiệu chia hết cho 2 và 5</a>
+                        </li>
+                        <li>
+                            <a href="#bai12">Dấu hiệu chia hết cho 3 và 9</a>
+                        </li>
+                        <li>
+                            <a href="#bai13">Uớc và bội</a>
+                        </li>
+                        <li>
+                            <a href="#bai14">Số nguyên tố. Hợp số</a>
+                        </li>
+                        <li>
+                            <a href="#bai15">Phân tích một số ra thừa số nguyên tố</a>
+                        </li>
+                        <li>
+                            <a href="#bai16">Uớc chung và bội chung</a>
+                        </li>
+                        <li>
+                            <a href="#bai17">Uớc chung lớn nhất</a>
+                        </li>
+                        <li>
+                            <a href="#bai18">Bội chung nhỏ nhất</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương 2
+                        - Số nguyên</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#bai19">Làm quen với số nguyên âm</a>
+                        </li>
+                        <li>
+                            <a href="#bai20">Tập hợp các số nguyên, số đối</a>
+                        </li>
+                        <li>
+                            <a href="#bai21">So sánh số nguyên, giá trị tuyệt đối</a>
+                        </li>
+                        <li>
+                            <a href="#bai22">Cộng hai số nguyên cùng dấu, khác dấu</a>
+                        </li>
+                        <li>
+                            <a href="#bai23">Tính chất của phép cộng các số nguyên</a>
+                        </li>
+                        <li>
+                            <a href="#bai24">Phép trừ hai số nguyên</a>
+                        </li>
+                        <li>
+                            <a href="#bai25">Quy tắc dấu ngoặc, tổng đại số</a>
+                        </li>
+                        <li>
+                            <a href="#bai26">Tính chất của đẳng thức, quy tắc chuyển vế</a>
+                        </li>
+                        <li>
+                            <a href="#bai27">Nhân hai số nguyên khác dấu, cùng dấu</a>
+                        </li>
+                        <li>
+                            <a href="#bai28">Tính chất của phép nhân</a>
+                        </li>
+                        <li>
+                            <a href="#bai29">Bội và ước của một số nguyên</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="active">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương
+                        3 - Phân số</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu1">
+                        <li>
+                            <a href="#bai30">Khái niệm phân số, hai phân số bằng nhau </a>
+                        </li>>
+                        <li>
+                            <a href="#bai31">Tính chất cơ bản của phân số, rút gọn phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai32">Quy đồng mẫu nhiều phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai33">So sánh phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai34">Phép cộng phân số cùng mẫu, không cùng mẫu</a>
+                        </li>
+                        <li>
+                            <a href="#bai35">Tính chất cơ bản của phép cộng phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai36">Số đối, phép trừ phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai37">Phép nhân phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai38">Tính chất cơ bản của phép nhân phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai39">Số nghịch đảo, phép chia phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai40">Hỗn số. Số thập phân. Phần trăm</a>
+                        </li>
+                        <li>
+                            <a href="#bai41">Các bài toán liên quan đến phân số</a>
+                        </li>
+                        <li>
+                            <a href="#bai42">Biểu đồ cột, biểu đồ vuông, biểu đồ hình quạt</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li>
+                                <input style="font-size: 75%;margin-bottom: -20%; margin-left: -600px; width: 500px;"
+                                    type="text" placeholder="Go ten bai tap ban muon tim kiem">
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/lop6/lop6.html">Lớp 6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/lop7/lop7.html">Lớp 7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/lop8/lop8.html">Lớp 8</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lop9/lop9.html">Lớp 9</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="chuong">
+                <h1>Chương I: Ôn tập bổ túc về số tự nhiên</h1>
+                <div class="bai" id="bai1">
+                    <h2>Bài 1: Tập hợp. Phần tử của tập hợp</h2>
+                    <div class="dang">
+                        <h3>Lý thuyết tổng hợp</h3>
+                        <ol>
+                            <li>Mỗi tập hợp thường được kí hiệu bởi một chữ cái in hoa; chẳng hạn; tập hợp A, tập hợp B,
+                                tập hợp X.<br>
+                                Mỗi phần tử của một tập hợp thường được kí hiệu bởi một chữ cái thường; chẳng hạn: a là
+                                phần tử của tập hợp A, b là một phần tử của tập hợp B, x là một phần tử của tập hợp X
+                            </li>
+                            <li>Nếu a là một phần tử của tập hợp A thì ta viết: a ∈ A.<br>
+                                Nếu b không phải là một phần tử của tập hợp A thì ta viết b ∉ A.</li>
+                            <li>Để viết một tập hợp, thường có hai cách:<br>
+                                – Liệt kê các phần tử của tập hợp; tức là viết tất cả các phần tử của tập hợp đó trog
+                                dấu ngoặc nhọn {}.<br>
+                                – Chỉ ra tính chất đặc trưng cho các phần tử của tập hợp đó, tức là tính chất mà mỗi
+                                phần tử của tập hợp đó phải có và chỉ những phần tử của tập hợp đó mới có.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bai" id="bai2">
+                    <h2>Bài 2: Tập hợp các số tự nhiên</h2>
+                    <div class="dang">
+                        <h3>Khái niệm số tự nhiên là gì?</h3>
+                        <p>Các số 0; 1; 2; 3; 4…. là các số tự nhiên. Tập hợp các số tự nhiên được kí hiệu là N. <br>
+                            Như vậy N = {0; 1; 2; 3…}. Các số tự nhiên được biểu diễn trên một tia số.<br>
+                            Mỗi số được biểu diễn bởi một điểm. Điểm biểu diễn số tự nhiên a được gọi là điểm a.<br>
+                            Tập hợp các số tự nhiên khác O được kí hiệu là N*, với N* = {1; 2; 3;…}
+                        </p>
+                    </div>
+                    <div class="dang">
+                        <h3>Thứ tự trong tập số tự nhiên</h3>
+                        <ul>
+                            <li>Trong hai số tự nhiên khác nhau có một số nhỏ hơn số kia. Khi số a nhỏ hơn số b, ta viết
+                                a < b hoặc b> a.<br>
+                                    Ta viết a ≤ b để chỉ a < b hoặc a=b; viết b ≥ a để chỉ b> a hoặc b = a.<br>
+                                        Trong hai điểm trên tia số như hình vẽ trên, điểm ben trái biểu diễn số nhỏ hơn.
+                            </li>
+                            <li>
+                                Nếu a < b và b < c thì a < c. </li>
+                            <li>
+                                Mỗi số tự nhiên có một số liền sau. <br>
+                                Chẳng hạn, số 1 là số liền sau của số 0, số 6 là số liền sau của số 5; khi đó ta cũng
+                                nói số 0 là số liền trước của số 1, số 5 là số liền trước của số 6.
+                            </li>
+                            <li>
+                                Số 0 là số tự nhiên nhỏ nhất. Không có số tự nhiên lớn nhất.
+                            </li>
+                            <li>
+                                Tập hợp số tự nhiên có vô số phần tử.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai3">
+                    <h2>Bài 3: Ghi số tự nhiên</h2>
+                    <div class="dang">
+                        <h3>Cách ghi số tự nhiên</h3>
+                        <p>Có mười chữ số: 0; 1; 2; 3; 4; 5; 6; 7; 8; 9.
+                            Dùng mười chữ số này có thể viết được mọi số.<br>
+                            Một số có thể có một hoặc nhiều chữ số.<br>
+                            Chẳng hạn số 8 là một số có một chữ số; số 2015 là số có 4 chữ số là 2; 0; 1; 5.<br>
+                            Khi viết một số có quá ba chữ số ta thường tách thành từng nhóm gồm ba chữ số kể từ phải
+                            sang trái để dễ đọc, chẳng hạn 5 321 608.<br>
+                            Trong một số, cần phân biệt chữ số hàng chục với số chục, chữ số hàng trăm với số trăm,
+                            chẳng hạn, trong số 2015, chữ số 0 là chữ số hàng trăm còn số trăm của nó là 20.<br>
+                        </p>
+                    </div>
+                    <div class="dang">
+                        <h3>Biểu thị số có nhiều chữ số</h3>
+                        <p>
+                            Trong hệ thập phân cứ 10 đợn vị ở một hàng thì làm thành 1 đơn vị ở hàng liền trước nó.<br>
+                            Để biểu thị một số có nhiều chữ số, chẳng hạn có bốn chữ sô theo thứ tự từ trái sang phải là
+                            a, b, c, d, ta thường viết abcd. Số này là “a nghìn, b trăm, c chục, d đơn vị. Do đó:<br>
+                            abcd= a*1000 + b*100 + c*10 + d
+                        </p>
+                    </div>
+                    <div class="dang">
+                        <h3>Chữ số La Mã</h3>
+                        <table border="1" cellspacing="2">
+                            <tr>
+                                <td>Ký tự</td>
+                                <td>Giá trị</td>
+                            </tr>
+                            <tr>
+                                <td>I</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>V</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>X</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>1000</td>
+                            </tr>
+                        </table>
+                        <p>Từ 7 chữ số trên người ta thiết lập thêm các chữ số sau:</p>
+                        <table border="1" cellspacing="2">
+                            <tr>
+                                <td>Ký tự</td>
+                                <td>Giá trị</td>
+                            </tr>
+                            <tr>
+                                <td>IV</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>IX</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>XC</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>CD</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <td>CM</td>
+                                <td>900</td>
+                            </tr>
+                        </table>
+                        <p>Giá trị của một số La Mã bằng tổng giá trị thành phần của nó.<br>
+                            Khi viết một số bằng chữ số La Mã ta viết các số từ lớn đến bé, từ trái sang phải. <br>
+                            Chẳng hạn: MMCDIX = 2000 + 400 + 9 = 2409. </p>
+                    </div>
+                    <div class="dang">
+                        <p>Chuyển đổi giữa 2 hệ số tương ứng:</p>
+                        <div class="question-box">
+                            <p>Nhập số</p>
+                            <input type="number" id="num" name="num" value="" placeholder="Nhập số">
+                            <button onclick="convertToRoman();">Chuyển</button>
+                        </div>
+                        <div class="answer-box">
+                            <div id="lama"></div>
+                            <br>
+                            <button>Phản hồi</button>
+                        </div>
+                        <div class="question-box">
+                            <p>Nhập số la mã</p>
+                            <input type="text" id="lm" name="lm" value="" placeholder="Nhập số la mã">
+                            <button onclick="RomanToDec();">Chuyển</button>
+                        </div>
+                        <div class="answer-box">
+                            <div id="dec"></div>
+                            <br>
+                            <button>Phản hồi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bai" id="bai4">
+                    <h2>Bài 4: Số phần tử của tập hợp. Tập hợp con</h2>
+                    <div class="dang">
+                        <h3>Lý thuyết về phần tử của một tập hợp, tập hợp con.</h3>
+                        <ol>
+                            <li>Một tập hơp có thể có một phần tử, có nhiều phần tử, có vô số phần tử, cũng có thể không
+                                có phần tử nào.
+                                <br>Tập hợp không có phần tử nào được gọi là tập rỗng và được kí hiệu là Φ.</li>
+                            <li>Nếu một phần tử của tập hợp A đều thuộc tập hợp B thì tập hợp A gọi là tập hợp con của
+                                tập hợp B. Kí hiệu: A ⊂ B hay B A và đọc là:
+                                <br>A là tập hợp con của tập hợp B hoặc A được chứa trong B hoặc B chứa A.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bai" id="bai5">
+                    <h2>Bài 5: Tính chất của phép cộng và phép nhân</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm tổng, tích của hai số a và b</h3>
+                        <ol>
+                            <li>Nếu a + b = c thì c là tổng của hai số a và b. Khi đó a và b được gọi là những số hạng.
+                            </li>
+                            <li>Nếu a . b = d thì d là tích của hai số a và b. Khi đó a và b được gọi là những thừa số.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Các tính chất của phép cộng và phép nhân</h3>
+                        <ol>
+                            <li>Tính chất giao hoán:</li>
+                            <ul>
+                                <li>a + b = b + a</li>
+                                <li>a . b = b . a</li>
+                            </ul>
+                            <li>Tính chất kết hợp:</li>
+                            <ul>
+                                <li>(a + b) + c = a + (b + c)</li>
+                                <li>(a . b) . c = a . (b . c)</li>
+                            </ul>
+                            <li>Cộng với 0: a + 0 = a</li>
+                            <li>Nhân với 1: a . 1 = a</li>
+                            <li>Tính chất phân phối của phép nhân đối với phép cộng: a . (b + c) = ab + ac</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bai" id="bai6">
+                    <h2>Bài 6: Tính chất của phép trừ và phép chia</h2>
+                    <div class="dang">
+                        <h3>1. Định nghĩa số bị trừ, số trừ, hiệu</h3>
+                        <p>Cho hai số tự nhiên a và b. Nếu có số tự nhiên x mà b + x = a thì ta có phép trừ a – b = x.
+                            Số a gọi là số bị trừ, số b là số trừ, số x là hiệu số.<br>
+                            Lưu ý:</p>
+                        <ul>
+                            <li>Nếu b + x = a thì x = a – b và b = a – x.</li>
+                            <li>Nếu x = a – b thì b + x = a và b = a – x.</li>
+                            <li>Điều kiện để thực hiện được phép trừ là số bị trừ phải lớn hơn hay bằng số trừ.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Định nghĩa số bị chia, số chia, thương</h3>
+                        <p>Cho hai số tự nhiên a và b, với b ≠ 0. Nếu có số tự nhiên x mà b . x = a thì ta có phép chia
+                            hết a : b = x. Số a gọi là số bị chia, số b là số chia, số x là thương.<br>Lưu ý:</p>
+                        <ul>
+                            <li>Nếu b . x = a thì x = a : b nếu b ≠ 0 và b = a : x nếu x ≠ 0.</li>
+                            <li>Nếu x = a : b thì b . x = a và nếu a ≠ 0 thì b = a : x.</li>
+                            <li>Cho hai số tự nhiên a và b, với b ≠ 0, ta luôn tìm được hai số tự nhiên q và r sao cho a
+                                = bq + r, trong đó 0 ≤ r < b.<br>
+                                    Khi r ≠ 0 ta nói rằng ta có phép chia có dư với a là số bị chia, b là số chia, q là
+                                    thương, r là số dư.</li>
+                            <li>Số chia bao giờ cũng khác 0</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai7">
+                    <h2>Bài 7: Lũy thừa với số mũ tự nhiên</h2>
+                    <div class="dang">
+                        <h3>1. Các khái niệm về lũy thừa của số tự nhiên</h3>
+                        <p>Lũy thừa bậc n của một số a là tích của n thừa số bằng nhau, mỗi thừa số bằng a:<br>a^n =
+                            a.a…a (n ≠
+                            0)<br>Trong đó: a gọi là cơ số, n gọi là số mũ. Quy ước:<br></p>
+                        <ul>
+                            <li>a^1=a</li>
+                            <li>a^2 còn được gọi là bình phương của a</li>
+                            <li>a^3 còn được gọi là lập phương của a</li>
+                            <li>Phép nhân nhiều thừa số bằng nhau gọi là phép nâng lên lũy thừa.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Cách nhân hai lũy thừa cùng cơ số</h3>
+                        <p>Khi nhân hai lũy thừa cùng cơ số, ta giữ nguyên cơ số và cộng các số mũ: z^m . z^n = z^(m+n)
+                        </p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Cách nhận biết số chính phương</h3>
+                        <p>Một số là bình phương của một số tự nhiên được gọi là số chính phương. <br>Chẳng hạn: 9 là
+                            một số chính
+                            phương vì 9 = 3^2</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai8">
+                    <h2>Bài 8: Chia hai lũy thừa cùng cơ số</h2>
+                    <div class="dang">
+                        <h3>1. Lý thuyết chia hai lũy thừa cùng cơ số</h3>
+                        <p>Khi chia hai lũy thừa cùng cơ số (khác 0), ta giữ nguyên cơ số và lấy số mũ của số bị chia
+                            trừ đi số mũ của số chia.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Công thức chia hai lũy thừa cùng cơ số:</h3>
+                        <p> a^m : a^ n = a^( m -n ) với (a ≠ 0, m ≥ n ).<br>Quy ước: a^0 = 1.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>Lũy thừa của 10</h3>
+                        <p>Mọi số tự nhiên đều viết được dưới dạng tổng các lũy thừa của 10:</p>
+                        <ul>
+                            <li>ab = a.10 + b</li>
+                            <li>abc = a.100 + b.10 + c</li>
+                            <li>abcd = a.1000 + b.100 + c.10 +d</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai9">
+                    <h2>Bài 9: Thứ tự thực hiện các phép tính</h2>
+                    <div class="dang">
+                        <h3>1. Lý thuyết về biểu thức, biểu thức là gì</h3>
+                        <p>Các số được nối với nhau bởi dấu cá phép tính (cộng, trừ, nhân, chia, nâng lên lũy thừa) làm
+                            thành một biểu thức.
+                            <br>Một số cũng được coi là một biểu thức.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Thứ tự thực hiện các phép tính</h3>
+                        <ol>
+                            <li>Đối với biểu thức không có dấu ngoặc</li>
+                            <ul>
+                                <li>Nếu chỉ có các phép cộng, trừ hoặc chỉ có các phép nhân, chia, ta thực hiện các phép
+                                    tính theo thứ tự từ trái sang phải.</li>
+                                <li>Nếu có các phép tính cộng, trừ, nhân, chia, nâng lên lũy thừa, ta thực hiện phép
+                                    tính nâng lên lũy thừa trước, rồi đến phép nhân và phép chia, cuối cùng đến phép
+                                    cộng và trừ.</li>
+                            </ul>
+                            <li>Đối với biểu thức có dấu ngoặc:(), [], {} ta thực hiện theo thứ tự sau:<br>() → [] → {}
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bai" id="bai10">
+                    <h2>Bài 10: Tính chất chia hết của một tổng</h2>
+                    <div class="dang">
+                        <h3>Tính chất chia hết của một tổng, số tự nhiên chia hết, tổng chia hết, tổng không chia hết.
+                        </h3>
+                        <ol>
+                            <li>Số tự nhiên a chia hết cho số tự nhiên b ≠ 0 nếu có một số tự nhiên k sao cho: a = b .
+                                k.
+                                <br>Kí hiệu a chia hết cho b bởi a ⋮ b
+                                <br>Kí hiệu a không chia hết cho b bởi a ‘/. b
+                                <br>Nếu a ⋮ b và b ⋮ c thì a ⋮ c</li>
+                            <li>Nếu tất cả các số hạng của một tổng đều chia hết cho cùng một số thì tổng chia hết cho
+                                số đó: a ⋮ m, b ⋮ m, c ⋮ m => (a + b + c) ⋮ m.</li>
+                            <li>Nếu a > b, a và b đều chia hết cho cùng một số thì hiệu a – b cũng chia hết cho số đó: a
+                                ⋮ m, b ⋮ m => (a + b + c) ‘/. m.</li>
+                            <li>Nếu trong tổng có một số hạng không chia hết cho số tự nhiên m, còn các số hạng khác đều
+                                chia hết cho m thì tổng đó không chia hết cho m: a ⋮ m, b ⋮ m, c ‘/. m => (a + b + c)
+                                ‘/. m</li>
+                            <li>Một tổng chia hết cho một số tự nhiên nhưng các số hạng của tổng không nhất thiết cần
+                                phải chia hết cho số đó.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bai" id="bai11">
+                    <h2>Bài 11: Dấu hiệu chia hết cho 2, cho 5</h2>
+                    <div class="dang">
+                        <h3>1. Dấu hiệu chia hết cho 2</h3>
+                        <p>Các số có chữ số tận cùng là chữ số chẵn thì chia hết cho 2 và chỉ những số đó mới chia hết
+                            cho 2.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Dấu hiệu chia hết cho 5</h3>
+                        <p>Các số có chữ số tận cùng là chữ số 0 hoặc 5 thì đều chia hết cho 5 và chỉ những số đó mới
+                            chia hết cho 5.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Dấu hiệu chia hết cho cả 2 và 5</h3>
+                        <p>Các số có chữ số tận cùng là chữ số 0 thì chia hết cho cả 2 và 5.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>4. Bài tập</h3>
+                    </div>
+                </div>
+                <div class="bai" id="bai12">
+                    <h2>Bài 12: Dấu hiệu chia hết cho 3, cho 9</h2>
+                    <div class="dang">
+                        <h3>1. Dấu hiệu chia hết cho 3</h3>
+                        <p>Các số có tổng các chữ số chia hết cho 3 thì chia hết cho 3 và chỉ những số đó mới chia hết
+                            cho 3</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Dấu hiệu chia hết cho 9</h3>
+                        <p>Các số có tổng các chữ số chia hết cho 9 thì chia hết cho 9 và chỉ những số đó mới chia hết
+                            cho 9.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Dấu hiệu chia hết cho cả 3 và 9</h3>
+                        <p>Các số có tổng các chữ số chia hết cho 9 thì chia hết cho cả 3 và 9.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>4. Bài tập</h3>
+                    </div>
+                </div>
+                <div class="bai" id="bai13">
+                    <h2>Bài 13: Uớc và bội</h2>
+                    <div class="dang">
+                        <h3>1. Định nghĩa ước và bội</h3>
+                        <p>Số tự nhiên a chia hết cho số tự nhiên b thì ta nói a là bội của b, còn b là ước của a.<br>Ký
+                            hiệu:</p>
+                        <ul>
+                            <li> B(a) : tập hợp các bội của a.</li>
+                            <li> Ư(a) : tập hợp các ước của a.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Cách tìm ước và bội</h3>
+                        <p>Ta có thể tìm các bội của một số khác 0 bằng cách nhân số đó lần lược cho 1, 2, 3, …<br>Ví
+                            dụ: B(5) = {5.1, 4.2, 5.3, …} = {5, 10, 15, …}</p>
+                        <p>Ta có thể tìm các ước của một số a (a > 1) bằng cách lần lược chia số a cho số tự nhiên từ 1
+                            đến a để xét xem a chia hết cho những số nào, khi đó các số ấy là ước của a.<br>Ví dụ: Ư(8)
+                            = {8, 4, 2, 1}</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai14">
+                    <h2>Bài 14: Số nguyên tố. Hợp số</h2>
+                    <div class="dang">
+                        <h3>1. Định nghĩa về số nguyên tố</h3>
+                        <p>Số nguyên tố là số tự nhiên lớn hơn 1, chỉ có hai ước là 1 và chính nó.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Định nghĩa về hợp số</h3>
+                        <p>Hợp số là một số tự nhiên lớn hơn 1, có nhiều hơn hai ước.<br>Lưu ý:</p>
+                        <ul>
+                            <li>Số 0 và số 1 không phải là số nguyên tố cũng không phải là hợp số.</li>
+                            <li>Số 2 là số nguyên tố nhỏ nhất và cũng là số nguyên tố chẵn duy nhất. Như vậy, trừ số 2,
+                                mọi số nguyên tố đều là số lẻ. Nhưng ngược lại, một số lẻ chưa chắc là số nguyên tố.
+                            </li>
+                            <li>Muốn biết một số tự nhiên lớn hơn 1 có phải là số nguyên tố hay không, ta phải tìm tập
+                                các ước của nó.</li>
+                            <li>Những số: 2; 3; 5; 7; 11; 13; 17; 19; 23;… là những số nguyên tố.</li>
+                            <li>Có vô số số nguyên tố.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Bảng số nguyên tố</h3>
+                        <img style="width:500px;"
+                            src="https://Toancap2.net/wp-content/uploads/2017/07/so-nguyen-to-hop-so-bang-so-nguyen-to.gif"
+                            alt="Bảng số nguyên tố">
+                        <p style="font-size: 75%; font-style: italic;">Hình minh họa cho thấy thuật toán đơn giản để tìm
+                            số nguyên tố và các bội số. Các số tô màu giống nhau là cùng một họ mà dẫn đầu (đậm hơn) sẽ
+                            là số nguyên tố</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai15">
+                    <h2>Bài 15: Phân tích một số ra thừa số nguyên tố</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm</h3>
+                        <p>Phân tích một số tự nhiên lớn hơn 1 ra thừa số nguyên tố là viết số đó dưới dạng một tích các
+                            thừa số nguyên tố.
+                            <br>Lưu ý: Dạng phân tích ra thừa số nguyên tố của một số nguyên tố là chính nó.
+                        </p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Các bước phân tích một số ra thừa số nguyên tố</h3>
+                        <p>Muốn phân tích một số tự nhiên a lớn hơn 1 ra thừa số nguyên tố ta có thể làm như sau:</p>
+                        <ul>
+                            <li>Kiểm tra xem 2 có phải là ước của a hay không. Nếu không ta xét số nguyên tố 3 và cứ như
+                                thế đối với các số nguyên tố lớn dần.</li>
+                            <li>Giả sử p là ước nguyên tố nhỏ nhất của a, ta chia a cho p được thương b.</li>
+                            <li>Tiếp tục thực hiện quy trình trên đối với b.</li>
+                            <li>Quá trình trên kéo dài cho đến khi ta được thương là một số nguyên tố.</li>
+                        </ul>
+                        <p>Lưu ý: Dù phân tích một số tự nhiên ra thừa số nguyên tố bằng cách nào thì cũng được cùng một
+                            kết quả.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai16">
+                    <h2>Bài 16: Ước chung và Bội chung</h2>
+                    <div class="dang">
+                        <h3>1. Ước chung là gì?</h3>
+                        <p>Ước chung của hai hay nhiều số là ước của tất cả các số đó.<br>Ước chung của các số a, b, c
+                            được kí hiệu là ƯC(a, b, c).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Bội chung là gì?</h3>
+                        <p>Bội chung của hai hay nhiều số là bội của tất cả các số đó.<br>Bội chung của các số a, b, c
+                            được kí hiệu là: BC(a, b, c).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Định nghĩa giao</h3>
+                        <p>Giao của hai tập hợp là một tập hợp gồm các phần tử chung của hai tập hợp đó.<br>Ta kí hiệu
+                            giao của hai tập hợp A và B là A ∩ B.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai17">
+                    <h2>Bài 17: Ước chung lớn nhất</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm UCLN</h3>
+                        <p>Ước chung lớn nhất của hai hay nhiều số là số lớn nhất trong tập hợp các ước chung của các số
+                            đó.<br>Kí hiệu ước chung lớn nhất của các số a, b, c là ƯCLN (a, b, c).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Các bước tìm UCLN</h3>
+                        <p>Muốn tìm ước chung lớn nhất (ƯCLN) của hai hay nhiều số lớn hơn 1, ta thực hiện ba bước sau:
+                        </p>
+                        <ol>
+                            <li> Phân tích mỗi số ra thừa số nguyên tố.</li>
+                            <li> Chọn ra các thừa số nguyên tố chung.</li>
+                            <li> Lập tích các thừa số đã chọn, mỗi thừa số lấy với số mũ nhỏ nhất của nó. Tích đó là
+                                ƯCLN phải tìm.</li>
+                        </ol>
+                        <p>Lưu ý:</p>
+                        <ul>
+                            <li>Nếu các số đã cho không có thừa số nào chung thì ƯCLN của chúng bằng 1.
+                                <br>Hai hay nhiều số có ƯCLN bằng 1 được gọi là những số nguyên tố cùng nhau.</li>
+                            <li>Trong các số đã cho, nếu có số nhỏ nhất là ước cảu số còn lại thì ƯCLN của các số đã cho
+                                chính là số nhỏ nhất ấy.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Cách tìm ước chung</h3>
+                        <p>Muốn tìm ước chung của các số đã cho ta có thể tìm các ước của ƯCLN của các số đó.<br>Như
+                            vậy, tập hợp các ước chung của các số đã cho là tập hợp các ước của ƯCLN của các số đó.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai18">
+                    <h2>Bài 18: Bội chung nhỏ nhất</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm BCNN</h3>
+                        <p>Bội chung nhỏ nhất của hai hay nhiều số là số nhỏ nhất khác 0 trong tập hợp các bội chung của
+                            các số đó.
+                            <br>Bội chung nhỏ nhất của các số a, b, c được kí hiệu là BCNN (a, b, c).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Cách tìm BCNN</h3>
+                        <p>Muốn tìm BCNN của hai hay nhiều số ta thực hiện ba bước sau:</p>
+                        <ol>
+                            <li> Phân tích mỗi số ra thừa số nguyên tố.</li>
+                            <li> Chọn ra các thừa số nguyên tố chung và riêng.</li>
+                            <li>Lập tích các thừa số đã chọn, mỗi thừa số lấy với số mũ cao nhất của nó. Tích đó là BCNN
+                                phải tìm.</li>
+                        </ol>
+                        <p>Lưu ý:</p>
+                        <ul>
+                            <li>Nếu các số đã cho nguyên tố cùng nhau thì BCNN của chúng là tích của các số đó.</li>
+                            <li>Trong các số đã cho, nếu số lớn nhất là bội của các số còn lại thì BCNN của chúng là số
+                                lớn nhất ấy.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Cách tìm bội chung nhờ BCNN</h3>
+                        <p>Đề tìm các bội chung của các số đã cho ta có thể tìm các bội của BCNN của các số đó.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chuong">
+                <h1>Chương 2: Số nguyên</h1>
+                <div class="bai" id="bai19">
+                    <h2>Bài 19: Làm quen với số nguyên âm</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm số nguyên âm</h3>
+                        <p>Số tự nhiên với dấu trừ đứng trước gọi là số nguyên âm.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Trục số</h3>
+                        <p>Ta biểu diễn các số nguyên âm trên tia đối của tia số. Khi đó ta được một trục số.<br>Như vậy một trục số là một đường thẳng trên đó đã chọn điểm 0 gọi là điểm gốc, thường chọn chiều từ trái sang phải làm chiều dương và một đơn vị độ dài, mỗi số tự nhiên được biểu diễn bởi một điểm ở bên phải điểm 0, mỗi số nguyên âm được biểu diễn bởi một điểm ở bên trái điểm 0.</p>
+                        <img src="https://Toancap2.net/wp-content/uploads/2017/07/khai-niem-so-nguyen-am-truc-so-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bai" id="bai20">
+                    <h2>Bài 20: Tập hợp các số nguyên, số đối</h2>
+                    <div class="dang">
+                        <h3>1. Tập hợp số nguyên</h3>
+                        <ul>
+                            <li>Các số tự nhiên khác 0 còn được gọi là các số nguyên dương.</li>
+                            <li>Các số -1; -2; -3; -4;… là các số nguyên âm.</li>
+                            <li>Tập hợp: {…; -4; -3; -2; -1; 0; 1; 2; 3; 4;…} gồm các số nguyên âm, số 0, các số nguyên dương là tập hợp
+                                các số nguyên.</li>
+                            <li>Tập hợp các số nguyên được kí hiệu là Z.</li>
+                            <li>Như vậy trên trục số với chiều dương là chiều từ trái sang phải thì các số âm nằm bên trái số 0, các số
+                                dương nằm bên phải số 0.</li>
+                            <li>Lưu ý: Số 0 không phải là số nguyên dương cũng không phải là số nguyên âm. Điểm biều diễn số nguyên a
+                                trên trục số được gọi là điểm a.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Số đối</h3>
+                        <ul>
+                            <li>Trên trục số, hai số nguyên biểu diễn bởi hai điểm cách đều điểm gốc được gọi là hai số đối nhau. Khi
+                                đó, mỗi số được gọi là số đối của số kia. Chẳng hạn: 1 và -1 là hai số đối của nhau; 1 là số đối của -1,
+                                ngược lại -1 là số đối của 1.</li>
+                            <li>Tương tự, 3 và -3; 7 và -7; 1954 và -1954 là những cặp số đối nhau; 3 là số đối của -3; ngược lại -3 là
+                                số đối của 3,…</li>
+                            <li>Đặc biệt: số 0 là số đối của số 0.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai21">
+                    <h2>Bài 21: So sánh số nguyên, giá trị tuyệt đối</h2>
+                    <div class="dang">
+                        <h3>1. So sánh hai số nguyên</h3>
+                        <p>Khi biểu diễn trên trục số (nằm ngang), điểm a nằm bên trái điểm b thì số nguyên a bé hơn số nguyên b. Như vậy:</p>
+                        <ul>
+                            <li> Mọi số dương đều lớn hơn số 0</li>
+                            <li> Mọi số âm đều bé hơn số 0 và mọi số nguyên bé hơn 0 đều là số âm;</li>
+                            <li> Mỗi số âm đều bé hơn mọi số dương.</li>
+                        </ul>
+                        <p>Lưu ý: Số nguyên b được gọi là số liền sau số nguyên a nếu a < b và không có số nguyên nào nằm giữa a và b. Khi đó ta cũng nói số nguyên a là số liền trước của b.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Giá trị tuyệt đối</h3>
+                        <p>Trên trục số, khoảng cách từ điểm a đến điểm gốc O được gọi là giá trị tuyệt đối của số a. Giá trị tuyệt đối của số a được kí hiệu là |a| (đọc là giá trị tuyệt đối của a). Như vậy:</p>
+                        <ul>
+                            <li> Giá trị tuyết đối của số 0 là 0.</li>
+                            <li> Giá trị tuyệt đối của một số nguyên dương là chính nó.</li>
+                            <li> Giá trị tuyệt đối của một số nguyên âm là số đối của nó.</li>
+                            <li> Hai số đối nhau có giá trị tuyệt đối bằng nhau.</li>
+                            <li> Trong hai số nguyên âm, số có giá trị tuyệt đối nhỏ hơn là số lớn hơn.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai22">
+                    <h2>Cộng hai số nguyên cùng dấu, khác dấu</h2>
+                    <div class="dang">
+                        <h3>1. Cộng hai số nguyên dương</h3>
+                        <p>Vì hai số nguyên dương là những số tự nhiên nên cộng hai số nguyên dương chính là cộng hai số tự nhiên.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Cộng hai số nguyên âm</h3>
+                        <p>Muốn cộng hai số nguyên âm ta cộng hai giá trị tuyệt đối của chúng rồi đặt dấu “-” trước kết quả.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Cộng hai số nguyên khác dấu</h3>
+                        <ul>
+                            <li>Tổng của hai số nguyên đối nhau bằng 0.</li>
+                            <li>Muốn cộng hai số nguyên khác dấu, ta tìm hiệu các giá trị tuyệt đối của chúng rồi đặt trước kết quả tìm được dấu của hai số có giá trị tuyệt đối lớn hơn.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai23">
+                    <h2>Bài 22: Tính chất của phép cộng các số nguyên</h2>
+                    <div class="dang">
+                        <h3>1. Tính chất giao hoán</h3>
+                        <p>a + b = b + a.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tính chất kết hợp</h3>
+                        <p>(a + b) + c = a + (b + c).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Cộng với số 0</h3>
+                        <p>a + 0 = a.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>4. Cộng với số đối</h3>
+                        <p>a + (-a) = 0.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai24">
+                    <h2>Bài 24: Phép trừ hai số nguyên</h2>
+                    <div class="dang">
+                        <h2>Muốn trừ số nguyên a cho số nguyên b ta cộng a với số đối của b. Kết quả tìm được gọi là hiệu của a và b.</h2>
+                        <p>Như vậy a – b = a + (-b).</p>
+                        <p>Lưu ý: Nếu x = a – b thì x + b = a.</p>
+                        <p>Ngược lại nếu x + b = a thì x = a – b.</p>
+                        <p>Nhận xét: Trong N phép trừ a cho b chỉ thực hiện được khi a ≥ b.<br>     Nhưng trong Z phép trừ a cho b luôn luôn thực hiện được.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai25">
+                    <h2>Bài 25: Quy tắc dấu ngoặc, tổng đại số</h2>
+                    <div class="dang">
+                        <h3>1. Quy tắc dấu ngoặc</h3>
+                        <p>Khi bỏ dấu ngoặc có dấu “-” đứng trước, ta phải đối dấu tất cả các số hạng trong dấu ngoặc: dấu “-” thành dấu “+” và dấu “+” thành dấu “-“. Khi bỏ dấu ngoặc có dấu “+” đứng trước thì dấu các số hạng trong ngoặc vẫn giữ nguyên.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tổng đại số</h3>
+                        <p>Vì phép trừ đi một số là phép cộng với số đối của số đó nên một dãy các phép cộng và phép trừ có thể đối thành một dãy các phép cộng. Vì thế: Một dãy các phép tính cộng trừ những số nguyên được gọi là một tổng đại số. Sau khi chuyển các phép trừ thành phép cộng ta có thể bỏ tất cả các dấu của phép cộng và dấu ngoặc, chỉ để lại dấu của các số hạng. Trong thực hành ta thường gặp tổng đại số dười dạng đơn giản này.</p>
+                        <P>Lưu ý: </P>
+                        <ul>
+                            <li>Tổng đại số có thể nói gọn là tổng.</li>
+                            <li>Trong tổng đại số ta có thể:</li>
+                            <li>Thay đổi vị trí của các số hạng kèm theo dấu của chúng.</li>
+                            <li>Đặt dấu ngoặc để nhóm những số hạng một cách tùy ý với chú ý rằng nếu trước dấu ngoặc là dấu “-” thì phải đổi dấu tất cả các số hạng trong ngoặc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai26">
+                    <h2>Bài 26: Tính chất của đẳng thức, quy tắc chuyển vế</h2>
+                    <div class="dang">
+                        <h3>1. Tính chất của đẳng thức</h3>
+                        <p>Với mọi số nguyên a, b, c ta có:</p>
+                        <ul>
+                            <li>Nếu a = b thì a + c = b + c.</li>
+                            <li>Nếu a + c = b + c thì a = b.</li>
+                            <li>Nếu a = b thì b = a.</li>
+                        </ul>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Quy tắc chuyển vế</h3>
+                        <p>Khi chuyển một số hạng từ vế này sang vế kia của một đẳng thức, ta phải đổi dấu số hạng đó: dấu “+” đổi thành dấu “-” và dấu “-” thành dấu “+”.<br>Nhận xét:</p>
+                        <ul>
+                            <li>Nếu x = a – b thì theo quy tắc chuyển vế ta có x + b = a.</li>
+                            <li>Ngược lại, nếu x + b = a thì theo quy tắc chuyển vế ta có x = a – b.</li>
+                            <li>Những điều nỏi trên chứng tỏ rằng nếu x là hiệu của a và b thì a là tổng của x và b. Nói cách khác, phép trừ là phép tính ngược của phép cộng.</li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="bai" id="bai27">
+                    <h2>Bài 27: Nhân hai số nguyên khác dấu, cùng dấu</h2>
+                    <div class="dang">
+                        <h3>1. Quy tắc nhân hai số nguyên khác dấu</h3>
+                        <p>Muốn nhân hai số nguyên khác dấu ta nhân hai giá trị tuyệt đối của chúng rồi đặt dấu “-” trước kết quả nhận được.<br>Lưu ý: Tích của một số nguyên với số 0 bằng 0.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Quy tắc nhân hai số nguyên cùng dấu</h3>
+                        <ul>
+                            <li>Với hai số nguyên cùng dấu dương ta nhân bình thường như nhân hai số tự nhiên không dấu.</li>
+                            <li>Với hai số nguyên cùng dấu âm ta nhân như hai số tự nhiên không dấu. Kết quả là số nguyên dương.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai28">
+                    <h2>Bài 28: Tính chất của phép nhân</h2>
+                    <div class="dang">
+                        <h3>1. Tính chất giao hoán</h3>
+                        <p>a . b = b . a.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tính chất kết hợp</h3>
+                        <p>(a . b) . c = a . (b . c)</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Nhân với số 1</h3>
+                        <p>a . 1 = 1 . a = a</p>
+                    </div>
+                    <div class="dang">
+                        <h3>4. Tính chất phân phối của phép nhân đối với phép cộng</h3>
+                        <p>a . (b + c) = a . b + a . c.</p>
+                        <p>Lưu ý: Ta cũng có: a . (b – c) = a . b – a . c</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai29">
+                    <h2>Bài 29: Bội và ước của một số nguyên</h2>
+                    <div class="dang">
+                        <h3>1. Bội và ước của một số nguyên</h3>
+                        <p>Cho a, b là những số nguyên, b ≠ 0. Nếu có số nguyên q sao cho a = bq thì ta nói a chia hết cho b và kí hiệu là a ⋮ b.<br>Ta còn nói a là một bội của b và b là một ước của a.<br>Lưu ý:</p>
+                        <ol>
+                            <li> Nếu a = bq thì ta còn nói a chia cho b được thương là q và viết q = a : b.</li>
+                            <li> Số 0 là bội của mọi số nguyên khác 0.</li>
+                            <li> Số 0 không phải là ước của bất kì số nguyên nào.</li>
+                            <li> Số 1 và -1 là ước của mọi số nguyên.</li>      
+                            <li> Nếu c là ước của cả a và b thì c được gọi là một ước chung của a và b.</li>
+                        </ol>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tính chất chia hết</h3>
+                        <ol>
+                            <li> Nếu a chia hết cho b và b chia hết cho c thì a chia hết cho a.
+                            <br>a ⋮ b và b ⋮ c => a ⋮ c.</li>
+                            <li> Nếu a chia hết cho b thì mọi bội của a cũng chia hết cho b.
+                            <br>a ⋮ b => am ⋮ b.</li>
+                            <li> Nếu a và b đều chia hết cho c thì tổng, hiệu của a và b cũng chia hết cho c.
+                            <br>a ⋮ c và b ⋮ c => (a + b) ⋮ c và (a – b) ⋮ c.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="chuong">
+                <h1>Chương 3: Phân số</h1>
+                <div class="bai" id="bai30">
+                    <h2>Bài 30: Khái niệm phân số, hai phân số bằng nhau</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm phân số</h3>
+                        <p>Người ta gọi <sup>a</sup >/<sub>b</sub>  với a, b ∈ Z, b ≠ 0 là một phân số, a là tử số (tử), b là mẫu số (mẫu) của phân số.
+                        <br>Số nguyên a cũng được viết dưới dạng phân số là <sup>a</sup >/<sub>1</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Hai phân số bằng nhau</h3>
+                        <p>Hai phân số <sup>a</sup >/<sub>b</sub> và <sup>c</sup >/<sub>d</sub> được gọi là bằng nhau nếu a.d = b.c<br>Khi đó ta viết: <sup>a</sup >/<sub>b</sub> = <sup>c</sup >/<sub>d</sub></p>
+                    </div>
+                </div>
+                <div class="bai" id="bai31">
+                    <h2>Bài 31: Tính chất cơ bản của phân số, rút gọn phân số</h2>
+                    <div class="dang">
+                        <h3>1. Tính chất cơ bản của phân số</h3>
+                        <p>Nếu ta nhân cả tử và mẫu của một phân số với cùng một số nguyên khác 0 thì ta được phân số bằng phân số đã cho.<br><sup>a</sup >/<sub>b</sub> = <sup>a . m</sup >/<sub>b . m</sub>, với m ∈ Z và m ≠ 0.<br>Nếu chia cả tử và mẫu của một phân số cho cùng một ước chung của chúng thì ta được một phân số bằng phân số đã cho.<br><sup>a</sup >/<sub>b</sub> = <sup>a : n</sup >/<sub>b : n</sub> , với n ∈ ƯC (a;b).</p>
+                        <p>Lưu ý: Nếu ta nhân cả tử và mẫu của một phân số với -1 thì ta được một phân số bằng nó có tử và mẫu lần lượt là đối số của tử số và mẫu số của phân số đã cho.<br>Nói cách khác, nếu ta đổi dấu cả tử và mẫu của một phân số thì được phân số bằng phân số đã cho.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Rút gọn phân số</h3>
+                        <p>Muốn rút gọn phân số ta chia cả tử và mẫu của phân số cho một ước chung khác 1 và -1 của chúng.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Phân số tối giản</h3>
+                        <p>Phân số tối giản (hay phân số không rút gọn được nữa) là phân số mà tử và mẫu chỉ có một ước chung là 1 và -1.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai32">
+                    <h2>Bài 32: Quy đồng mẫu nhiều phân số</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm</h3>
+                        <p>Quy đồng mẫu số của nhiều phân số là biến đổi những phân số đó lần lượt thành những phân số bằng chúng nhưng có cùng mẫu số.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Quy tắc quy đồng mẫu số</h3>
+                        <p>Muốn quy đồng mẫu số nhiều phân số với mẫu số dương ta làm như sau:</p>
+                        <ul>
+                            <li>Bước 1: Tìm bội chung của các mẫu (thường là BCNN để làm mẫu chung).</li>
+                            <li>Bước 2: Tìm thừa số phụ của mỗi mẫu (bằng cách chia mẫu chung cho từng mẫu).</li>
+                            <li>Bước 3: Nhân cả tử và mẫu của mỗi phân số với thừa số phụ tương ứng.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai33">
+                    <h2>Bài 33: So sánh phân số</h2>
+                    <div class="dang">
+                        <h3>1. So sánh hai phân số cùng mẫu</h3>
+                        <p>Trong hai phân số cùng mẫu dương, phân số nào có tử lớn hơn thì lớn hơn.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. So sánh hai phân số không cùng mẫu</h3>
+                        <p>Muốn so sánh hai phân số không cùng mẫu, ta viết chúng dưới dạng hai phân số có cùng mẫu dương rồi so sánh các tử với nhau.<br>Lưu ý:</p>
+                        <ul>
+                            <li> Phân số nào có tử và mẫu là hai số nguyên cùng dấu thì lớn hơn 0. Phân số lớn hơn 0 được gọi là phân số dương.</li>
+                            <li> Phân số có tử và mẫu là hai số nguyên khác dấu thì nhỏ hơn 0. Phân số nhỏ hơn 0 được gọi là phân số âm.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai34">
+                    <h2>Bài 34: Phép cộng phân số cùng mẫu, không cùng mẫu</h2>
+                    <div class="dang">
+                        <h3>1. Cộng các phân số cùng mẫu</h3>
+                        <p>Muốn cộng các phân số cùng mẫu số, ta cộng các tử và giữ nguyên mẫu.</p>
+                        <p><sup>a</sup >/<sub>m</sub> + <sup>b</sup >/<sub>m</sub> = <sup>a + b</sup >/<sub>m</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Cộng các phân số không cùng mẫu</h3>
+                        <p>Muốn cộng các phân số không cùng mẫu, ta quy đồng mẫu rồi cộng các tử và giữ nguyên mẫu chung.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai35">
+                    <h2>Bài 35: Tính chất cơ bản của phép cộng phân số</h2>
+                    <div class="dang">
+                        <h3>1. Tính chất giao hoán</h3>
+                        <p><sup>a</sup >/<sub>b</sub> + <sup>c</sup >/<sub>d</sub> = <sup>c</sup >/<sub>d</sub> + <sup>a</sup >/<sub>b</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tính chất kết hợp</h3>
+                        <p> ( <sup>a</sup >/<sub>b</sub> + <sup>c</sup >/<sub>d</sub> ) + <sup>x</sup >/<sub>y</sub> = <sup>a</sup >/<sub>b</sub> + ( <sup>c</sup >/<sub>d</sub> + <sup>x</sup >/<sub>y</sub> )</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Cộng với 0</h3>
+                        <p><sup>a</sup >/<sub>b</sub> + 0 = 0 + <sup>a</sup >/<sub>b</sub> = <sup>a</sup >/<sub>b</sub></p>
+                    </div>
+                </div>
+                <div class="bai" id="bai36">
+                    <h2>Bài 36: Số đối, phép trừ phân số</h2>
+                    <div class="dang">
+                        <h3>1. Số đối</h3>
+                        <p>Hai số được gọi là đối nhau nếu tổng của chúng bằng 0.<br>Số đối của phân số <sup>a</sup >/<sub>b</sub> là - <sup>a</sup >/<sub>b</sub></p>
+                        <p>Vì <sup>a</sup >/<sub>b</sub> + ( - <sup>a</sup >/<sub>b</sub> ) = 0</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Phép trừ phân số</h3>
+                        <p>Muốn trừ một phân số cho một phân số, ta cộng số bị trừ với số đối của số trừ.</p>
+                        <p><sup>a</sup >/<sub>b</sub> - <sup>c</sup >/<sub>d</sub> = <sup>a</sup >/<sub>b</sub> + ( - <sup>c</sup >/<sub>d</sub> )<br> Kết quả thu được gọi là hiệu của hai phân số <sup>a</sup >/<sub>b</sub> và <sup>c</sup >/<sub>d</sub></p>
+                        <p>* Lưu ý. Muốn trừ một phân số cho một phân số ta quy đồng mẫu rồi lấy tử của phân số bị trừ trừ đi tử của phân số trừ và giữ nguyên mẫu chung.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai37">
+                    <h2>Bài 37: Phép nhân phân số</h2>
+                    <div class="dang">
+                        <h3>1. Quy tắc nhân hai phân số</h3>
+                        <p>Muốn nhân hai phân số ta nhân các tử số với nhau và mẫu số với nhau. <sup>a</sup >/<sub>b</sub> . <sup>c</sup >/<sub>d</sub> = <sup>a . c</sup >/<sub>b . d</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Nhân một số với số nguyên </h3>
+                        <p>Muốn nhân một số nguyên với một phân số, ta nhân số nguyên đó với tử của phân số và giữ nguyên mẫu.</p>
+                        <p>m . <sup>a</sup >/<sub>b</sub> = <sup>a . m</sup >/<sub>b</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Lũy thừa bậc n của một phân số</h3>
+                        <p>Với n là một số nguyên dương, ta gọi tích của n thừa số <sup>a</sup >/<sub>b</sub> là lũy thừa bậc n của <sup>a</sup >/<sub>b</sub> và kí hiệu là ( <sup>a</sup >/<sub>b</sub> )<sup>n</sup></p>
+                        <p>Theo quy tắc nhân phân số ta được:</p>
+                        <img src="https://Toancap2.net/wp-content/uploads/2017/07/phep-nhan-phan-so-1.jpg" alt="lũy thừa của 1 phân số">
+                    </div>
+                </div>
+                <div class="bai" id="bai38">
+                    <h2>Bài 38: Tính chất cơ bản của phép nhân phân số</h2>
+                    <div class="dang">
+                        <h3>1. Tính chất giao hoán</h3>
+                        <p><sup>a</sup >/<sub>b</sub> . <sup>c</sup >/<sub>d</sub> = <sup>c</sup >/<sub>d</sub> . <sup>a</sup >/<sub>b</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tính chất kết hợp</h3>
+                        <p> ( <sup>a</sup >/<sub>b</sub> . <sup>c</sup >/<sub>d</sub> ) . <sup>x</sup >/<sub>y</sub> = <sup>a</sup >/<sub>b</sub> . ( <sup>c</sup >/<sub>d</sub> . <sup>x</sup >/<sub>y</sub>)</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Nhân với số 1</h3>
+                        <p><sup>a</sup >/<sub>b</sub> . 1 = 1. <sup>a</sup >/<sub>b</sub> = <sup>a</sup >/<sub>b</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>4. Tính chất phân phối của phép nhân đối với phép cộng</h3>
+                        <p><sup>a</sup >/<sub>b</sub> . ( <sup>c</sup >/<sub>d</sub> + <sup>x</sup >/<sub>y</sub> ) = <sup>a</sup >/<sub>b</sub> . <sup>c</sup >/<sub>d</sub> + <sup>a</sup >/<sub>b</sub> . <sup>x</sup >/<sub>y</sub></p>
+                    </div>
+                </div>
+                <div class="bai" id="bai39">
+                    <h2>Bài 39: Số nghịch đảo, phép chia phân số</h2>
+                    <div class="dang">
+                        <h3>1. Số nghịch đảo</h3>
+                        <p>Hai số được gọi là nghịch đảo của nhau nếu tích của chúng bằng 1.<br>Từ đó suy ra chỉ có những số khác 0 thì mới có số nghịch đảo.<br>Nếu phân số <sup>a</sup >/<sub>b</sub> khác 0 thì số nghịch đảo của nó là <sup>b</sup >/<sub>a</sub></p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Phép chia phân số</h3>
+                        <ul>
+                            <li>Muốn chia một phân số cho một phân số khác 0, ta nhân phân số bị chia với số nghịch đảo của số chia.
+                            <br><sup>a</sup >/<sub>b</sub> : <sup>c</sup >/<sub>d</sub> = <sup>a</sup >/<sub>b</sub> . <sup>d</sup >/<sub>c</sub> với <sup>c</sup >/<sub>d</sub> khác 0</li>
+                            <li>Muốn chia một số nguyên cho một phân số khác 0, ta nhân số nguyên với nghịch đảo của số chia.<br>a: <sup>c</sup >/<sub>d</sub> = <sup>a. d</sup >/<sub>c</sub></li>
+                            <li>Muốn chia một phân số cho một số nguyên khác 0, ta nhân mẫu của phân số bị chia với số nguyên và giữ nguyên tử số.<br><sup>a</sup >/<sub>b</sub> : c = <sup>a</sup >/<sub>b . c</sub></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai40">
+                    <h2>Bài 40: Hỗn số. Số thập phân. Phần trăm </h2>
+                    <div class="dang">
+                        <h3>1. Hỗn số</h3>
+                        <p>Người ta viết gọn tổng 1 + <sup>2</sup >/<sub>3</sub> dưới dạng 1<sup>a</sup >/<sub>b</sub> và gọi là 1 hỗn số.</p>
+                        <p>Số đối -1<sup>2</sup >/<sub>3</sub> = -( 1 + <sup>a</sup >/<sub>b</sub> )</p>
+                        <p>Tổng quát khi ta viết gọn tổng của một số nguyên dương và phân số dương bằng cách bỏ dấu cộng xen giữa chúng thì được gọi là một hỗn số.<br>Số đối của hỗn số này cũng được gọi là một hỗn số.<br>Như vậy, một hỗn số gồm hai phần: phần nguyên và phần phân số.<br>Lưu ý. Muốn đổi một phân số dương có tử lớn hơn mẫu thành một hỗn số ta chia tử cho mẫu. Thương tìm được chính là phần nguyên, phần phân số có tử là số dư còn mẫu là mẫu số của phân số đã cho.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Phân số thập phân. Số thập phân.</h3>
+                        <p>Phân số thập phân là phân số có mẫu là một lũy thừa của 10.<br>Các phân số thập phân có thể viết dưới dạng số thập phân.<br>Số thập phân gồm hai phần:</p>
+                        <ul>
+                            <li> Phần số nguyên viết bên trái dấu phẩy</li>
+                            <li> Phần thập phân viết bên phải dấu phẩy.</li>
+                        </ul>
+                        <p>Số chữ số thập phân bằng đúng số chữ số 0 ở mẫu của phân số thập phân.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Phần trăm</h3>
+                        <p>Phân số có mẫu là 100 được viết dưới dạng phần trăm, tức là dạng gồm tử số của phân số đã cho kèm theo kí hiệu %.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai41">
+                    <h2>Bài 41: Các bài toán liên quan đến phân số</h2>
+                    <div class="dang">
+                        <h3>1. Tìm giá trị phân số của một số cho trước</h3>
+                        <p>Muốn tìm <sup>m</sup >/<sub>n</sub> của một số a cho trước, ta nhân <sup>2</sup >/<sub>3</sub> với a, (m, n ∈ N, n ≠ 0 ).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Tìm một số biết giá trị một phân số của nó</h3>
+                        <p>Muốn tìm một số biết <sup>m</sup >/<sub>n</sub> của nó bằng a, ta chia a cho <sup>m</sup >/<sub>n</sub>  (m, n ∈ N*).</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Tìm tỷ số của 2 số, tỷ số phần trăm, tỷ lệ xích</h3>
+                        <ul>
+                            <li>Tỷ số của 2 số:</li>
+                            <p>Thương của phép chia số a cho số b (b ≠ 0) được gọi là tỉ số của hai số a và b.<br>Tỷ số của a và b được viết là <sup>a</sup >/<sub>b</sub> hoặc a : b.</p>
+                            <li>Tỷ số phần trăm:</li>
+                            <p>Tỉ số của hai số được viết dưới dạng phần trăm được gọi là tỉ số phần trăm của hai số đó.<br>Quy tắc tìm tỉ số phần trăm<br>Muốn tìm tỉ số phần trăm của hai số a và b, ta nhân a với 100 rồi chia cho b và viết kí hiệu phần trăm vào kết quả :</p>
+                            <p><sup>a . 100%</sup >/<sub>b</sub></p>
+                            <li>Tỷ lệ xích:</li>
+                            <p>Tỉ lệ xích T của một bản vẽ là tỉ số của khoảng cách a giữa hai điểm trên bản vẽ và khoảng cách b giữa hai điểm trên thực tế:</p>
+                            <p>T = </sup >/<sub>b</sub> ( a, b có cùng đơn vị độ dài).</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bai" id="bai42">
+                    <h2>Bài 42: Biểu đồ cột, biểu đồ vuông, biểu đồ hình quạt</h2>
+                    <div class="dang">
+                        <h3>1. Biểu đồ hình cột</h3>
+                        <p>Người ta dựng một tia số thẳng đứng. Mỗi đơn vị độ dài trên tia số ứng với 1%.<br>Để biểu thị một tỉ số a phần trăm, ta dựng một cột hình chữ nhật có chiều cao bằng a đơn vị độ dài trên tia số.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>2. Biểu đồ vuông</h3>
+                        <p>Người ta chia một hình vuông thành 100 hình vuông nhỏ bằng nhau.<br>Để biểu thị một tỉ số a phần trăm, người ta tô đậm a hình vuông nhỏ.</p>
+                    </div>
+                    <div class="dang">
+                        <h3>3. Biểu đồ hình quạt</h3>
+                        <p>Người ta chia một hình tròn thành 100 hình quạt bằng nhau( bởi những bán kính).<br>Để biểu thị tỉ số a phần trăm, người ta tô đậm a hình quạt liền nhau.</p>
+                    </div>
+                </div>
+                <div class="dang">
+                    <p>Nhập số cần phân tích ra thừa số nguyên tố: </p>
+                    <input type="number" id="sophantich" >
+                    <button onclick="phanTichThuaSoNguyenTo();">Tìm</button>
+                    <p>Số sau khi đã phân tích:</p>
+                    <div id ="phantich">
+                    </div>
+                </div>
+                <div class="dang">
+                    <p>Tìm ước của: </p>
+                    <input type="number" id="timuoc">
+                    <button onclick="xuatUoc();">Xuất ước</button>
+                    <div id="xuatuoc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

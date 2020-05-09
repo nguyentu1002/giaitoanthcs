@@ -1,4 +1,34 @@
+//Viết tập hợp các chữ với từ được đưa vào
+function tapHopChuCai(){
+    var kq= document.getElementById("cumtu").value;
+    //xóa khoảng trắng
+    var mangtu = kq.split(" ");
+    var kq ="";
+    for(i = 0; i < mangtu.length; i++)
+    kq += mangtu[i];
+    var arr= kq.split('');
+    //Loại bỏ ký tự trùng nhau
+    arr = arr.filter((item, index) => arr.indexOf(item) === index);
+    document.getElementById("kq_cumtu").innerHTML= arr;
+}
+//Tìm số tự nhiên liền sau/ liền trước
+function timSoLienST(){
+    var liensau= document.getElementById("liensau").value;
+    var lientruoc=document.getElementById("lientruoc").value;
+    var kq_ls= parseInt(liensau)+1;
+    var kq_lt= parseInt(lientruoc)-1;
+    document.getElementById("tim_ls").innerHTML=kq_ls;
+    document.getElementById("tim_lt").innerHTML=kq_lt;
+}
+//Viết tập hợp bằng cách liệt kê các phần tử
+//Input : 1 <= x <5 Output 1, 2, 3, 4
 
+//Đếm số phần tử
+function demSoPhanTuTapHop(){
+    var taphop= document.getElementById("phantu").value;
+    var arr= taphop.split(',');
+    document.getElementById("dem_th").innerHTML=arr.length;
+}
 //Bài 3.Hàm chuyển số sang chữ số La mã
 function convertToRoman() {
   var num = document.getElementById("num").value;

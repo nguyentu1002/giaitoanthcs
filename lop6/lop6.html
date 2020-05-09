@@ -275,6 +275,82 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="accordion" id="accordion-tab-1">
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-1-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Viết tập hợp các chữ số trong từ được đưa vào</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+                                <div class="card-body">
+                                    <p>Ví D: Viết tập hợp các chữ cái trong từ “TOÁN HỌC”
+                
+                                        => A = {T, O, A, N, H, C}</p>
+                                    <p><strong>Tương tự: </strong>Với cụm từ:</p>
+                                    <input type="text" id="cumtu">
+                                    <button onclick="tapHopChuCai();">Kết quả: </button>
+                                    <label id="kq_cumtu"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-1-heading-2">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Tìm số tự nhiên  </button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
+                                <div class="card-body">
+                                    <p>Viết số tự nhiên liền sau số: </p>
+                                    <input type="number" id="liensau">
+                                    <button onclick="timSoLienST();">Tìm</button>
+                                    <label id="tim_ls"></label>
+                                    <p><strong>Nhận xét: </strong>Số tự nhiên liền sau của a là : a + 1</p>
+                                    <p>Viết số tự nhiên liền trước số:</p>
+                                    <input type="number" id="lientruoc">
+                                    <button onclick="timSoLienST();">Tìm</button>
+                                    <label id="tim_lt"></label>
+                                    <p><strong>Nhận xét: </strong>Số tự nhiên liền sau của a là : a - 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-1-heading-3">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Viết tập hợp bằng cách liệt kê phần tử</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
+                                <div class="card-body">
+                                    <p>Ví dụ: Tìm tập hợp số tự nhiên x thõa mãn 12 < x < 16 </p>
+                                    <p>Tập hợp A các số tự nhiên x thõa mãn: A = {13, 14, 15}</p>
+                                    <p><strong>Tương tự: </strong>Tìm tập hợp các số tự nhiên x thõa mãn: </p>
+                                    <input type="text" id="tim_taphop">
+                                    <button>Xuất tập hợp</button>
+                                    <label id="taphop"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-1-heading-4">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">Đếm số phần tử của tập hợp </button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
+                                <div class="card-body">
+                                    <p>Ví dụ: Tập hợp sau: </p>
+                                    <p> A = {1,2,3,5,6,7}</p>
+                                    <p>Số phần tử của tập hợp là: 6</p>
+                                    <p><strong>Tương tự: </strong>Đếm số phần tử của tập hợp: A= </p>
+                                    <input type="text" id="phantu">
+                                    <button onclick="demSoPhanTuTapHop();">Số phần tử: </button>
+                                    <label id="dem_th"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="bai" id="bai3">
                     <h2>Bài 3: Ghi số tự nhiên</h2>

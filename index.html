@@ -4,13 +4,6 @@
 <head>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <link rel="stylesheet" href="resources/css/style.css">
@@ -20,64 +13,140 @@
 <body>
     <header id="home">
         <nav>
-            <a href="#"><img class="logo" src="./resources/img/Logo.jpg" alt="Logo"></a>
+            <a href="./index.html"><img class="logo" src="./resources/img/Logo.jpg" alt="Logo"></a>
             <ul class="main-nav">
                 <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#khoilop">Giải Toán Nhanh</a></li> 
+                <li><a href="#dangky">Đăng ký ngay</a></li>
+                <li><a href="#khoilop">Giải Toán Nhanh</a></li>
                 <li><a href="#hdsd">Hướng dẫn sử dụng</a></li>
-                <li><a href="#container">Đăng nhập</a></li>
+                <li><a href="./dangnhap.html" class="btn">Đăng nhập</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
-        <p class="heading-main-text">Phương pháp giải bài tập Toán<br>nhanh chóng, chính xác và thuận tiện<br>các khối THCS</p>
+        <h1 class="heading-main-text">Phương pháp giải bài tập Toán<br>nhanh chóng, chính xác và thuận tiện<br>các khối
+            THCS</h1>
     </header>
-    
-    <div class="container" id="container">
-        <h2>Đăng nhập</h2>
-        <div class="form-container sign-up-container">
-            <form action="#" method="post">
-                <h1>Tạo tài khoản</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-
+    <section id="dangky" class= "dangky">
+        <h2>Đăng ký thành viên</h2>
+        <form>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Họ và tên: </label>
                 </div>
-                <span>hoặc sử dụng email của bạn</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button >Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form id="form-login" action="#" method="post">
-                <h1>Đăng nhập</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-                <span>hoặc tài khoản của bạn</span>
-                <input type="email" placeholder="Email" id="email" name="email" required />
-                <input type="password" placeholder="Password" id="password" name="password" required />
-                <a href="#">Quên mật khẩu?</a>
-                <button type="submit" >Đăng nhập</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Chào mừng bạn!</h1>
-                    <p>Vui lòng đăng nhập với thông tin của bạn</p>
-                    <button class="ghost" id="signIn">Đăng nhập</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Chào mừng bạn!</h1>
-                    <p>Nhập thông tin của bạn để bắt đầu trải nghiệm</p>
-                    <button class="ghost" id="signUp">Đăng ký</button>
+                <div class="col span-2-of-3">
+                    <input type="text" placeholder="Họ tên">
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Email: </label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Username: </label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="text" placeholder="Username">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Password: </label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label >Ngày sinh:</label>
+                </div>
+                <div class="col span-2-of-3 ngaysinh">
+                    <span>
+                        <select name="ngay" title="Ngày" aria-label="Ngày">
+                            <option value="0">Ngày</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option selected="1" value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="25">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="ngay" title="Tháng" aria-label="Tháng">
+                            <option value="0">Tháng</option>
+                            <option value="1">Tháng 1</option>
+                            <option selected="1" value="2">Tháng 2</option>
+                            <option value="3">Tháng 3</option>
+                            <option value="4">Tháng 4</option>
+                            <option value="5">Tháng 5</option>
+                            <option value="6">Tháng 6</option>
+                            <option value="7">Tháng 7</option>
+                            <option value="8">Tháng 8</option>
+                            <option value="9">Tháng 9</option>
+                            <option value="10">Tháng 10</option>
+                            <option value="11">Tháng 11</option>
+                            <option value="12">Tháng 12</option>
+                        </select>
+                        <select name="nam" title="Năm" aria-label="Năm">
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1998</option>
+                            <option selected="1" value="1998">1999</option>
+                            <option value="1999">2000</option>
+                            <option value="2000">2001</option>
+                            <option value="2001">2002</option>
+                            <option value="2002">2003</option>
+                            <option value="2003">2004</option>
+                            <option value="2004">2005</option>
+                            <option value="2005">2006</option>
+                            <option value="2006">2007</option>
+                            <option value="2007">2008</option>
+                            <option value="2008">2009</option>
+                            <option value="2009">2010</option>
+                        </select>
+    
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" class="btn" value="Đăng ký">
+            </div>
+        </form>
+    </section>
     <section id="khoilop" class="khoilop">
         <h2>Bài toán</h2>
         <div class="row">
@@ -90,7 +159,7 @@
                         <li>Số nguyên</li>
                         <li>Phân số</li>
                     </ol>
-                    <a href="/lop6/lop6.html" class="btn">Thử ngay</a>
+                    <a href="/lop6/lop6.html" class="btn">Join Us</a>
                 </div>
             </div>
             <div class="col span-1-of-4">
@@ -103,7 +172,7 @@
                         <li>Thống kê</li>
                         <li>Biểu thức đại số</li>
                     </ol>
-                    <a href="/lop7/lop7.html" class="btn">Thử ngay</a>
+                    <a href="/lop7/lop7.html" class="btn">Join Us</a>
                 </div>
             </div>
             <div class="col span-1-of-4">
@@ -116,7 +185,7 @@
                         <li>Phương trình bậc nhất một ẩn</li>
                         <li>Bất phương trình bậc nhất một ẩn</li>
                     </ol>
-                    <a href="/lop8/lop8.html" class="btn">Thử ngay</a>
+                    <a href="/lop8/lop8.html" class="btn">Join Us</a>
                 </div>
             </div>
             <div class="col span-1-of-4">
@@ -129,7 +198,7 @@
                         <li>Hệ hai phương trình bậc nhất hai ẩn</li>
                         <li>Phương trình bậc hai một ẩn</li>
                     </ol>
-                    <a href="/lop9/lop9.html" class="btn">Thử ngay</a>
+                    <a href="/lop9/lop9.html" class="btn">Join Us</a>
                 </div>
             </div>
         </div>
@@ -146,7 +215,6 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/scripts.js"></script>
-        <script src="/resources/js/dangnhap.js"></script>
 </body>
 
 </html>

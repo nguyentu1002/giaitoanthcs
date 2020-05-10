@@ -29,7 +29,7 @@ function demSoPhanTuTapHop(){
     var arr= taphop.split(',');
     document.getElementById("dem_th").innerHTML=arr.length;
 }
-//Bài 3.Hàm chuyển số sang chữ số La mã
+//Hàm chuyển số sang chữ số La mã
 function convertToRoman() {
   var num = document.getElementById("num").value;
   var roman = {
@@ -101,6 +101,67 @@ function RomanToDec() {
       }
   }
   document.getElementById("dec").innerHTML = sum;
+}
+//Tìm * để số a chia hết cho b
+function timSao(){
+    var so1 =document.getElementById("so1").value;
+    var so2=document.getElementById("so2").value;
+    var kq="";
+    if( parseInt(so2) == 3|| parseInt(so2) == 9){
+        var arr = so1.split('*');
+        var k ="";
+        for(i = 0; i < arr.length; i++)
+        k += arr[i];
+        arr= k.split('');
+        //Xử lý tổng
+        var sum=0;
+        for( var i=0 ;i < arr.length; i++){
+            sum += parseInt(arr[i]);
+        }
+        kq=" Ta có " + so1 +" ⋮ "+ so2 + " <=> " + sum + "+ * ⋮ "+so2 +" <=> * = "  ;
+        for( var i=0; i<10;i++){
+            if((sum +i)% parseInt(so2) ==0)
+                kq += i.toString() +","; 
+        }
+    }
+    if(parseInt(so2) == 5){
+        var arr= so1.split('');
+        if(parseInt(arr[arr.length-1])== 5 || arr[arr.length-1]== 0){
+            kq += so1 +" ⋮ 5 với mọi * <=> * = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9";   
+        }
+        if(arr[arr.length-1]=="*"){
+            kq += so1 +"⋮ 5 <=> * ⋮ 5 <=> * ={ 0, 5}"
+        }
+        else{
+            kq += "Không tồn tại * nào thõa mãn yêu cầu vì chữ số cuối cùng không thuộc tập {0, 5}."
+        }
+    }
+    if(parseInt(so2) == 2){
+        var arr= so1.split('');
+        if(parseInt(arr[arr.length-1])== 0 || parseInt(arr[arr.length-1])== 2 ||parseInt(arr[arr.length-1])== 4 ||parseInt(arr[arr.length-1])== 6 ||parseInt(arr[arr.length-1])== 8 ){
+            kq += so1 +" ⋮ 2 với mọi * <=> * = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9";   
+        }
+        if(arr[arr.length-1]=="*"){
+            kq += so1 +"⋮ 2 <=> * ⋮ 2 <=> * ={ 0, 2, 4, 6, 8}"
+        }
+        else{
+            kq += "Không tồn tại * nào thõa mãn yêu cầu vì chữ số cuối cùng không thuộc tập {0, 2, 4, 6, 8}."
+        }
+    }
+    if(parseInt(so2) == 10){
+        var arr= so1.split('');
+        if(parseInt(arr[arr.length-1])== 0){
+            kq += so1 +" ⋮ 10 với mọi * <=> * = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9";   
+        }
+        if(arr[arr.length-1]=="*"){
+            kq += so1 +"⋮ 10 <=> * ⋮ 2 <=> * ={ 0}"
+        }
+        else{
+            kq += "Không tồn tại * nào thõa mãn yêu cầu vì chữ số cuối cùng không thuộc tập {0}."
+        }
+    }
+    
+    document.getElementById("so3").innerHTML=kq;
 }
 //Hàm kiểm tra số nguyên tố
 function kiemTraSoNguyenTo(n){

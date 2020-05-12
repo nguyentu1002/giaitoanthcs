@@ -19,6 +19,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -33,28 +34,28 @@
             <ul class="list-unstyled components">
                 <p>Toán lớp 7</p>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương 1 - Số hữu tỷ, số thực</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương 1 - Số hữu tỉ, số thực</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Tập hợp Q các số hữu tỷ</a>
+                            <a href="#">Tập hợp Q các số hữu tỉ</a>
                         </li>
                         <li>
-                            <a href="#">Cộng trừ số hữu tỷ</a>
+                            <a href="#">Cộng trừ số hữu tỉ</a>
                         </li>
                         <li>
-                            <a href="#">Nhân, chia số hữu tỷ</a>
+                            <a href="#">Nhân, chia số hữu tỉ</a>
                         </li>
                         <li>
-                            <a href="#">Giá trị tuyệt đối số hữu tỷ</a>
+                            <a href="#">Giá trị tuyệt đối số hữu tỉ</a>
                         </li>
                         <li>
                             <a href="#">Cộng, trừ, nhân, chia số thập phân</a>
                         </li>
                         <li>
-                            <a href="#">Định nghĩ, tính chất của tỷ lệ thức</a>
+                            <a href="#">Định nghĩ, tính chất của tỉ lệ thức</a>
                         </li>
                         <li>
-                            <a href="#">Tính chất của dãy tỷ số bằng nhau</a>
+                            <a href="#">Tính chất của dãy tỉ số bằng nhau</a>
                         </li>
                         <li>
                             <a href="#">Số thập phân hữu hạn, vô hạn tuần hoàn</a>
@@ -63,7 +64,7 @@
                             <a href="#">Quy ước làm tròn số</a>
                         </li>
                         <li>
-                            <a href="#">Khái niệm số vô tỷ căn bậc hai</a>
+                            <a href="#">Khái niệm số vô tỉ căn bậc hai</a>
                         </li>
                         <li>
                             <a href="#">Khái niệm số thực, trục số thực</a>
@@ -75,16 +76,16 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương 2 - Hàm số và đồ thị</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Công thức, tính chất đại lượng tỷ lệ thuận</a>
+                            <a href="#">Công thức, tính chất đại lượng tỉ lệ thuận</a>
                         </li>
                         <li>
-                            <a href="#">Một số bài toán về địa lượng tỷ lệ thuận</a>
+                            <a href="#">Một số bài toán về địa lượng tỉ lệ thuận</a>
                         </li>
                         <li>
-                            <a href="#">Công thức, tính chất đại lượng tỷ lệ nghịch</a>
+                            <a href="#">Công thức, tính chất đại lượng tỉ lệ nghịch</a>
                         </li>
                         <li>
-                            <a href="#">Một số bài toán về địa lượng tỷ lệ nghịch</a>
+                            <a href="#">Một số bài toán về địa lượng tỉ lệ nghịch</a>
                         </li>
                         <li>
                             <a href="#">Khái niệm hàm số</a>
@@ -183,6 +184,138 @@
                 </div>
             </nav>
 
+            <div class="chuong" id="chuong1">
+                <h1>Số hữu tỉ, số thực</h1>
+                <div class="bai" id="bai1">
+                    <h2>Bài 1: Tập hợp Q các số hữu tỉ</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm số hữu tỉ</h3>
+                        <p>Số hữu tỉ là số có thể viết dưới dạng <span class="frac">
+                            <span>a</span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">b</span>
+                        </span> với a,b ∈ Z, b # 0 và được kí hiệu là Q.</p>
+                        <h3>2. Biểu diễn số hữu tỉ trên trục số</h3>
+                        <p>Mỗi số hữu tỉ được biểu diễn bởi một điểm trên trục số và không phụ thuộc vào cách chọn phân số xác định nó.</p>
+                        <h3>3. So sánh khố hữu tỉ</h3>
+                        <p>Để so sánh hai số hữu tỉ x, y ta làm như sau:</p>
+                        <ul>
+                            <li>Viết x,y dưới dạng phân số cùng mẫu dương x = <span class="frac">
+                                <span>a</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span>
+                            </span>
+                            , y = <span class="frac">
+                                <span>b</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span>
+                            </span> (m>0)</li>
+                            <li>So sánh các tử là số nguyên a và b</li>                           
+                        </ul>
+                        <p>Nếu a &gt; b thì x &gt; y<br>
+                            Nếu a = b thì x = y<br>                       
+                            Nếu a &lt; b thì x &lt; y
+                        </p>
+                        <h3>Chú ý</h3>
+                        <ul>
+                            <li>Số hữu tỉ lớn hơn 0 gọi là số hữu tỉ dương</li>
+                            <li>Số hữu tỉ nhỏ hơn 0 gọi là số hữu tỉ âm</li>
+                            <li>Số 0 không là số hữu tỉ dương, cũng không là số hữu tỉ âm</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="bai" id="bai2">
+                    <h2>Bài 2: Cộng, trừ số hữu tỉ</h2>
+                    <div class="dang">
+                        <h3>1. Cộng trừ số hữu tỉ</h3>
+                        <p>Viết hai số hữu tỉ x,y dưới dạng:<br>
+                            x = <span class="frac">
+                                <span>a</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span>
+                            </span>
+                            , y = <span class="frac">
+                                <span>b</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span>
+                            </span>
+                            <br>Khi đó:<br>
+                            x + y = <span class="frac">
+                                <span>a</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span>
+                            </span> + <span class="frac">
+                                <span>b</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span> 
+                            </span> = <span class="frac">
+                                <span>a + b</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span> 
+                            </span>
+                            <br>
+                            x - y = x + (-y) =  <span class="frac">
+                                <span>a</span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">m</span>
+                                </span> + (- <span class="frac">
+                                    <span>b</span>
+                                    <span class="symbol">/</span>
+                                    <span class="bottom">m</span> 
+                                </span>) = <span class="frac">
+                                    <span>a - b</span>
+                                    <span class="symbol">/</span>
+                                    <span class="bottom">m</span> 
+                                </span>
+                        </p>
+                        <h3>2. Quy tắc "chuyển vế"</h3>
+                        <p>Khi chuyển một số hạng từ vế này sang vế kia của một đẳng thức ta phải đổi dấu số hạng đó<br>
+                        Tổng quát: với mọi x, y , z ∈ Q, ta có: <br> x + y + z => x = z - y
+                        </p>
+                    </div>
+                </div>     
+                <div class="bai" id="bai3">
+                    <h2>Bài 3: Nhân, chia số hữu tỉ</h2>
+                    <p>Với 2 số hữu tỉ x = <span class="frac">
+                        <span>a</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">b</span> 
+                    </span> , y = <span class="frac">
+                        <span>c</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">d</span> 
+                    </span> cho trước, ta có lý thuyết, công thức nhân hai số hữu tỉ như sau:
+                    </p>
+                    <h3>1. Nhân hai số hữu tỉ</h3>
+                    <p>x . y =  <span class="frac">
+                        <span>a</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">b</span> </span> . <span class="frac">
+                            <span>c</span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">d</span> 
+                        </span> = <span class="frac">
+                            <span>a.c</span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">b.d</span> 
+                        </span>
+                    </p>
+                    <h3>2. Chia hai số hữu tỉ</h3>
+                    <p>x : y = <span class="frac">
+                        <span>a</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">b</span> </span> : <span class="frac">
+                            <span>c</span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">d</span> 
+                        </span> = <span class="frac">
+                            <span>a.d</span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">b.c</span> 
+                        </span></p>
+                        <h3>3. Chú ý khi nhân, chia hai số hữu tỉ</h3>
+                        <p>- Phép nhân trong Q có các tính chất cơ bản: giao hoán, kết hợp, nhân với 1, tính chất phân phối của phép nhân đối với phép cộng.<br>- Thương của phép chia x cho y (với y # 0) gọi là tỉ số của x và y, kí hiệu: x : y</p>
+                </div>               
         </div>
     </div>
 

@@ -18,6 +18,8 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!--MathJax-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -185,7 +187,7 @@
             </nav>
 
             <div class="chuong" id="chuong1">
-                <h1>Số hữu tỉ, số thực</h1>
+                <h1>Chương1: Số hữu tỉ, số thực</h1>
                 <div class="bai" id="bai1">
                     <h2>Bài 1: Tập hợp Q các số hữu tỉ</h2>
                     <div class="dang">
@@ -286,8 +288,9 @@
                         <span class="bottom">d</span> 
                     </span> cho trước, ta có lý thuyết, công thức nhân hai số hữu tỉ như sau:
                     </p>
-                    <h3>1. Nhân hai số hữu tỉ</h3>
-                    <p>x . y =  <span class="frac">
+                    <div class="dang">
+                        <h3>1. Nhân hai số hữu tỉ</h3>
+                        <p>x . y =  <span class="frac">
                         <span>a</span>
                         <span class="symbol">/</span>
                         <span class="bottom">b</span> </span> . <span class="frac">
@@ -299,9 +302,9 @@
                             <span class="symbol">/</span>
                             <span class="bottom">b.d</span> 
                         </span>
-                    </p>
-                    <h3>2. Chia hai số hữu tỉ</h3>
-                    <p>x : y = <span class="frac">
+                        </p>
+                        <h3>2. Chia hai số hữu tỉ</h3>
+                        <p>x : y = <span class="frac">
                         <span>a</span>
                         <span class="symbol">/</span>
                         <span class="bottom">b</span> </span> : <span class="frac">
@@ -314,8 +317,217 @@
                             <span class="bottom">b.c</span> 
                         </span></p>
                         <h3>3. Chú ý khi nhân, chia hai số hữu tỉ</h3>
-                        <p>- Phép nhân trong Q có các tính chất cơ bản: giao hoán, kết hợp, nhân với 1, tính chất phân phối của phép nhân đối với phép cộng.<br>- Thương của phép chia x cho y (với y # 0) gọi là tỉ số của x và y, kí hiệu: x : y</p>
-                </div>               
+                        <p>- Phép nhân trong Q có các tính chất cơ bản: giao hoán, kết hợp, nhân với 1, tính chất phân phối của phép nhân đối với phép cộng.<br>- Thương của phép chia x cho y (với y # 0) gọi là tỉ số của x và y, kí hiệu: x : y
+                        </p>
+                    </div>
+                </div>  
+                <div class="bai" id="bai4">
+                    <h2>Bài 4: Giá trị tuyệt đối của một số hữu tỉ</h2>
+                    <p>Giá trị tuyệt đối của một số hữu tỉ x được kí hiệu là |x| và được xác định bằng công thức dưới đây: <br>|x| = x nếu x ≥ 0 <br> |x| = -x nếu x ≤ 0</p>
+                </div> 
+                <div class="bai" id="bai5">
+                    <h2>Bài 5: Cộng, trừ, nhân, chia số thập phân</h2>
+                    <p>Để cộng, trừ, nhân, chia các số thập phân ta viết chúng dưới dạng phân số thập phân rồi làm theo quy tắc các phép tính đã biết về phân số</p>
+                    <b><u>Diễn giải:</u></b>
+                    <p>- Khi cộng, trừ số thập phân ta tiến hành cộng hoặc trừ các phần tương ứng của các số đó</p>
+                    <div style= "border: solid 1px; width: 90%;margin-left: 10px;" >
+                        <u>Ví dụ 1:</u>
+                        <p>Tính 0,25 + 2,5 ta làm như sau: 5 + 0 = 5 , 2 + 5 = 7 , 0 + 2 = 2 . Vậy 0,25 + 2,5 = 2,75</p>
+                        <p>Tính 8,6 – 2,7 ta làm như sau: 6 – 7 không trừ được ta lấy 16 – 7 = 9, tiếp tục 8 – 2 trừ thêm 1 nữa tức là 8 -3 = 5. Vậy 8,6 – 2,7 = 5,9</p>
+                    </div>
+                    <p>-Với phép nhân, chia các số thập phân ta cần viết chúng dưới dạng phân số.</p>
+                    <div style= "border: solid 1px; width: 90%; margin-left: 10px;" >
+                        <u>Ví dụ 2:</u>                        
+                        <p>Tính 3,1 x 2,5 ta làm như sau:</p>
+                        <p>3,1 x 2,5 = <span class="frac1" a="30" b="10"></span> x <span class="frac1" a="25" b="10"></span> = <span class="frac1"  a="31" b="10"></span> x <span class="frac1" a="5" b="2"></span> = <span class="frac1" a="31" b="4"></span></p>
+                    </div>
+                    <p>Làm tương tự với phép chia số thập phân</p>
+                </div>
+                <div class="bai" id="bai6">
+                    <h2>Bài 6: Định nghĩa, tính chất của tỉ lệ thức</h2>
+                    <div class="dang">
+                        <h3>1. Định nghĩa</h3>
+                        <p>Tỉ lệ thức là một đẳng thức của hai số <span class="frac1" a="a" b="b"></span> = <span class="frac1" a="c" b="d"></span> ( a, d: ngoại trung tỉ)</p>
+                        <h3>2. Tính chất</h3>
+                        <p>a. Tính chất cơ bản: Nếu <span class="frac1" a="a" b="b"></span> = <span class="frac1" a="c" b="d"></span> thì a.d = b.c</p>
+                        <p>b. Điều kiện để bốn số thành lập tỉ lệ thức:</p>
+                        <p>Nếu a.d = b.c và a,b,c,d &ne; 0 thì ta có các tỉ lệ thức:</p>
+                        <p><span class="frac1" a="a" b="b"></span> = <span class="frac1" a="c" b="d"></span> &emsp;;&emsp; <span class="frac1" a="a" b="c"></span> = <span class="frac1" a="b" b="d"></span> &emsp;;&emsp; <span class="frac1" a="d" b="b"></span> = <span class="frac1" a="c" b="a"></span> &emsp;;&emsp; <span class="frac1" a="d" b="c"></span> = <span class="frac1" a="b" b="a"></span></p> 
+                    </div>
+                </div>
+                <div class="bai" id="bai7">
+                    <h2>Bài 7: Tính chất của dãy tỉ số bằng nhau</h2>
+                    <div class="dang">
+                        <h3>1.Tính chất</h3>
+                        <p>Từ dãy tỉ số bằng nhau <span class="frac1" a="a" b="b"></span> = <span class="frac1" a="c" b="d"></span> = <span class="frac1" a="e" b="f"></span> ta suy ra:</p>
+                        <p><span class="frac1" a="a" b="b"></span> = <span class="frac1" a="c" b="d"></span> = <span class="frac1" a="e" b="f"></span> = <span class="frac1" a="a + c + e" b="b + d +f"></span> = <span class="frac1" a="a + c - e" b="b + d - f"> </span></p>
+                        <h3>2. Số tỉ lệ</h3>
+                        <p>Khi nói các số a, b, c tỉ lệ với các số 3, 4, 5 tức là ta có: <span class="frac1" a="a" b="3"></span>  = <span class="frac1" a="b" b="4"></span> = <span class="frac1" a="c" b="5"></span></p>
+                    </div>
+                </div>
+                <div class="bai" id="bai8">
+                    <h2>Bài 8: Số thập phân hữu hạn, vô hạn tuần hoàn</h2>
+                    <div class="dang">
+                        <h3>1. Số thập phân hữu hạn</h3>
+                        <p>Nếu một phân số tối giản với mẫu dương và mẫu không có ước nguyên tố khác 2 và 5 thì phân số đó viết được dưới dạng số thập phân hữu hạn.</p>
+                        <h3>2. Số thập phân vô hạn tuần hoàn</h3>
+                        <p>Nếu một phân số tối giản với mẫu dương và mẫu có ước nguyên tố khác 2 và 5 thì phân số đó viết dưới dạng số thập phân vô hạn tuần hoàn</p>
+                        <b>*Chú ý</b>
+                        <p>- Mỗi số hữu tỉ được biểu diễn bởi một số thập phân hữu hạn hoặc vô hạn tuần hoàn.</p>
+                        <p>- Ngược lại, mỗi số thập phân hữu hạn hoặc vô hạn tuần hoàn biểu diễn một số hữu tỉ.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai9">
+                    <h2>Bài 9: Quy ước làm tròn số</h2>
+                    <div class="dang">
+                        <h3>1. Số bỏ đi nhỏ hơn 5</h3>
+                        <p>Nếu chữ số đầu tiên bỏ đi nhỏ hơn 5 thì ta giữ nguyên bộ phận còn lại.</p>
+                        <p>Ví dụ: Làm tròn số 0,36451 đến chữ số thập phân thứ hai ta được kết quả là 0,36</p>
+                        <h3>2. Số bỏ đi lớn hơn 5</h3>
+                        <p>Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5 thì ta cộng thêm 1 vào chữ số cuối cùng của bộ phận còn lại.<br>Ví dụ:<br> Làm tròn số 0,36451 đến chữ số thập phân thứ nhất ta được kết quả là 0,4.</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai10">
+                    <h2>Bài 10: Khái niệm số vô tỉ, căn bậc 2</h2>
+                    <div class="dang">
+                        <h3>1. SỐ vô tỉ</h3>
+                        <p>Số vô tỉ là số viết được dưới dạng thập phân vô hạn không tuần hoàn</p>
+                        <p>Tập hợp các số vô tỉ được kí hiệu là I</p>
+                        <h3>2. Khái niệm về căn bậc 2</h3>
+                        <p>a. Định nghĩa: Căn bậc hai của một số a không âm là số x sao cho x<sup>2</sup> = a</p>
+                        <p>b. Tính chất: Với hâi số dương bất kì a và b</p>
+                        <p>- Nếu a = b thì &radic;a = &radic;b<br>- Nếu a &lt; b thì &radic;a &lt; &radic;b</p>
+                    </div>                    
+                </div>
+                <div class="bai" id="bai11">
+                    <h2>Khái niệm số thực, trục số thực</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm số thực</h3>
+                        <p>Số hữu tỉ và số vô tỉ được gọi chung là số thực.</p>
+                        <p>Tập hợp các số thực được kí hiệu là R: R = Q &cup; I</p>
+                        <h3>2. Trục số thực</h3>
+                        <p>- Mỗi số thực được biểu diễn bởi một điểm trên trục số.<br>- Ngược lại mỗi điểm trên trục số đều biểu diễn một số thực.<br>Chỉ có tập hợp số thực mới lấp đầy trục số. <br><u>Chú ý:</u> Các phép toán trong tập hợp các số thực cũng có các tính chất tương tự như các phép toán trong tập hợp số hữu tỉ.</p>
+                        <p>Ta có Z &sub; Q &sub; R.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chuong" id="chuong2">
+                <h1>Chương 2: Hàm số và đồ thị</h1>
+                <div class="bai" id="bai12">
+                    <h2>Bài 12: Công thức, tính chất của đại lượng tỉ lệ thuận</h2>
+                    <div class="dang">
+                        <h3>1. Công thức</h3>
+                        <p>Hai đại lượng tỷ lệ thuận x và y liên hệ với nhau bởi công thức y = kx, với k là một hằng số khác ), (y tỉ lệ thuận với x theo hệ số tỉ lệ k).</p>
+                        <h3>2. Tính chất</h3>
+                        <p>– Tỉ số hai giá trị tương ứng của hai đại lượng tỉ lệ thuận luôn không đổi và bằng hệ số tỉ lệ:</p>
+                        <p><span class="frac1" a="y<sub>1</sub>" b="x<sub>1</sub>"></span> = <span class="frac1" a="y<sub>2</sub>" b="x<sub>2</sub>"></span> = <span class="frac1" a="y<sub>3</sub>" b="x<sub>3</sub>"></span> = k</span></p>
+                        <p>– Tỉ số hai giá trị bất kì của đại lượng này bằng tỉ số hai giá trị tương ứng của địa lượng kia.</p>
+                        <p><span class="frac1" a="y<sub>1</sub>" b="y<sub>2</sub>"></span> = <span class="frac1" a="x<sub>1</sub>" b="x<sub>2</sub>"></span>  &emsp;;&emsp;  <span class="frac1" a="y<sub>1</sub>" b="y<sub>3</sub>"></span> = <span class="frac1" a="x<sub>1</sub>" b="x<sub>3</sub>"></span></p>
+                    </div>
+                <div class="bai bai13">
+                    <h2>Bài 13: Một số bài toán về đại lượng tỉ lệ thuận</h2>
+                    <div class="dang">
+                        <h3>Bài tập: Hai đại lượng x và y tỉ lệ thuận với nhau hay không, nếu:</h3>
+                        <p>a)</p>
+                        <table border="1">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: left;"><strong>x</strong></td><td style="text-align: left;">1</td>
+                                    <td style="text-align: left;">2</td>
+                                    <td style="text-align: left;">3</td>
+                                    <td style="text-align: left;">4</td>
+                                    <td style="text-align: left;">5</td>
+                                </tr>
+                                <tr><td style="text-align: left;"><strong>y</strong></td>
+                                    <td style="text-align: left;">9</td>
+                                    <td style="text-align: left;">18</td>
+                                    <td style="text-align: left;">27</td>
+                                    <td style="text-align: left;">36</td>
+                                    <td style="text-align: left;">45</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>b) </p>
+                        <table border="1">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: left;"><span style="font-size: 15px;"><strong>x</strong></span></td><td style="text-align: left;"><span style="font-size: 15px;">1</span></td><td style="text-align: left;"><span style="font-size: 15px;">2</span></td><td style="text-align: left;"><span style="font-size: 15px;">5</span></td><td style="text-align: left;"><span style="font-size: 15px;">6</span></td><td style="text-align: left;"><span style="font-size: 15px;">9</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;"><span style="font-size: 15px;"><strong>y</strong></span></td><td style="text-align: left;"><span style="font-size: 15px;">12</span></td><td style="text-align: left;"><span style="font-size: 15px;">24</span></td><td style="text-align: left;"><span style="font-size: 15px;">60</span></td><td style="text-align: left;"><span style="font-size: 15px;">72</span></td><td style="text-align: left;"><span style="font-size: 15px;">90</span></td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        <u>Giải</u>
+                        <p>a) Ta có:</p>
+                        <p>\(\displaystyle\frac{x}{y}=\frac{1}{9}=\frac{2}{18}=\frac{3}{27}=\frac{4}{36}=\frac{5}{45}\)</p>
+                        <p>Vậy x và y là hai <a href="#bai12">đại lượng tỉ lệ thuận</a></p>
+                        <p>b) Ta có \(\displaystyle \frac{6}{72}\ne \frac{9}{90}\)</p>
+                        <p>Vậy x và y là hai đại lượng không tỉ lệ thuận.</p>
+                    </div>                  
+                </div> 
+                <div class="bai" id="bai14">
+                    <h2>Bài 14: Công thức, tính chất của đại lượng tỉ lệ nghịch</h2>
+                    <div class="dang">
+                        <h3>1. Công thức</h3>
+                        <p>Hai đại lượng tỉ lệ nghịch x và y liên hệ với nhau bởi công thức \(\displaystyle y=\frac{a}{x}\) , với a là một số khác 0. Ta nói y tỉ lệ nghịch với x theo hệ số tỉ lệ a</p>
+                        <h3>2. Tính chất</h3>
+                        <p>- Tích của một giá trị bất kì của đại lượng này với giá trị tương ứng của đại lượng kia tương ứng của đại lượng kia luôn là một hằng số (bằng hệ số tỉ lệ).</p>
+                        <p>x<sub>1</sub>y<sub>1</sub> = x<sub>2</sub>y<sub>2</sub> = x<sub>3</sub>y<sub>3</sub> = ... = a</p>
+                        <p>– Tỉ số hai giá trị bất kì của đại lượng này bằng nghịch đảo của tỉ số hai giá trị tương ứng của đại lượng kia.</p>
+                        <p>\(\displaystyle \frac{{{x}_{1}}}{{{x}_{2}}}=\frac{{{y}_{1}}}{{{y}_{2}}}\) &emsp; ; &emsp; \(\displaystyle \frac{{{x}_{1}}}{{{x}_{3}}}=\frac{{{y}_{1}}}{{{y}_{3}}}\) ...</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai15">
+                    <h2>Bài 15: Một số bài toán về đại lượng tỉ lệ nghịch</h2>
+                    <b>Bài tạp: Hai đại lượng x và y có tỉ lệ nghịch với nhau hay không, nếu:</b>
+                    <p>1)</p>
+                    <table border="1">
+                        <tbody><tr><td>x</td><td>1</td><td>2</td><td>4</td><td>5</td><td>8</td></tr><tr><td>y</td><td>120</td><td>60</td><td>30</td><td>24</td><td>15</td></tr></tbody>
+                    </table>
+                    <p>2)</p>
+                    <table border="1">
+                        <tbody><tr><td>x</td><td>1</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>y</td><td>30</td><td>20</td><td>15</td><td>12,5</td><td>10</td></tr></tbody>
+                    </table>
+                    <u>Giải:</u>
+                    <p>x . y = 1 . 120 = 2 . 60 = 4 . 30 = 5 . 24 = 8 . 15 = 120</p>
+                    <p>Theo tính chất của<a hreft="#bai14"> đại lượng tỉ lệ nghịch </a>thì x và y trong trường hợp này là hai đại lượng tỉ lệ nghịch.</p>
+                    <p>2) Ta có: <br> x . y = 1 . 30 &ne; 3 . 20</p>
+                    <p>&rArr; x và y trong trường hợp này không là hai đại lượng tỉ lệ nghịch.</p>
+                </div>         
+                <div class="bai" id="bai16">
+                    <h2>Bài 17: Khái niệm hàm số</h2>
+                    <div class="dang">
+                        <h3>1. Khái niệm</h3>
+                        <p>Nếu đại lượng y phụ thuộc vào đại lượng thay đổi x sao cho với mỗi giá trị của x ta luôn xác định chỉ một giá trị tương ứng của y thì y được gọi là hàm số của x và gọi x là biến số.</p>
+                        <h3>2. Chú ý</h3>
+                        <p>– Hàm số có thể được cho bằng bảng, bằng lưới, bằng công thức…. Khi hàm số được cho bằng công thức thì ta hiểu rằng biến số x chỉ nhận những giá trị làm cho công thức có nghĩa.<br>– Hàm số thường được kí hiệu y = f(x)./p>
+                    </div>
+                </div>  
+                <div class="bai" id="bai17">
+                    <h2>Bài 17: Mặt phẳng toạ độ, trục tung, trục hoành</h2>
+                    <div class="dang">
+                        <h3>1. Mặt phẳng toạ độ</h3>
+                        <p>Trên mặt phẳng, nếu hai trục Ox, Oy vuông góc và cắt nhau tại gốc O của mỗi trục số, thì ta gọi hệ trục toạ độ Oxy.</p>
+                        <p>Ox và Oy gọi là các trục toạ độ</p>
+                        <p>– Trục nằm ngang Ox gọi là trục hoành.</p>
+                        <p>– Trục thẳng đứng Oy gọi là trục tung</p>
+                        <p>Giao điểm O gọi là gốc toạ độ. Mặt phẳng có hệ trục toạ độ Oxy gọi là mặt phẳng toạ độ Oxy.</p>
+                        <h3>2. Toạ độ của một điểm trong mặt phẳng toạ độ</h3>
+                        <p>– Trên mặt phẳng toạ độ, mỗi điểm M xác định một cặp số (x0; y0). Ngược lại mỗi cặp số (x0; y0) xác định vị trí của một điểm M.</p>
+                        <p>– Cặp số (x<sub>0</sub>; y<sub>0</sub>) gọi là toạ độ của điểm M; x<sub>0</sub> là hoành độ và y<sub>0</sub> là tung độ của điểm M</p>
+                    </div>
+                </div>
+                <div class="bai" id="bai18">
+                    <h2>Bài 18: Khái niệm đồ thị hàm số y= ax (a&ne;0)</h2>
+                    <div class="dang">
+                        <h3>1. Đồ thị hàm số</h3>
+                        <p>Đồ thị hàm số y = f(x) là tập hợp tất cả các điểm biểu diễn các cặp giá trị tương ứng (x; y) trên mặt phẳng toạ độ.</p>
+                        <h3>2. Đồ thị của hàm số y = ax (a &ne; 0)</h3>
+                        <p>Đồ thị hàm số y = ax (a &ne; 0) là đường thẳng đi qua gốc toạ độ.</p>
+                    </div>
+                </div>    
+            </div>            
         </div>
     </div>
 
@@ -340,6 +552,16 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
+    </script>
+    <script type="text/javascript">
+            //Phân số
+            var ele_frac = document.getElementsByClassName("frac1")
+            
+            for(let i=0;i<ele_frac.length;i++){
+                var string = "<span class=\"frac\"><span>"+ ele_frac[i].getAttribute("a") +"</span><span class\=\"symbol\">/</span\><span class=\"bottom\">"+ ele_frac[i].getAttribute("b") + "</span></span>";
+                ele_frac[i].innerHTML = string;
+            }
+                 
     </script>
 </body>
 

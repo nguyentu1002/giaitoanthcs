@@ -1,0 +1,39 @@
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle; 
+    letter-spacing: 0.001em;
+    text-align: center;
+    
+    }
+.frac > span { 
+    display: block; 
+    padding: 0.1em; 
+    }
+.frac span.bottom {border-top: thin solid black;}
+.frac span.symbol {display: none;}
+
+table {
+    width: 70%;
+    height: 70px;
+    border-collapse: collapse;
+    margin: 10px auto;
+    display: table;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.bai{
+    border-top: solid 2px;
+}
+.dang{
+    margin-left: 20px;
+}

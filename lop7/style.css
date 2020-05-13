@@ -31,3 +31,9 @@ td {
     display: table-cell;
     vertical-align: inherit;
 }
+.bai{
+    border-top: solid 2px;
+}
+.dang{
+    margin-left: 20px;
+}

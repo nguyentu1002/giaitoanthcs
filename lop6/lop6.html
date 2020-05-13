@@ -385,104 +385,7 @@
                                 <br>A là tập hợp con của tập hợp B hoặc A được chứa trong B hoặc B chứa A.</li>
                         </ol>
                     </div>
-                </div>
-                <div class="accordion" id="accordion-tab-1">
-                    <div class="card">
-                        <div class="card-header" id="accordion-tab-1-heading-1">
-                            <h5>
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Dạng 1: Viết tập hợp các chữ số trong từ được đưa vào</button>
-                            </h5>
-                        </div>
-                        <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
-                            <div class="card-body">
-                                <p>Ví D: Viết tập hợp các chữ cái trong từ “TOÁN HỌC”
-            
-                                    => A = {T, O, A, N, H, C}</p>
-                                <p><strong>Tương tự: </strong>Với cụm từ:</p>
-                                <input type="text" id="cumtu">
-                                <button onclick="tapHopChuCai();">Kết quả: </button>
-                                <label id="kq_cumtu"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="accordion-tab-1-heading-2">
-                            <h5>
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Dạng 2: Tìm số tự nhiên  </button>
-                            </h5>
-                        </div>
-                        <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
-                            <div class="card-body">
-                                <p>Viết số tự nhiên liền sau số: </p>
-                                <input type="number" id="liensau">
-                                <button onclick="timSoLienST();">Tìm</button>
-                                <label id="tim_ls"></label>
-                                <p><strong>Nhận xét: </strong>Số tự nhiên liền sau của a là : a + 1</p>
-                                <p>Viết số tự nhiên liền trước số:</p>
-                                <input type="number" id="lientruoc">
-                                <button onclick="timSoLienST();">Tìm</button>
-                                <label id="tim_lt"></label>
-                                <p><strong>Nhận xét: </strong>Số tự nhiên liền sau của a là : a - 1</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="accordion-tab-1-heading-3">
-                            <h5>
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Dạng 3: Viết tập hợp bằng cách liệt kê phần tử</button>
-                            </h5>
-                        </div>
-                        <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
-                            <div class="card-body">
-                                <p>Ví dụ: Tìm tập hợp số tự nhiên x thõa mãn 12 < x < 16 </p>
-                                <p>Tập hợp A các số tự nhiên x thõa mãn: A = {13, 14, 15}</p>
-                                <p><strong>Tương tự: </strong>Tìm tập hợp các số tự nhiên x thõa mãn: </p>
-                                <input type="text" id="tim_taphop">
-                                <button>Xuất tập hợp</button>
-                                <label id="taphop"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="accordion-tab-1-heading-4">
-                            <h5>
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">Dạng 4: Đếm số phần tử của tập hợp </button>
-                            </h5>
-                        </div>
-                        <div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
-                            <div class="card-body">
-                                <p>Ví dụ: Tập hợp sau: </p>
-                                <p> A = {1,2,3,5,6,7}</p>
-                                <p>Số phần tử của tập hợp là: 6</p>
-                                <p><strong>Tương tự: </strong>Đếm số phần tử của tập hợp: A= </p>
-                                <input type="text" id="phantu">
-                                <button onclick="demSoPhanTuTapHop();">Số phần tử: </button>
-                                <label id="dem_th"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="accordion-tab-1-heading-5">
-                            <h5>
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5">Dạng 5: Chuyển đổi số tự nhiên sang số la mã và ngược lại </button>
-                            </h5>
-                        </div>
-                        <div class="collapse" id="accordion-tab-1-content-5" aria-labelledby="accordion-tab-1-heading-5" data-parent="#accordion-tab-1">
-                            <div class="card-body">
-                                <p>Ví dụ: XVII = 17<br>     IV = 4 </p>
-                                <p><strong>Tương tự: </strong> Chuyển: </p>
-                                <p>Hệ số tự nhiên sang La mã:</p>
-                                <input type="number" id="num" placeholder="Điền số tự nhiên">
-                                <button onclick="convertToRoman();">Số La mã: </button>
-                                <label id="lama"></label>
-                                <p>Hệ số La mã sang hệ số tự nhiên:</p>
-                                <input type="text" id="lm" placeholder="Điền số la mã">
-                                <button onclick="RomanToDec();">Số tự nhiên: </button>
-                                <label id="dec"></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> 
                 <div class="bai" id="bai5">
                     <h2>Bài 5: Tính chất của phép cộng và phép nhân</h2>
                     <div class="dang">
@@ -671,96 +574,6 @@
                     <div class="dang">
                         <h3>4. Bài tập</h3>
                     </div>
-                    <div class="accordion" id="accordion-tab-2">
-                        <div class="card">
-                            <div class="card-header" id="accordion-tab-2-heading-1">
-                                <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">Dạng 1: Chứng minh số a chia hết cho số b</button>
-                                </h5>
-                            </div>
-                            <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
-                                <div class="card-body">
-                                    <p>Phương pháp: Dựa vào các dấu hiệu và tính chất chia hết</p>
-                                    <p>Ví dụ: Không thực hiện phép tính chia chứng minh rằng: <br>a) 26 . 2020 ⋮ 13           b) 1411 . 2020 ⋮ 17<br>
-                                    a) Ta có 26 . 2020 = 13 . 2 . 2020 ⋮ 13 ( vì 13 ⋮ 13, theo tính chất)<br>
-                                    b) Ta có 1411 . 2020 = 17 . 83 . 2020 ⋮ 17 (vì 17 ⋮ 17, theo tính chất)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="accordion-tab-2-heading-2">
-                                <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">Dạng 2: Tìm điều kiện để a chia hết cho b </button>
-                                </h5>
-                            </div>
-                            <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
-                                <div class="card-body">
-                                    <p>Phương pháp: Dựa vào các dấu hiệu và tính chất chia hết</p>
-                                    <p>Ví dụ: Điền vào * để: <br>a) 6*5 ⋮ 3           b) 5*4 ⋮ 9<br>
-                                    a) Ta có 6*a5 ⋮ 3 <=> ( 6 + * +5) ⋮ 3 <=> (11 + *) ⋮ 3 <=> * ={1, 4, 7} <br>
-                                    b) Ta có 5*4 ⋮ 9 <=> (5 + * + 4 ) ⋮ 9 <=> (9 + *) ⋮ 9 <=> * ={0, 9}</p>
-                                    <p>Tương tự: Tìm * để số 
-                                    <input type="text" id="so1"> chia hết cho số 
-                                    <select name="so2" id="so2">
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="5">5</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                    <button onclick="timSao();">Tìm *:</button>
-                                    <label id="so3"></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="accordion-tab-2-heading-3">
-                                <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Dạng 3: Chứng minh một biểu thức chia hết cho một số</button>
-                                </h5>
-                            </div>
-                            <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
-                                <div class="card-body">
-                                    <p>Phương pháp: Dựa vào các dấu hiệu và tính chất chia hết</p>
-                                    <p>Ví dụ 1: Chứng minh rằng S = 5 + 5<sup>2</sup> + 5<sup>3</sup> + 5<sup>4</sup> + ... + 5<sup>100</sup> chia hết cho 6.</p>
-                                    <p>Ta có: S = 5 + 5<sup>2</sup> + 5<sup>3</sup> + 5<sup>4</sup> + ... + 5<sup>100</sup><br>
-                                            = 5( 1 + 5) + 5<sup>3</sup>( 1 + 5) + 5<sup>5</sup>( 1 + 5) + ... + 5<sup>99</sup>( 1 + 5)<br>
-                                            = 6( 5 + 5<sup>3</sup> + 5<sup>5</sup> + ... + 5<sup>99</sup> ) ⋮ 6 (Điều phải chứng minh) </p>
-                                    <p>Ví dụ 2: Chứng minh rằng S = 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup> + 3<sup>4</sup> + ... + 3<sup>11</sup> chia hết cho 40.</p>
-                                    <p>Ta có: S = 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup> + 3<sup>4</sup> + ... + 3<sup>11</sup> <br>
-                                                = ( 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>) + 3<sup>4</sup>(1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>) + 3<sup>8</sup>(1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>)<br>
-                                                = (1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>)( 1 + 3<sup>4</sup> +  3<sup>8</sup>)<br>
-                                                = 40(1 + 3<sup>4</sup> +  3<sup>8</sup>) ⋮ 40 (Điều phải chứng minh).</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="accordion-tab-2-heading-4">
-                                <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">Dạng 4: Một số dạng toán chứng minh khác </button>
-                                </h5>
-                            </div>
-                            <div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
-                                <div class="card-body">
-                                    <p>Phương pháp: Vận dụng các tính chất và dấu hiệu chia hết. Phân tích biểu thức thành các tích chứa cơ số chia hết.</p>
-                                    <p>Ví dụ 1: Chứng minh tổng 3 số tự nhien liên tiếp chia hết cho 3.</p>
-                                    <ul>
-                                        <li>Gọi 3 số tự nhiên liên tiếp lần lượt là a, a+1, a+2 với a ∈ N.</li>
-                                        <li>Tổng 3 số S = a + ( a + 1 ) + ( a + 2 ) = 3a +3 = 3( a + 1 ) ⋮ 3 (Điều phải chứng minh)</li>
-                                    </ul>
-                                    <p>Ví dụ 2: Chứng minh tích của 2 số tự nhiên chẵn liên tiếp chia hết cho 8.</p>
-                                    <ul>
-                                        <li>Gọi 3 số tự nhiên chẵn liên tiếp lần lượt là 2a và 2a + 2 với a ∈ N.</li>
-                                        <li>Tích 2 số P = 2a . ( 2a + 2 ) = 4a. (a+1)</li>
-                                        <ul>
-                                            <li> Xét tích a( a + 1) luôn chia hết cho 2 (Vì nếu a là lẻ thì a+1 là chẵn, và ngược lại)</li>
-                                            <li> Vậy tích 4a. (a+1) luôn chia hết cho 8 (Vì 4.2 = 8)  (Điều phải chứng minh)</li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="bai" id="bai13">
                     <h2>Bài 13: Ước và bội</h2>
@@ -782,6 +595,7 @@
                             = {8, 4, 2, 1}</p>
                     </div>
                 </div>
+                
                 <div class="bai" id="bai14">
                     <h2>Bài 14: Số nguyên tố. Hợp số</h2>
                     <div class="dang">
@@ -1062,7 +876,7 @@
                         <ul>
                             <li>Nếu x = a – b thì theo quy tắc chuyển vế ta có x + b = a.</li>
                             <li>Ngược lại, nếu x + b = a thì theo quy tắc chuyển vế ta có x = a – b.</li>
-                            <li>Những điều nỏi trên chứng tỏ rằng nếu x là hiệu của a và b thì a là tổng của x và b. Nói cách khác, phép trừ là phép tính ngược của phép cộng.</li>
+                            <li>Những điều nỏi trên chứng tỏ r��ng nếu x là hiệu của a và b thì a là tổng của x và b. Nói cách khác, phép trừ là phép tính ngược của phép cộng.</li>
                         </ul>
                     </div>    
                 </div>
@@ -1341,21 +1155,6 @@
                         <h3>3. Biểu đồ hình quạt</h3>
                         <p>Người ta chia một hình tròn thành 100 hình quạt bằng nhau( bởi những bán kính).<br>Để biểu thị tỉ số a phần trăm, người ta tô đậm a hình quạt liền nhau.</p>
                     </div>
-                </div>
-                <div class="dang">
-                    <p>Nhập số cần phân tích ra thừa số nguyên tố: </p>
-                    <input type="number" id="sophantich" >
-                    <button onclick="phanTichThuaSoNguyenTo();">Tìm</button>
-                    <p>Số sau khi đã phân tích:</p>
-                    <div id ="phantich">
-                    </div>
-                </div>
-                <div class="dang">
-                    <p>Tìm ước của: </p>
-                    <input type="number" id="timuoc1"> và
-                    <input type="number" id="timuoc1">
-                    <button onclick="xuatUoc();">Xuất ước</button>
-                    <div id="xuatuoc"></div>
                 </div>
             </div>
         </div>

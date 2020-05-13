@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải bài tập</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="baitap.css">
+    <script src="../lop6/lop6.js"></script>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lớp 6</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+                    <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
+                        <i class="mdi mdi-help-circle"></i> Chương I: Ôn tập bổ túc về số tự nhiên
+                    </a>
+                    <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
+                        <i class="mdi mdi-account"></i> Chương II: Số nguyên
+                    </a>
+                    <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
+                        <i class="mdi mdi-account-settings"></i> Chương III: Phân số
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="tab-content" id="faq-tab-content">
+                    <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+                        <div class="accordion" id="accordion-tab-1">
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-1">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Dạng 1: Viết tập hợp các chữ số trong từ được đưa vào</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví D: Viết tập hợp các chữ cái trong từ “TOÁN HỌC”
+                    
+                                            => A = {T, O, A, N, H, C}</p>
+                                        <p><strong>Tương tự: </strong>Với cụm từ:</p>
+                                        <input type="text" id="cumtu">
+                                        <button onclick="tapHopChuCai();">Kết quả: </button>
+                                        <label id="kq_cumtu"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-2">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Dạng 2: Tìm số tự nhiên  </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Viết số tự nhiên liền sau số: </p>
+                                        <input type="number" id="liensau">
+                                        <button onclick="timSoLienST();">Tìm</button>
+                                        <label id="tim_ls"></label>
+                                        <p><strong>Nhận xét: </strong>Số tự nhiên liền sau của a là : a + 1</p>
+                                        <p>Viết số tự nhiên liền trước số:</p>
+                                        <input type="number" id="lientruoc">
+                                        <button onclick="timSoLienST();">Tìm</button>
+                                        <label id="tim_lt"></label>
+                                        <p><strong>Nhận xét: </strong>Số tự nhiên liền sau của a là : a - 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-3">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Dạng 3: Viết tập hợp bằng cách liệt kê phần tử</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví dụ: Tìm tập hợp số tự nhiên x thõa mãn 12 < x < 16 </p>
+                                        <p>Tập hợp A các số tự nhiên x thõa mãn: A = {13, 14, 15}</p>
+                                        <p><strong>Tương tự: </strong>Tìm tập hợp các số tự nhiên x thõa mãn: </p>
+                                        <input type="text" id="tim_taphop">
+                                        <button>Xuất tập hợp</button>
+                                        <label id="taphop"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-4">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">Dạng 4: Đếm số phần tử của tập hợp </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví dụ: Tập hợp sau: </p>
+                                        <p> A = {1,2,3,5,6,7}</p>
+                                        <p>Số phần tử của tập hợp là: 6</p>
+                                        <p><strong>Tương tự: </strong>Đếm số phần tử của tập hợp: A= </p>
+                                        <input type="text" id="phantu">
+                                        <button onclick="demSoPhanTuTapHop();">Số phần tử: </button>
+                                        <label id="dem_th"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-5">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5">Dạng 5: Chuyển đổi số tự nhiên sang số la mã và ngược lại </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-5" aria-labelledby="accordion-tab-1-heading-5" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví dụ: XVII = 17<br>     IV = 4 </p>
+                                        <p><strong>Tương tự: </strong> Chuyển: </p>
+                                        <p>Hệ số tự nhiên sang La mã:</p>
+                                        <input type="number" id="num" placeholder="Điền số tự nhiên">
+                                        <button onclick="convertToRoman();">Số La mã: </button>
+                                        <label id="lama"></label>
+                                        <p>Hệ số La mã sang hệ số tự nhiên:</p>
+                                        <input type="text" id="lm" placeholder="Điền số la mã">
+                                        <button onclick="RomanToDec();">Số tự nhiên: </button>
+                                        <label id="dec"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-6">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-6" aria-expanded="false" aria-controls="accordion-tab-1-content-6">Dạng 6: Chứng minh số a chia hết cho số b</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-6" aria-labelledby="accordion-tab-1-heading-6" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Phương pháp: Dựa vào các dấu hiệu và tính chất chia hết</p>
+                                        <p>Ví dụ: Không thực hiện phép tính chia chứng minh rằng: <br>a) 26 . 2020 ⋮ 13           b) 1411 . 2020 ⋮ 17<br>
+                                        a) Ta có 26 . 2020 = 13 . 2 . 2020 ⋮ 13 ( vì 13 ⋮ 13, theo tính chất)<br>
+                                        b) Ta có 1411 . 2020 = 17 . 83 . 2020 ⋮ 17 (vì 17 ⋮ 17, theo tính chất)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-7">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-7" aria-expanded="false" aria-controls="accordion-tab-1-content-7">Dạng 7: Tìm điều kiện để a chia hết cho b </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-7" aria-labelledby="accordion-tab-1-heading-7" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Phương pháp: Dựa vào các dấu hiệu và tính chất chia hết</p>
+                                        <p>Ví dụ: Điền vào * để: <br>a) 6*5 ⋮ 3           b) 5*4 ⋮ 9<br>
+                                        a) Ta có 6*a5 ⋮ 3 <=> ( 6 + * +5) ⋮ 3 <=> (11 + *) ⋮ 3 <=> * ={1, 4, 7} <br>
+                                        b) Ta có 5*4 ⋮ 9 <=> (5 + * + 4 ) ⋮ 9 <=> (9 + *) ⋮ 9 <=> * ={0, 9}</p>
+                                        <p>Tương tự: Tìm * để số 
+                                        <input type="text" id="so1"> chia hết cho số 
+                                        <select name="so2" id="so2">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="5">5</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <button onclick="timSao();">Tìm *:</button>
+                                        <label id="so3"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-8">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-8" aria-expanded="false" aria-controls="accordion-tab-1-content-8">Dạng 8: Chứng minh một biểu thức chia hết cho một số</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-8" aria-labelledby="accordion-tab-1-heading-8" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Phương pháp: Dựa vào các dấu hiệu và tính chất chia hết</p>
+                                        <p>Ví dụ 1: Chứng minh rằng S = 5 + 5<sup>2</sup> + 5<sup>3</sup> + 5<sup>4</sup> + ... + 5<sup>100</sup> chia hết cho 6.</p>
+                                        <p>Ta có: S = 5 + 5<sup>2</sup> + 5<sup>3</sup> + 5<sup>4</sup> + ... + 5<sup>100</sup><br>
+                                                = 5( 1 + 5) + 5<sup>3</sup>( 1 + 5) + 5<sup>5</sup>( 1 + 5) + ... + 5<sup>99</sup>( 1 + 5)<br>
+                                                = 6( 5 + 5<sup>3</sup> + 5<sup>5</sup> + ... + 5<sup>99</sup> ) ⋮ 6 (Điều phải chứng minh) </p>
+                                        <p>Ví dụ 2: Chứng minh rằng S = 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup> + 3<sup>4</sup> + ... + 3<sup>11</sup> chia hết cho 40.</p>
+                                        <p>Ta có: S = 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup> + 3<sup>4</sup> + ... + 3<sup>11</sup> <br>
+                                                    = ( 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>) + 3<sup>4</sup>(1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>) + 3<sup>8</sup>(1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>)<br>
+                                                    = (1 + 3 + 3<sup>2</sup> + 3<sup>3</sup>)( 1 + 3<sup>4</sup> +  3<sup>8</sup>)<br>
+                                                    = 40(1 + 3<sup>4</sup> +  3<sup>8</sup>) ⋮ 40 (Điều phải chứng minh).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-9">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-9" aria-expanded="false" aria-controls="accordion-tab-1-content-9">Dạng 9: Một số dạng toán chứng minh khác chia hết</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-9" aria-labelledby="accordion-tab-1-heading-9" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Phương pháp: Vận dụng các tính chất và dấu hiệu chia hết. Phân tích biểu thức thành các tích chứa cơ số chia hết.</p>
+                                        <p>Ví dụ 1: Chứng minh tổng 3 số tự nhien liên tiếp chia hết cho 3.</p>
+                                        <ul>
+                                            <li>Gọi 3 số tự nhiên liên tiếp lần lượt là a, a+1, a+2 với a ∈ N.</li>
+                                            <li>Tổng 3 số S = a + ( a + 1 ) + ( a + 2 ) = 3a +3 = 3( a + 1 ) ⋮ 3 (Điều phải chứng minh)</li>
+                                        </ul>
+                                        <p>Ví dụ 2: Chứng minh tích của 2 số tự nhiên chẵn liên tiếp chia hết cho 8.</p>
+                                        <ul>
+                                            <li>Gọi 3 số tự nhiên chẵn liên tiếp lần lượt là 2a và 2a + 2 với a ∈ N.</li>
+                                            <li>Tích 2 số P = 2a . ( 2a + 2 ) = 4a. (a+1)</li>
+                                            <ul>
+                                                <li> Xét tích a( a + 1) luôn chia hết cho 2 (Vì nếu a là lẻ thì a+1 là chẵn, và ngược lại)</li>
+                                                <li> Vậy tích 4a. (a+1) luôn chia hết cho 8 (Vì 4.2 = 8)  (Điều phải chứng minh)</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-10">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-10" aria-expanded="false" aria-controls="accordion-tab-1-content-10">Dạng 10: Tìm ước và bội của các số tự nhiên đã biết</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-10" aria-labelledby="accordion-tab-1-heading-10" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví dụ 1: <br>a) Viết tập hợp các bội nhỏ hơn 40 của 9<br>      b) Viết dạng tổng quát các bội của 9</p>
+                                        <p>Giải: a) Nhân 9 lần lượt với các số 0, 1, 2, 3, ... ta được các bội của 9. Khi đó tập các bội của 9 nhỏ hơn 40 là {0, 9, 18, 27, 36}<br>
+                                                b) Trong tập các bội của 9, mỗi phần tử là tích của 9 với 1 số tự nhiên. Nên dạng tổng quát các số là bội của 9k với k∈N</p>
+                                        <p>Tương tự :</p>
+                                        <p>Tìm tập hợp các bội của <input type="number" id="tim_boin"> trong khoảng <input type="text" id="khoang" placeholder="Nhập dưới dạng [x,y]"></p>
+                                        <button onclick="timBoiN();">Giải: </button>
+                                        <label id="kq_boin"></label>     
+                                        <p>Ví dụ 2: Tìm các ước của 30 và tính tổng các ước trên.</p> 
+                                        <p>
+                                            <ol>
+                                                <li>Xét tính chia hết của 30 cho các ố tự nhiên từ 1 đến 30. Các ước của 30 là {1, 2, 3, 5, 6, 10, 15, 30} </li>
+                                                <li>Do đó tổng là : S= 1 + 2 + 3 + 5 +6 + 10 + 15 + 30 =42</li>
+                                            </ol>
+                                        </p>
+                                        <p>Tương tự: Tìm ước của <input type="number" id="tim_uocn"> và tính tổng các ước của nó. </p>
+                                        <button onclick="timUocN();">Giải</button>
+                                        <label id="kq_uocn"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-11">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-11" aria-expanded="false" aria-controls="accordion-tab-1-content-11">Dạng 11: Xác định các số tự nhiên theo hệ thức cho trước  </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-11" aria-labelledby="accordion-tab-1-heading-11" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví dụ 1: Tìm số tự nhiên n để 5 chia hết cho n-1</p>
+                                        <p>Giải: </p>
+                                        <p>Để 5 chia hết cho n-1 ( n ∈ N ) thì n-1 ∈ U(5).</p>
+                                        <p>Ta có: U(5) = {1 ,5 }</p>
+                                        <ul>
+                                            <li>Với n-1 = 1 => n=2</li>
+                                            <li>Với n-1 = 5 => n=6</li>
+                                        </ul>
+                                        <p>Vậy n ∈ { 2, 6} thõa mãn yêu cầu đề bài.</p>
+                                        <p>Ví dụ 2: Tìm số tự nhiên n để n+10 chia hết cho n+5</p>
+                                        
+                                        <p>Giải: </p>
+                                        <p>Phương pháp : Ta đưa bài toán về dạng cơ bản như ví dụ 1, triệt tiêu vế trái thành số tự nhiên.</p>
+                                        <p>Ta có: n+10 ⋮ n+5<br> => (n+10) - (n+5) ⋮ (n+5)<br> => 5 ⋮ (n+5)<br> => n+5 ∈ U(5)</p>
+                                        <p>Để 5 chia hết cho n+5 ( n ∈ N ) thì n-1 ∈ U(5).</p>
+                                        <p>Ta có: U(5) = {1 ,5}</p>
+                                        <ul>
+                                            <li>Với n+5 = 1 (Điều này không xảy ra do n ∈ N) </li>
+                                            <li>Với n+5 = 5 => n=0</li>
+                                        </ul>
+                                        <p>Vậy n ∈ {0} thõa mãn yêu cầu đề bài.</p>
+                                        <p>Tương tự : Tìm n để <input type="text" placeholder="Nhập an+b (với a,b ∈ N)" id="vetrai"> chia hết cho <input type="text" placeholder="Nhập an+b (với a,b ∈ N)"></p>
+                                        <button onclick="tim_SoN();">Giải :</button>
+                                        <label id="kq_timson"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-12">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-12" aria-expanded="false" aria-controls="accordion-tab-1-content-12">Dạng 12: Xác định yếu tố chưa biết của một biểu thức để biểu thức có giá trị là 1 số N</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-12" aria-labelledby="accordion-tab-1-heading-12" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Ví dụ 1: Tìm số tự nhiên x,y biết (x-7)(y+3)=13
+                                            <br>Giải:</p>
+                                        <p>Do x,y là số tự nhiên, có (x-7)(y+3)=13 nên 2 thừa số x-7 và y+3 là ước của 13.<br>Ta có: U(13)={1,13}<br>Nên xảy ra trường hợp:</p>
+                                        <p>.) x-7 = 1 && y+3 = 13 => x= 8, y=10</p>
+                                        <p>.) x-7 = 13 && y+3 =1 (loại)</p>
+                                        <p>Vậy (x,y) = (8,10)</p>
+                                        <p>Tương tự: Tìm số tự nhiên x,y để biểu thức <input type="text" id="bt_xy" placeholder="Nhập dưới dạng (ax+b)(cx+d) = m với a,b,c,d,m ∈ N "></p>
+                                        <button onclick="">Giải:</button>
+                                        <label id="kq_xy"></label>
+                                        <p>Ví dụ 2: Tìm số tự nhiên x, y biết xy = x-y+7</p>
+                                        <p>Giải:</p>
+                                        <p>xy = x - y + 7 <br> => xy - x + y - 1 = 6<br>=> x(y -1) + (y -1) = 6 => (x +1)(y -1)= 6 <br>
+                                        Do x,y ∈ N nên tương tự (x,y) = {(0,7) ,(1,4), (2,3), (5,2)}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
+                        <div class="accordion" id="accordion-tab-2">
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-2-heading-1">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">Does anybody else feel jealous and aroused and worried?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+                                    <div class="card-body">
+                                        <p>Kif, I have mated with a woman. Inform the men. This is the worst part. The calm before the battle. Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket.</p>
+                                        <p><strong>Example: </strong>There's no part of that sentence I didn't like! You, a bobsleder!? That I'd like to see!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-2-heading-2">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">This opera's as lousy as it is brilliant?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
+                                    <div class="card-body">
+                                        <p>Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry! It's okay, Bender. I like cooking too. Interesting. No, wait, the other thing: tedious.</p>
+                                        <p><strong>Example: </strong>Of all the friends I've had… you're the first. But I know you in the future. I cleaned your poop. Then we'll go with that data file!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-2-heading-3">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Who are you, my warranty?!</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
+                                    <div class="card-body">
+                                        <p>Oh, I think we should just stay friends. I'll tell them you went down prying the wedding ring off his cold, dead finger. Aww, it's true. I've been hiding it for so long. Say it in Russian! Then throw her in the laundry room, which will hereafter be referred to as "the brig".</p>
+                                        <p><strong>Example: </strong> We're rescuing ya. Robot 1-X, save my friends! And Zoidberg! <em>Then we'll go with that data file!</em> Okay, I like a challenge.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-2-heading-4">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">I haven't felt much of anything since my guinea pig died?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
+                                    <div class="card-body">
+                                        <p>And I'm his friend Jesus. Oh right. I forgot about the battle. OK, if everyone's finished being stupid. We'll need to have a look inside you with this camera. I'm just glad my fat, ugly mama isn't alive to see this day.</p>
+                                        <p><strong>Example: </strong> Isn't it true that you have been paid for your testimony? Quite possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
+                        <div class="accordion" id="accordion-tab-3">
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-3-heading-1">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Michelle, I don't regret this, but I both rue and lament it?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+                                    <div class="card-body">
+                                        <p>Look, last night was a mistake. We'll need to have a look inside you with this camera. Good news, everyone! There's a report on TV with some very bad news! You know, I was God once. You lived before you met me?!</p>
+                                        <p><strong>Example: </strong>I'm Santa Claus! Pansy. That's a popular name today. Little "e", big "B"?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-3-heading-2">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">Why am I sticky and naked?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-3-content-2" aria-labelledby="accordion-tab-3-heading-2" data-parent="#accordion-tab-3">
+                                    <div class="card-body">
+                                        <p>Did I miss something fun? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Kids don't turn rotten just from watching TV.</p>
+                                        <p><strong>Example: </strong>I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-3-heading-3">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">Is that a cooking show?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3">
+                                    <div class="card-body">
+                                        <p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. You seem malnourished. Are you suffering from intestinal parasites? Check it out, y'all. Everyone who was invited is here. I am Singing Wind, Chief of the Martians.</p>
+                                        <p><strong>Example: </strong>Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-3-heading-4">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4">You are the last hope of the universe?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-3-content-4" aria-labelledby="accordion-tab-3-heading-4" data-parent="#accordion-tab-3">
+                                    <div class="card-body">
+                                        <p>I don't want to be rescued. I videotape every customer that comes in here, so that I may blackmail them later. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."</p>
+                                        <p><strong>Example: </strong>Tell them I hate them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4">
+                        <div class="accordion" id="accordion-tab-4">
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-4-heading-1">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">You, minion. Lift my arm?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+                                    <div class="card-body">
+                                        <p>AFTER HIM! A true inspiration for the children. What are you hacking off? Is it my torso?! 'It is!' My precious torso! I saw you with those two "ladies of the evening" at Elzars. Explain that. She also liked to shut up! Why not indeed!</p>
+                                        <p><strong>Example: </strong>I feel like I was mauled by Jesus. Hello, little man. I will destroy you!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-4-heading-2">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">No, I'm Santa Claus?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4">
+                                    <div class="card-body">
+                                        <p>I meant 'physically'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually? When the lights go out, it's nobody's business what goes on between two consenting adults.</p>
+                                        <p><strong>Example: </strong>Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-4-heading-3">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3">Belligerent and numerous?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-4-content-3" aria-labelledby="accordion-tab-4-heading-3" data-parent="#accordion-tab-4">
+                                    <div class="card-body">
+                                        <p>Hey, what kinda party is this? There's no booze and only one hooker. I'm just glad my fat, ugly mama isn't alive to see this day. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Well, let's just dump it in the sewer and say we delivered it. You guys realize you live in a sewer, right? </p>
+                                        <p><strong>Example: </strong>Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-4-heading-4">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-4" aria-expanded="false" aria-controls="accordion-tab-4-content-4">Take me to your leader?</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-4-content-4" aria-labelledby="accordion-tab-4-heading-4" data-parent="#accordion-tab-4">
+                                    <div class="card-body">
+                                        <p>PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon. Interesting. No, wait, the other thing: tedious. All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat.</p>
+                                        <p><strong>Example: </strong>If rubbin' frozen dirt in your crotch is wrong, hey I don't wanna be right.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>

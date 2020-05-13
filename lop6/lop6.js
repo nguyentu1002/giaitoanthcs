@@ -163,6 +163,59 @@ function timSao(){
     
     document.getElementById("so3").innerHTML=kq;
 }
+//Tìm bội của 1 số N đã biết
+function timBoiN(){
+    var boi = document.getElementById("tim_boin").value;
+    var arr= document.getElementById("khoang").value;
+    var mang = arr.slice(1,arr.length-1).split(",");
+    var kq="";
+    var d=parseInt(mang[0]);
+    var c=parseInt(mang[1]);
+    if(d>c || boi>c)
+        kq += "Nhập khoảng giá trị sai. ";
+    else{
+        if(boi > d-c)
+            kq="Không tồn tại bội nào thõa mãn.";
+        else{
+            kq += "Nhân "+boi+" lần lượt với các số 0, 1, 2, 3, ... ta được các bội của "+boi +". Trong khoảng "+arr+ " thì tập bội thõa mãn là: ";
+            for(var i=d;i<=c;i++){
+                if(i% (parseInt(boi))== 0)
+                    kq +=i.toString() +", ";
+        }
+        }
+    }
+    document.getElementById("kq_boin").innerHTML=kq.substring(0, kq.length - 1);
+}
+//Hàm tìm ước của 1 số N đã biết và xuất tổng các ước
+function timUocN(){
+    var n= document.getElementById("tim_uocn").value;
+    var kq="";
+    var sum=0;
+    for( var i=1; i<= n;i++){
+        if(n % i== 0){
+            kq +=i.toString()+", ";
+            sum +=i;
+        }
+    }
+    kq=kq.slice(0,kq.length-2);
+    document.getElementById("kq_uocn").innerHTML="Các ước của "+n+" là: "+kq +". Tổng các ước của "+n +" là :"+sum;
+}
+//Hàm tìm n để biểu thức chia hết:
+function tim_SoN(){
+    var kq="";
+    var vt= document.getElementById("vetrai").value;
+    var vp= document.getElementById("vephai").value;
+    var regexObj = new RegExp(/(?:[+\-]|\d[a-z]|\d|[a-z])/g);
+
+    document.getElementById("kq_timson").innerHTML=kq;
+}
+// Hàm tìm x,y thuoc N
+function tim_XY(){
+    var kq="";
+    var ip=document.getElementById("bt_xy").value;
+
+}
+
 //Hàm kiểm tra số nguyên tố
 function kiemTraSoNguyenTo(n){
     if(n<=1)
@@ -192,17 +245,7 @@ function phanTichThuaSoNguyenTo(){
     kq=kq.slice(0,kq.length-2);
     document.getElementById("phantich").innerHTML = kq;
 }
-//Hàm tìm xuất ước của 1 số
-function xuatUoc(){
-    var n= document.getElementById("timuoc").value;
-    var kq="";
-    for( var i=1; i<= n;i++){
-        if(n % i== 0)
-            kq +=i.toString()+", ";
-    }
-    kq=kq.slice(0,kq.length-2);
-    document.getElementById("xuatuoc").innerHTML=kq;
-}
+
 //Hàm tìm UCLN
 function timUCLN(){
     

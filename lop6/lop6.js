@@ -227,23 +227,38 @@ function kiemTraSoNguyenTo(n){
     return 1;
 }
 //Hàm phân tích thừa số nguyên tố
-function phanTichThuaSoNguyenTo(){
-    var n= document.getElementById("sophantich").value;
+function phanTichThuaSoNguyenTo(n){
+    //var n= document.getElementById("sophantich").value;
     var i= 2;
     var kq="";
-    var tmp;
-    while(n!=1){
-        var dem=0;
+    var dem=0;
+    let arr_so = [];
+    let arr_dem= [];
+    while(n!=1){       
         if(n%i == 0){
             n /= i;
             dem++;
-            kq += i.toString()+" * ";
+            if(arr_so.indexOf(i) < 0){
+                arr_so.push(i);
+            }
+        }             
+        else{ 
+            i++; 
+            if(dem!=0){
+                arr_dem.push(dem);
+            }            
+            dem=0;
         }
-        else
-            i++;
-    }
-    kq=kq.slice(0,kq.length-2);
-    document.getElementById("phantich").innerHTML = "<p>" + kq +"<p>";
+        if(n==1){
+            arr_dem.push(dem);
+        }
+    }  
+     for(let i=0;i<arr_so.length;i++){
+         kq += `${arr_so[i]}${arr_dem[i]==1?"":"^"+arr_dem[i]} * `;
+     }
+    kq = kq.slice(0,kq.length-3);
+    //document.getElementById("phantich").innerHTML = "<p>" + kq +"<p>";
+    return kq;
 }
 
 //Hàm tìm UCLN
@@ -353,34 +368,35 @@ function SoSanhPhanSo(){
 function QuyDongPhanSo(){
     let input = document.getElementById("quydong_phanso").value;
     let p_tag = document.getElementById("quydongphanso");
-    
     let arr_input = input.split(';'); //mảng chứa các phân số
     let arr_mauso =[];
     let arr_tuso = [];
     let arr_thuaso = []
     let flag = false;
+    p_tag.innerHTML = "";
     for(let i=0;i<arr_input.length;i++){
         arr_input[i] = arr_input[i].replace(/\s+/g,'');
         var x = arr_input[i];
-        arr_intput[i] = RutGon_PhanSo(arr_input[i]);
+        arr_input[i] = RutGon_PhanSo(arr_input[i]);
         if(x != arr_input[i]){
             flag=true;
         }
         arr_mauso[i] = arr_input[i].split('/')[1];
         arr_tuso[i] = arr_input[i].split('/')[0];
     }
+    let mau_chung = BCNN_Mang(arr_mauso);
+    
     if(flag){
-        p_tag.innerHTML = "Rút gọn phân số: ";
+        p_tag.innerHTML += "Rút gọn phân số: ";
         for(let i=0;i<arr_input.length;i++){
             arr_thuaso[i] = mau_chung / arr_mauso[i];
             p_tag.appendChild(frac(`${arr_tuso[i]}/${arr_mauso[i]}`));
             (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");       
         }
-        p_tag.innerHTML = "<br>";
+        p_tag.innerHTML += "<br>";
     }
-    
-    p_tag.innerHTML = "Kết quả quy đồng là : "
-    let mau_chung = BCNN_Mang(arr_mauso);
+
+    p_tag.innerHTML += "Kết quả quy đồng là : " 
     for(let i=0;i<arr_input.length;i++){
         arr_thuaso[i] = mau_chung / arr_mauso[i];
         p_tag.appendChild(frac(`${arr_tuso[i]}*${arr_thuaso[i]}/${arr_mauso[i]}*${arr_thuaso[i]}`));
@@ -389,7 +405,6 @@ function QuyDongPhanSo(){
     p_tag.innerHTML += `(Mẫu số chung là ${mau_chung})`;
     p_tag.innerHTML += "<br> => "
     for(let i=0;i<arr_input.length;i++){
-        arr_thuaso[i] = mau_chung / arr_mauso[i];
         p_tag.appendChild(frac(`${arr_tuso[i]*arr_thuaso[i]}/${arr_mauso[i]*arr_thuaso[i]}`));
         (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");   
     }  

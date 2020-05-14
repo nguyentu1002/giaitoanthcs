@@ -246,7 +246,7 @@ function kiemTraSoNguyenTo(n){
     return 1;
 }
 //Hàm phân tích thừa số nguyên tố
-<<<<<<< HEAD
+
 function phanTichThuaSoNguyenTo(){
     var n= document.getElementById("pt_snt").value;
     var i= 2;
@@ -296,7 +296,7 @@ function demUocSNT(){
         }
     }
     document.getElementById("kq_demusnt").innerHTML =tmp+" = " + kq+"<br> Vậy số ước là : "+tich;
-=======
+}
 function phanTichThuaSoNguyenTo(n){
     //var n= document.getElementById("sophantich").value;
     var i= 2;
@@ -478,7 +478,6 @@ function QuyDongPhanSo(){
         p_tag.appendChild(frac(`${arr_tuso[i]*arr_thuaso[i]}/${arr_mauso[i]*arr_thuaso[i]}`));
         (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");   
     }  
->>>>>>> f3e141e31a55c7d9feb5f2ec1d69a8f8cbd8d21f
 }
 // //Hàm tìm u c l n
 // function tim_UCLN(){

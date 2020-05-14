@@ -93,9 +93,9 @@
                                         <p>Ví dụ: Tìm tập hợp số tự nhiên x thõa mãn 12 < x < 16 </p>
                                         <p>Tập hợp A các số tự nhiên x thõa mãn: A = {13, 14, 15}</p>
                                         <p><strong>Tương tự: </strong>Tìm tập hợp các số tự nhiên x thõa mãn: </p>
-                                        <input type="text" id="tim_taphop">
-                                        <button>Xuất tập hợp</button>
-                                        <label id="taphop"></label>
+                                        <input type="text" id="tim_thso" placeholder="Nhập dưới dạng a<x<b">
+                                        <button onclick="timTHSo();">Xuất tập hợp</button>
+                                        <label id="kq_thso"></label>
                                     </div>
                                 </div>
                             </div>
@@ -283,7 +283,7 @@
                                             <li>Với n+5 = 5 => n=0</li>
                                         </ul>
                                         <p>Vậy n ∈ {0} thõa mãn yêu cầu đề bài.</p>
-                                        <p>Tương tự : Tìm n để <input type="text" placeholder="Nhập an+b (với a,b ∈ N)" id="vetrai"> chia hết cho <input type="text" placeholder="Nhập an+b (với a,b ∈ N)"></p>
+                                        <p>Tương tự : Tìm x để <input style="width: 45px;" type="number" id="a1" placeholder="a1">x + <input style="width: 45px;" type="number" id="b1" placeholder="b1">chia hết cho <input style="width: 45px;" type="number" id="a2" placeholder="a2">x + <input style="width: 45px;" type="number" id="b2" placeholder="b2"></p>
                                         <button onclick="tim_SoN();">Giải :</button>
                                         <label id="kq_timson"></label>
                                     </div>
@@ -303,13 +303,57 @@
                                         <p>.) x-7 = 1 && y+3 = 13 => x= 8, y=10</p>
                                         <p>.) x-7 = 13 && y+3 =1 (loại)</p>
                                         <p>Vậy (x,y) = (8,10)</p>
-                                        <p>Tương tự: Tìm số tự nhiên x,y để biểu thức <input type="text" id="bt_xy" placeholder="Nhập dưới dạng (ax+b)(cx+d) = m với a,b,c,d,m ∈ N "></p>
+                                        <p>Tương tự: Tìm số tự nhiên x,y để biểu thức (<input style="width: 45px;" type="number" id="a3" placeholder="a">x + <input style="width: 45px;" type="number" id="b3" placeholder="b">) . ( <input style="width: 45px;" type="number" id="a4" placeholder="c">y + <input style="width: 45px;" type="number" id="b4" placeholder="d"> ) = <input type="number" style="width: 45px;"  id="tich"></p>
                                         <button onclick="">Giải:</button>
                                         <label id="kq_xy"></label>
                                         <p>Ví dụ 2: Tìm số tự nhiên x, y biết xy = x-y+7</p>
                                         <p>Giải:</p>
                                         <p>xy = x - y + 7 <br> => xy - x + y - 1 = 6<br>=> x(y -1) + (y -1) = 6 => (x +1)(y -1)= 6 <br>
                                         Do x,y ∈ N nên tương tự (x,y) = {(0,7) ,(1,4), (2,3), (5,2)}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-13">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-13" aria-expanded="false" aria-controls="accordion-tab-1-content-13">Dạng 13: Phân tích 1 số ra thừa số nguyên tố và ứng dụng tìm số ước của nó</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-13" aria-labelledby="accordion-tab-1-heading-13" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Phương pháp: Ta thường phân tích một số tự nhiên n( n>1) ra thừa số nguyên tố bằng cách phân tích theo chiều dọc.</p>
+                                        <p>Ví dụ: Số 76 được phân tích như sau: </p>
+                                        <img src="https://cdn.vungoi.vn/vungoi/1533894281326_phan_tich_ra_thua_so_nguyen_to.png" alt="">
+                                        <p>Như vậy 76 = 2 <sup>2</sup>.19</p>
+                                        <p>Tương tự: Phân tích <input type="number" id="pt_snt"> ra thừa số nguyên tố.</p>
+                                        <button onclick="phanTichThuaSoNguyenTo();"> Giải: </button>
+                                        <label id="kq_snt"></label>
+                                        <p>Nâng cao: Số a = 2<sup>a1</sup> . 3<sup>a2</sup> . 5<sup>a3</sup> . 7<sup>a4</sup>... có số ước là : <br> U = ( a1 + 1 ) . ( a2 + 1 ) . ( a3 + 1 )...</p>
+                                        <p>Áp dụng: Không liệt kê, số <input type="number"  id="dem_usnt"> có bao nhiêu ước? </p>
+                                        <button onclick="demUocSNT();">Giải: </button>
+                                        <label id="kq_demusnt"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="accordion-tab-1-heading-14">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-14" aria-expanded="false" aria-controls="accordion-tab-1-content-14">Dạng 14: Tìm ước chung lớn nhất của 2 số</button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="accordion-tab-1-content-14" aria-labelledby="accordion-tab-1-heading-14" data-parent="#accordion-tab-1">
+                                    <div class="card-body">
+                                        <p>Phương pháp tìm UCLN:</p>
+                                        <ol>
+                                            <li>Phân tích mỗi số ra thừa số nguyên tố</li>
+                                            <li>Chọn ra các thừa số nguyên tố chung</li>
+                                            <li>Lập tích các thừa số đã chọn, mỗi thừa số lấy với số mũ nhỏ nhất của nó. Tích đó là UCLN cần tìm</li>
+                                        </ol>
+                                        <p>Ví dụ: Tìm UCLN(18,30)</p>
+                                        <P>18= 2. 3<sup>2</sup> <br> 30= 2.3.5<br> Thừa số nguyên tố chung là: 2 và 3 <br> Vậy UCLN(18,30) = 2.3 =6</P>
+                                        <p>Tương tự: Tìm UCLN ( <input type="number" id="ucln1">,<input type="number" id="ucln2">): </p>
+                                        <button onclick="tim_UCLN();">Tìm UCLN:</button>
+                                        <label id="kq_ucln"></label>
                                     </div>
                                 </div>
                             </div>

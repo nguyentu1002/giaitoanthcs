@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="baitap.css">
+    <link rel="stylesheet" href="../resources/css/phanso.css">
+    <script type="text/javascript" src="../resources/js/scripts.js"></script>
+
     <script src="../lop6/lop6.js"></script>
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    <!--MathJax-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -415,57 +418,69 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
                         <div class="accordion" id="accordion-tab-3">
                             <div class="card">
                                 <div class="card-header" id="accordion-tab-3-heading-1">
                                     <h5>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Michelle, I don't regret this, but I both rue and lament it?</button>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Dạng 1: Rút gọn phân số</button>
                                     </h5>
                                 </div>
                                 <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
                                     <div class="card-body">
-                                        <p>Look, last night was a mistake. We'll need to have a look inside you with this camera. Good news, everyone! There's a report on TV with some very bad news! You know, I was God once. You lived before you met me?!</p>
-                                        <p><strong>Example: </strong>I'm Santa Claus! Pansy. That's a popular name today. Little "e", big "B"?</p>
+                                        <p>Ví dụ: \(\displaystyle\frac{10}{4}\) có phân số tối giản là \(\displaystyle\frac{5}{2}\)</p>
+                                        <div>
+                                            <input type="text" id="rutgon_phanso">
+                                            <button id="btn_rutgon" onclick="RutGonPhanSo();">Kết quả</button><span> Ví dụ nhập:\(\displaystyle\frac{10}{4}\) -> 10/4</span>
+                                            <p id="Rutgonphanso"></p>
+                                        </div>                                      
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="accordion-tab-3-heading-2">
                                     <h5>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">Why am I sticky and naked?</button>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">Dạng 2: Quy đồng mẫu nhiều phân số</button>
                                     </h5>
                                 </div>
                                 <div class="collapse" id="accordion-tab-3-content-2" aria-labelledby="accordion-tab-3-heading-2" data-parent="#accordion-tab-3">
                                     <div class="card-body">
-                                        <p>Did I miss something fun? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Kids don't turn rotten just from watching TV.</p>
-                                        <p><strong>Example: </strong>I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness.</p>
+                                        <p>Ví dụ: \(\displaystyle \frac{2}{21}\) ; \(\displaystyle \frac{1}{6}\) => \(\displaystyle \frac{4}{42}\) ; \(\displaystyle \frac{7}{42}\)</p>
+                                        <input type="text" id="quydong_phanso">
+                                        <button id="btn_quydong" onclick="QuyDongPhanSo();">Kết quả</button><span> Ví dụ nhập:\(\displaystyle\frac{10}{4}\) ; \(\displaystyle \frac{1}{6}\) ; \(\displaystyle \frac{2}{3}\)-> 10/4 ; 1/6 ; 2/3</span>
+                                        <p id="quydongphanso"></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="accordion-tab-3-heading-3">
                                     <h5>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">Is that a cooking show?</button>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">Dạng 3: So sánh 2 phân số</button>
                                     </h5>
                                 </div>
                                 <div class="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3">
                                     <div class="card-body">
-                                        <p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. You seem malnourished. Are you suffering from intestinal parasites? Check it out, y'all. Everyone who was invited is here. I am Singing Wind, Chief of the Martians.</p>
-                                        <p><strong>Example: </strong>Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor.</p>
+                                        <p>Ví dụ \(\displaystyle\frac{15}{4}\) &gt; \(\displaystyle\frac{10}{3}\)</p>
+                                        <div>
+                                            <input type="text" id="sosanh_phanso">
+                                            <button id="btn_sosanh" onclick="SoSanhPhanSo();">Kết quả</button><span> Ví dụ nhập:\(\displaystyle\frac{15}{4}\) ; \(\displaystyle\frac{10}{3}\) -> 15/4 ; 10/3</span>
+                                            <p id="sosanhphanso"></p>
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="accordion-tab-3-heading-4">
                                     <h5>
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4">You are the last hope of the universe?</button>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4">Dạng 4: Cộng, trừ, nhân, chia 2 phân số</button>
                                     </h5>
                                 </div>
                                 <div class="collapse" id="accordion-tab-3-content-4" aria-labelledby="accordion-tab-3-heading-4" data-parent="#accordion-tab-3">
                                     <div class="card-body">
-                                        <p>I don't want to be rescued. I videotape every customer that comes in here, so that I may blackmail them later. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."</p>
-                                        <p><strong>Example: </strong>Tell them I hate them.</p>
+                                        <input type="text" id="tinh_phanso">
+                                            <button id="btn_tinhphanso" onclick="TinhPhanSo();">Kết quả</button><span> Ví dụ nhập:\(\displaystyle\frac{15}{4}\) + \(\displaystyle\frac{10}{3}\) -> 15/4 + 10/3 . Tương tự cho các dấu (+,-,x,:) -> (+,-,*,/)</span>
+                                            <p id="tinh_phanso"></p>
                                     </div>
                                 </div>
                             </div>
@@ -560,5 +575,15 @@
             });
         });
     </script>
+    <script>
+        var ele_frac = document.getElementsByClassName("frac1")
+            
+    for(let i=0;i<ele_frac.length;i++){
+    var string = "<span class=\"frac\"><span>"+ ele_frac[i].getAttribute("a") +"</span><span class\=\"symbol\">/</span\><span class=\"bottom\">"+ ele_frac[i].getAttribute("b") + "</span></span>";
+    ele_frac[i].innerHTML = string;
+} 
+    </script>
+    <link rel="stylesheet" href="baitap.css">
+    <script type="text/javascript" src="../resources/js/scripts.js"></script>
 </body>
 </html>

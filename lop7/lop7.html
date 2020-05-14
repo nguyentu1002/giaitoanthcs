@@ -8,6 +8,7 @@
 
     <title>Ứng dụng giải toán</title>
 
+    <link rel="stylesheet" href="../resources/css/phanso.css">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -21,7 +22,8 @@
     <!--MathJax-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
-    <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 
 <body>
@@ -725,16 +727,7 @@
             });
         });
     </script>
-    <script type="text/javascript">
-            //Phân số
-            var ele_frac = document.getElementsByClassName("frac1")
-            
-            for(let i=0;i<ele_frac.length;i++){
-                var string = "<span class=\"frac\"><span>"+ ele_frac[i].getAttribute("a") +"</span><span class\=\"symbol\">/</span\><span class=\"bottom\">"+ ele_frac[i].getAttribute("b") + "</span></span>";
-                ele_frac[i].innerHTML = string;
-            }
-                 
-    </script>
+    <script type="text/javascript" src="../resources/js/scripts.js"></script>
 </body>
 
 </html>

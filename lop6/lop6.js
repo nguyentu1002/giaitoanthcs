@@ -246,6 +246,7 @@ function kiemTraSoNguyenTo(n){
     return 1;
 }
 //Hàm phân tích thừa số nguyên tố
+<<<<<<< HEAD
 function phanTichThuaSoNguyenTo(){
     var n= document.getElementById("pt_snt").value;
     var i= 2;
@@ -295,6 +296,189 @@ function demUocSNT(){
         }
     }
     document.getElementById("kq_demusnt").innerHTML =tmp+" = " + kq+"<br> Vậy số ước là : "+tich;
+=======
+function phanTichThuaSoNguyenTo(n){
+    //var n= document.getElementById("sophantich").value;
+    var i= 2;
+    var kq="";
+    var dem=0;
+    let arr_so = [];
+    let arr_dem= [];
+    while(n!=1){       
+        if(n%i == 0){
+            n /= i;
+            dem++;
+            if(arr_so.indexOf(i) < 0){
+                arr_so.push(i);
+            }
+        }             
+        else{ 
+            i++; 
+            if(dem!=0){
+                arr_dem.push(dem);
+            }            
+            dem=0;
+        }
+        if(n==1){
+            arr_dem.push(dem);
+        }
+    }  
+     for(let i=0;i<arr_so.length;i++){
+         kq += `${arr_so[i]}${arr_dem[i]==1?"":"^"+arr_dem[i]} * `;
+     }
+    kq = kq.slice(0,kq.length-3);
+    //document.getElementById("phantich").innerHTML = "<p>" + kq +"<p>";
+    return kq;
+}
+
+//Hàm tìm UCLN
+function UCLN(x,y){
+    while(x!=y)   {
+        if(x>y) x=x-y;
+        else y=y-x;
+    }
+    return x;
+
+}
+//Hàm tìm BCNN
+function BCNN(a,b){
+    return (a*b/UCLN(a,b) );
+}
+//Tìm BCNN của nhiều số
+function BCNN_Mang(arr){
+    var ketqua = BCNN(arr[0], arr[1] );
+        for(let i=2;i<arr.length;i++){
+            ketqua = BCNN(ketqua, arr[i]);    
+        }
+        return ketqua;
+}
+//Bieu dien phan so
+function frac(x){
+    let a = x.split("/")[0].replace(/\s+/g, '');
+    let b = x.split("/")[1].replace(/\s+/g, '');
+    var span = document.createElement("span");         
+        span.className = "frac1";
+        span.setAttribute("a",`${a}`);
+        span.setAttribute("b",`${b}`);         
+        span.innerHTML = "<span class=\"frac\"><span>"+ span.getAttribute("a") +"</span><span class\=\"symbol\">/</span\><span class=\"bottom\">"+ span.getAttribute("b") + "</span></span>";
+    return span;
+}
+function RutGon_PhanSo(n){
+    n = n.toString();
+    var a = n.split("/")[0].replace(/\s+/g, '');
+    var b = n.split("/")[1].replace(/\s+/g, '');
+    if(a % b==0){
+        return a/b;
+    }
+    else{
+        var ucln = UCLN(Number(a),Number(b));
+        a = a/ucln;
+        b = b/ucln;      
+        return `${a}/${b}`;
+    }
+}
+//Rút gọn phân số
+function RutGonPhanSo(){
+    var p = document.getElementById("Rutgonphanso");
+    p.innerHTML = "";
+    var input = document.getElementById("rutgon_phanso").value;
+    var a = input.split("/")[0].replace(/\s+/g, '');
+    var b = input.split("/")[1].replace(/\s+/g, '');
+    
+    var string = "Kết quả rút gọn là:  ";
+    p.innerHTML = string;
+    
+    if(a % b==0){
+        p.innerHTML += a/b;
+    } 
+    else{        
+        var ucln = UCLN(Number(a),Number(b));
+        a = a/ucln;
+        b = b/ucln;      
+        var span = frac(`${a}/${b}`);
+        p.appendChild(span);
+        (ucln!=1? p.innerHTML += " (Chia tử và mẫu cho "+ ucln + ")":"");   
+    }   
+}
+
+function SoSanhPhanSo(){
+    let p_tag = document.getElementById("sosanhphanso");
+    p_tag.innerHTML = "";
+    
+    let input = document.getElementById("sosanh_phanso").value;
+    let a = input.split(";")[0].replace(/\s+/g, '');
+    let b = input.split(";")[1].replace(/\s+/g, '');
+    
+
+    var string = "Kết quả so sánh là:  ";
+    p_tag.innerHTML = string;
+
+    var float_a = parseFloat(Number(a.split('/')[0]) / Number(a.split('/')[1]));
+    var float_b = parseFloat(Number(b.split('/')[0]) / Number(b.split('/')[1]));
+
+    if(float_a > float_b){
+        p_tag.appendChild(frac(a));
+        p_tag.innerHTML += `(${float_a.toFixed(2)}) > `;
+        p_tag.appendChild(frac(b));
+        p_tag.innerHTML += `(${float_b.toFixed(2)})`;
+    }
+    else if(float_a < float_b){
+        p_tag.appendChild(frac(a));
+        p_tag.innerHTML += `(${float_a.toFixed(2)}) < `;
+        p_tag.appendChild(frac(b));
+        p_tag.innerHTML += `(${float_b.toFixed(2)})`;
+    }
+    else{
+        p_tag.appendChild(frac(a));
+        p_tag.innerHTML += " = ";
+        p_tag.appendChild(frac(b));
+    }
+}
+
+function QuyDongPhanSo(){
+    let input = document.getElementById("quydong_phanso").value;
+    let p_tag = document.getElementById("quydongphanso");
+    let arr_input = input.split(';'); //mảng chứa các phân số
+    let arr_mauso =[];
+    let arr_tuso = [];
+    let arr_thuaso = []
+    let flag = false;
+    p_tag.innerHTML = "";
+    for(let i=0;i<arr_input.length;i++){
+        arr_input[i] = arr_input[i].replace(/\s+/g,'');
+        var x = arr_input[i];
+        arr_input[i] = RutGon_PhanSo(arr_input[i]);
+        if(x != arr_input[i]){
+            flag=true;
+        }
+        arr_mauso[i] = arr_input[i].split('/')[1];
+        arr_tuso[i] = arr_input[i].split('/')[0];
+    }
+    let mau_chung = BCNN_Mang(arr_mauso);
+    
+    if(flag){
+        p_tag.innerHTML += "Rút gọn phân số: ";
+        for(let i=0;i<arr_input.length;i++){
+            arr_thuaso[i] = mau_chung / arr_mauso[i];
+            p_tag.appendChild(frac(`${arr_tuso[i]}/${arr_mauso[i]}`));
+            (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");       
+        }
+        p_tag.innerHTML += "<br>";
+    }
+
+    p_tag.innerHTML += "Kết quả quy đồng là : " 
+    for(let i=0;i<arr_input.length;i++){
+        arr_thuaso[i] = mau_chung / arr_mauso[i];
+        p_tag.appendChild(frac(`${arr_tuso[i]}*${arr_thuaso[i]}/${arr_mauso[i]}*${arr_thuaso[i]}`));
+        (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");       
+    }
+    p_tag.innerHTML += `(Mẫu số chung là ${mau_chung})`;
+    p_tag.innerHTML += "<br> => "
+    for(let i=0;i<arr_input.length;i++){
+        p_tag.appendChild(frac(`${arr_tuso[i]*arr_thuaso[i]}/${arr_mauso[i]*arr_thuaso[i]}`));
+        (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");   
+    }  
+>>>>>>> f3e141e31a55c7d9feb5f2ec1d69a8f8cbd8d21f
 }
 // //Hàm tìm u c l n
 // function tim_UCLN(){

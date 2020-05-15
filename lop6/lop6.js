@@ -270,7 +270,7 @@ function phanTichThuaSoNguyenTo(){
     }
     document.getElementById("kq_snt").innerHTML = kq;
 }
-//Hàm ứng dụng phân tích thưuà số nguyên tố tìm số ước
+//Hàm ứng dụng phân tích thưà số nguyên tố tìm số ước
 function demUocSNT(){
     var n= document.getElementById("dem_usnt").value;
     var tmp=n;
@@ -297,40 +297,6 @@ function demUocSNT(){
     }
     document.getElementById("kq_demusnt").innerHTML =tmp+" = " + kq+"<br> Vậy số ước là : "+tich;
 }
-function phanTichThuaSoNguyenTo(n){
-    //var n= document.getElementById("sophantich").value;
-    var i= 2;
-    var kq="";
-    var dem=0;
-    let arr_so = [];
-    let arr_dem= [];
-    while(n!=1){       
-        if(n%i == 0){
-            n /= i;
-            dem++;
-            if(arr_so.indexOf(i) < 0){
-                arr_so.push(i);
-            }
-        }             
-        else{ 
-            i++; 
-            if(dem!=0){
-                arr_dem.push(dem);
-            }            
-            dem=0;
-        }
-        if(n==1){
-            arr_dem.push(dem);
-        }
-    }  
-     for(let i=0;i<arr_so.length;i++){
-         kq += `${arr_so[i]}${arr_dem[i]==1?"":"^"+arr_dem[i]} * `;
-     }
-    kq = kq.slice(0,kq.length-3);
-    //document.getElementById("phantich").innerHTML = "<p>" + kq +"<p>";
-    return kq;
-}
-
 //Hàm tìm UCLN
 function UCLN(x,y){
     while(x!=y)   {
@@ -338,11 +304,135 @@ function UCLN(x,y){
         else y=y-x;
     }
     return x;
-
+}
+// Hàm tìm UCLN theo phân tích thừa số
+function tim_UCLN(){
+    var n1= document.getElementById("ucln1").value;
+    var n2=document.getElementById("ucln2").value;
+    var t1= n1;
+    var t2= n2;
+    var ucln=UCLN(n1,n2);
+    var i;
+    var dem;
+    var kq="Ta có: <br>"+t1+"=";
+    for( i=2;i<=t1;i++){
+        dem=0;
+        while(t1 % i == 0){
+            ++dem;
+            t1 /= i;
+        }
+        if(dem){
+            if(dem > 1)
+                kq += i+"^"+dem;
+            else
+                kq += i;
+            if(t1 > i){
+                kq += "*";
+            }
+        }
+    }
+    kq += "<br>"+t2 +" = ";
+    for( i=2;i<=t2;i++){
+        dem=0;
+        while(t2 % i == 0){
+            ++dem;
+            t2 /= i;
+        }
+        if(dem){
+            if(dem > 1)
+                kq += i+"^"+dem;
+            else
+                kq += i;
+            if(t2 > i){
+                kq += "*";
+            }
+        }
+    }
+    kq+="<br>Vậy UCLN cần tìm là: ";
+    for( i=2;i<=ucln;i++){
+        dem=0;
+        while(ucln % i == 0){
+            ++dem;
+            ucln /= i;
+        }
+        if(dem){
+            if(dem > 1)
+                kq += i+"^"+dem;
+            else
+                kq += i;
+            if(ucln > i){
+                kq += "*";
+            }
+        }
+    }
+    document.getElementById("kq_u").innerHTML=kq;
 }
 //Hàm tìm BCNN
 function BCNN(a,b){
     return (a*b/UCLN(a,b) );
+}
+//Hàm tìm bcnn
+function tim_BCNN(){
+    var n1= document.getElementById("boi1").value;
+    var n2=document.getElementById("boi2").value;
+    var t1=n1;
+    var t2=n2;
+    var ucln=n1*n2/(UCLN(n1,n2));
+
+    var i;
+    var dem;
+    var kq="Ta có: <br>"+t1+"=";
+    for( i=2;i<=t1;i++){
+        dem=0;
+        while(t1 % i == 0){
+            ++dem;
+            t1 /= i;
+        }
+        if(dem){
+            if(dem > 1)
+                kq += i+"^"+dem;
+            else
+                kq += i;
+            if(t1 > i){
+                kq += "*";
+            }
+        }
+    }
+    kq += "<br>"+t2 +" = ";
+    for( i=2;i<=t2;i++){
+        dem=0;
+        while(t2 % i == 0){
+            ++dem;
+            t2 /= i;
+        }
+        if(dem){
+            if(dem > 1)
+                kq += i+"^"+dem;
+            else
+                kq += i;
+            if(t2 > i){
+                kq += "*";
+            }
+        }
+    }
+    kq+="<br>Vậy BCNN cần tìm là: ";
+    for( i=2;i<=ucln;i++){
+        dem=0;
+        while(ucln % i == 0){
+            ++dem;
+            ucln /= i;
+        }
+        if(dem){
+            if(dem > 1)
+                kq += i+"^"+dem;
+            else
+                kq += i;
+            if(ucln > i){
+                kq += "*";
+            }
+        }
+    }
+    document.getElementById("kq_BC").innerHTML=kq;
 }
 //Tìm BCNN của nhiều số
 function BCNN_Mang(arr){

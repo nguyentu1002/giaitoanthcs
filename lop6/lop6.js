@@ -409,3 +409,5 @@ function QuyDongPhanSo(){
         (i==arr_input.length-1? "" : p_tag.innerHTML += " ; ");   
     }  
 }
+
+$(document).ready

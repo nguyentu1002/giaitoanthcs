@@ -125,49 +125,7 @@
                     </div>
                 </div>
             </nav>
-            
-bai-15-phan-tich-mot-so-ra-thua-so-nguyen-to
-<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
-<br/>
-<p>Nội dung bài học sẽ giới thiệu đến các em phương pháp<strong> Phân tích một số ra thừa số nguyên tố</strong> cùng với những dạng bài tập liên quan. Bên cạnh có là những ví dụ minh họa có hướng dẫn giải chi tiết sẽ giúp các em dễ dàng nắm được bài học.</p> </div></div><div class="box-1">
-<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
-<div class="box-content content-fck">
-<div id="11">
-<h3>1.1. Phân tích một thừa số ra số nguyên tố là gì?</h3>
-</div>
-<h3><strong>Ví dụ 1:</strong><span style="color:inherit; font-family:inherit; font-size:13px"> Viết số 300 dưới dạng một tích của nhiều thừa số lớn hơn 1, với mỗi thừa số lại làm như vậy (nếu có thể)?</span></h3>
-<p>Chẳng hạng làm như sau:</p>
-<p>300 = 6 .50 = 2 . 3 . 2 . 25 = 2 . 3 . 2 . 5 . 5</p>
-<p>300 = 3. 100 = 3. 10 .10 = 3. 2 . 5 . 2 . 5</p>
-<p>300 = 3 . 100 = 3. 4 . 25 = 3 . 2 . 2 . 5 . 5</p>
-<p>Các số 2, 3, 5 là các số nguyên tố. Ta nói rằng 300 đã được phân tích ra thừa số nguyên tố.</p>
-<p>\( \Rightarrow \) Phân tích một số tự nhiên lớn hơn 1 ra thừa số nguyên tố là viết số đó dưới dạng một tích các thừa số nguyên tố.</p>
-<p><strong>Chú ý: </strong></p>
-<p>a) Dạng phân tích ra thừa số nguyên tố của mỗi số nguyên tố là chính viết số đó.</p>
-<p>b) Mọi hợp số đều phân tích được ra thừa số nguyên tố</p>
-<div id="12">
-<h3>1.2. Cách phân tích một số thừa số nguyên tố.</h3>
-</div>
-<p>Ta còn có thể tích số 300 ra thừa số nguyên tố theo cột dọc</p>
-<p><img src="https://hoc247.net/fckeditorimg/upload/images/12(445).png" style="height:141px; width:60px"/></p>
-<p>Do đó 300 = 2 .2.3.5.5</p>
-<p>Viết gọn bằng luỹ thừa, ta được: \(300 = {2^2}{.3.5^2}\)</p>
-<p>(Trong cách phân tích một số ra thừa số nguyên tố, ta thường viết các ước nguyên tố theo thứ tự từ nhỏ đến lớn.)</p>
-<p><strong>Nhận xét:</strong> Dù phân tích một số ra thừa số nguyên tố bằng cách nào thì cuối cùng ta cũng được cùng một kết quả.</p>
-<hr/>
-<p><strong>Ví dụ 2:</strong>  Phân tích các số sau ra thừa số nguyên tố:</p>
-<p>a. 120;                   b. 900                    c. 100 000</p>
-<p><em><strong>Giải</strong></em></p>
-<p>a. \(120{\rm{ }} = {2^3}.3.5\)                      </p>
-<p>b. \(900 = {2^2}{.3^2}{.5^2}\)                    </p>
-<p>c. \(100{\rm{ }}000 = {10^5} = {2^5}{.5^5}\)</p>
-<hr/>
-<p><strong>Ví dụ 3:</strong> Phân tích các số sau ra thừa số nguyên tố rồi cho biết mỗi số đó chia hết cho các số nguyên tố nào?</p>
-<p>a. 450                    b. 2100</p>
-<p><em><strong>Giải</strong></em></p>
-<p>a.\(450 = {2.3^2}{.5^2}\). Số 450 chia hết cho các số nguyên tố 2, 3, 5                      </p>
-<p>b. \(2100 = {2^2}{.3.5^2}.7\). Số 2100 chia hết cho các số nguyên tố 2, 3, 5, 7.</p> </div>
-</div></div></div></section>
+            <!-- Nội dung -->
         </div>
     </div>
 	<!-- jQuery CDN - Slim version (=without AJAX) -->

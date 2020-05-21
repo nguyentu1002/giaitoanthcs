@@ -3,7 +3,7 @@ import pandas
 import requests
 
 # các bạn thay link của trang mình cần lấy dữ liệu tại đây
-url = 'https://hoc247.net/chuong-2-so-nguyen-ct25.html'
+url = 'https://hoc247.net/chuong-1-on-tap-va-bo-tuc-ve-so-tu-nhien-ct24.html'
 
 
 def get_page_content(url):
@@ -30,8 +30,8 @@ for url_bai in link:
         f = open("base-Tu.txt", mode='r', encoding='utf-8')
         data = f.read()
         arr = str(data).split("<!-- Nội dung -->")
-        f1 = open("lop6/chuong-2-so-nguyen/"+tenbai+".html", mode='w', encoding='utf-8')
-        f1.write(arr[0] + "\n" + tenbai + "\n" + noidung + arr[1])
+        f1 = open("lop6/chuong-1-on-tap-va-bo-tuc-ve-so-tu-nhien/"+tenbai+".html", mode='w', encoding='utf-8')
+        f1.write(arr[0] + "\n" + bai + "\n" + noidung + arr[1])
         f1.close()
 
     finally:

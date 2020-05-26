@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <!-- <link rel="stylesheet" href="../../../static/resources/css/general.css"> -->
+    <link rel="stylesheet" href="../../../static/resources/css/plv.css">    
+    <link rel="stylesheet" href="../../../static/resources/css/style.css">
+    <link rel="stylesheet" href="../../../static/resources/css/sidebar.css">
+    <link rel="stylesheet" href="../../../static/resources/css/menucustom.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <!--Math Jax-->
+    <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="/">  <img style="height:65px; width: 65px; border-radius:50%;margin-bottom:10px" src="../../../../static/resources-index/img/Logo.jpg" alt="Logo"></a>
+                <h3 style="margin-left: 40%;margin-top:-25%">Giải toán</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Toán lớp 8</p>
+                
+
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Chương 2 - Phân thức đại số</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Định nghĩa phân thức đại số</a>
+                        </li>
+                        <li>
+                            <a href="#">Tính chất cơ bản của phân thức, quy tắc đổi dấu</a>
+                        </li>
+                        <li>
+                            <a href="#">Quy tắc rút gọn phân thức</a>
+                        </li>
+                        <li>
+                            <a href="#">Tìm mẫu chung, quy đồng mẫu thức</a>
+                        </li>
+                        <li>
+                            <a href="#">Phép cộng các phân thức đại số</a>
+                        </li>
+                        <li>
+                            <a href="#">Phép trừ các phân thức đại số</a>
+                        </li>
+                        <li>
+                            <a href="#">Phép nhân các phân thức đại số</a>
+                        </li>
+                        <li>
+                            <a href="#">Biểu thức hữu tỷ.  Giá trị của phân thức</a>
+                        </li>
+                    </ul>
+                </li>  
+                   <li >
+                        <a href="toan8/giaitoan">Giải toán</a>                   
+                    </li>                  
+            </ul>
+
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" >Lớp 6</a>
+                                <div class="dropdown-content" >
+                                  <a class="dropdown-item" href="toan6/chuong1/">Chương 1: Ôn tập và bổ túc về số tự nhiên</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan6/chuong2/">Chương 2: Số nguyên</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan6/chuong3/">Chương 3: Phân số</a>                                  
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" >Lớp 7</a>
+                                <div class="dropdown-content" >
+                                  <a class="dropdown-item" href="toan7/chuong1/">Chương 1: Số hữu tỉ. Số thực</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan7/chuong2/">Chương 2: Hàm số và đồ thị</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan7/chuong3/">Chương 3: Thống kê</a>          
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan7/chuong4/">Chương 4: Biểu thức đại số</a>                           
+                                </div>
+                            </li> 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" >Lớp 8</a>
+                                <div class="dropdown-content" >
+                                  <a class="dropdown-item" href="toan8/chuong1/">Chương 1: Phép nhân và phép chia các đa thức</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan8/chuong2/">Chương 2: Phân thức đại số</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan8/chuong3/">Chương 3: Phương trình bậc nhât một ẩn</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan8/chuong4/">Chương 4: Bất phương trình bậc nhất 1 ẩn</a>                                    
+                                </div>
+                            </li> 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" >Lớp 9</a>
+                                <div class="dropdown-content" >
+                                  <a class="dropdown-item" href="toan9/chuong1/">Chương 1: Căn bậc hai. Căn bậc ba</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan9/chuong2/">Chương 2: Hàm số bậc nhất</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan9/chuong3/">Chương 3: Hệ hai phương trình bậc nhất hai ẩn</a>   
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="toan9/chuong4/">Chương 4: Phương trình bậc hai một ẩn</a>                                 
+                                </div>
+                            </li>                             
+
+                        </ul>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>            
+            {% block content %}
+            
+            {% endblock %}
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <!-- <script type="text/javascript" src="../../../static/resources/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../../../static/resources/js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="../../../static/resources/js/main.js"></script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+<script type="text/javascript">
+    var ul_tag = document.getElementById('homeSubmenu');
+    var li_tag = ul_tag.getElementsByTagName('li');
+    for(let i=0;i<li_tag.length ;i++){
+        li_tag[i].childNodes[1].href = "toan8/chuong2/bai"+(i+1);
+    }
+
+    
+</script>
+</body>
+
+</html>

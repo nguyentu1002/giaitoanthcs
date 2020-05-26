@@ -1,0 +1,46 @@
+{% extends "pages/lop6/chuong-2-so-nguyen/base-lop6-chuong2.html" %}
+{% block title %}Toán 6 Bài 13: Bội và ước của một số nguyên{% endblock %}
+{% block content %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 6 Bài 13: Bội và ước của một số nguyên</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Với bài học này chúng ta sẽ cùng tìm hiểu về <strong>Bội và ước của một số nguyên</strong>,<strong> </strong>cùng với các ví dụ minh họa có hướng dẫn giải chi tiết sẽ giúp các em dễ dàng ghi nhớ kiến thức</p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<p>Cho \(a,b \in \mathbb{Z},b \ne 0:a \vdots b\)</p>
+<p>Suy ra:</p>
+<p>- a là bội của b</p>
+<p>- b là ước của a</p>
+<p>Tính chất:</p>
+<p>1. \(\left. \begin{array}{l}a \vdots b\\b \vdots c\end{array} \right\} \Rightarrow a \vdots c\)</p>
+<p>2. \(\left. \begin{array}{l}a \vdots b\\m \in \mathbb{Z}\end{array} \right\} \Rightarrow a.m \vdots b\)</p>
+<p>3. \(\left. \begin{array}{l}a \vdots m\\b \vdots m\end{array} \right\} \Rightarrow (a + b) \vdots m,\,\,(a - b) \vdots m\)</p>
+<hr/>
+<p><strong>Ví dụ 1: </strong></p>
+<p>a) Tìm bốn bội của -3; 3</p>
+<p>b) Tìm các bội của -15, biết rằng chúng trong khoảng từ 100 đến 200.</p>
+<p><em><strong>Giải</strong></em></p>
+<p>a) Các bội của -3 và 3 đều có dạng 3k với \(k \in \mathbb{Z}\)</p>
+<p>có bốn bội của -3; 3 là -6, -3, -1, 0, 1, 3</p>
+<p>b) Trong khoảng từ 100 đến 200 bội của -15 là các số sau 105, 120, 135, 150, 165, 180, 195.</p>
+<hr/>
+<p><strong>Ví dụ 2:</strong> Cho tập hợp A ={7; 8; 9; 10} và B = {4; 5; 6}.</p>
+<p>a) Có thể lập được bao nhiêu tổng dạng a + b với \(a \in A,b \in B.\)</p>
+<p>b) Tổng trên có bao nhiêu tổng chia hết cho 2.</p>
+<p>c) Viết tập hợp gồm các phần tử có dạng a.b với \(a \in A,b \in B\) trong tập trên có bao nhiêu phần tử là bội của 5.</p>
+<p><em><strong>Giải</strong></em></p>
+<p>a)</p>
+<p>C = {a + b| \(a \in A,b \in B\)}</p>
+<p>C = {11, 12, 13, 14, 15, 16}</p>
+<p>b) Có ba số chia hết cho 2 là 12, 14, 16</p>
+<p>c) T = {28, 35, 42, 32, 40, 48, 36, 45, 54, 50, 60}</p>
+<p>Trong tập hợp T có các phần tử là bội của 5 là: 35, 40, 45, 50, 60.</p>
+<hr/>
+<p><strong>Ví dụ 3:</strong> Chứng minh rằng \(S = 2 + {2^2} + {2^3} + {2^4} + {2^5} + {2^6} + {2^7} + {2^8} + {2^9}\) là bội của (-41).</p>
+<p><em><strong>Giải</strong></em></p>
+<p>\(S = (2 + {2^2} + {2^3}) + {2^3}(2 + {2^2} + {2^3}) + {2^6}(2 + {2^2} + {2^3})\)</p>
+<p>\(S = 41(2 + {2^2} + {2^3}) \Rightarrow S \vdots ( - 41)\)</p>
+<p><strong> </strong>Vậy S là bội của -41</p>
+<p> </p> </div>
+</div></div></div></section>
+{% endblock %}

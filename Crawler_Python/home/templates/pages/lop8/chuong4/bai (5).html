@@ -1,0 +1,113 @@
+{% extends "pages/lop8/chuong4/base-lop8-chuong4.html" %}
+{% block title %}Toán 8 Bài 5: Phương trình chứa dấu giá trị tuyệt đối{% endblock %}
+{% block content %}
+{% verbatim %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 8 Bài 5: Phương trình chứa dấu giá trị tuyệt đối</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Với bài học này chúng ta sẽ tìm hiểu về <strong>Phương trình chứa dấu giá trị tuyệt đối, </strong><span>cùng với các ví dụ minh họa có hướng dẫn giải chi tiết sẽ giúp các em dễ dàng làm chủ nội dung bài học</span></p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<div id="11">
+<h3>1.1. Nhắc lại về giá trị tuyệt đối</h3>
+</div>
+<p>Với số a, ta có: \(|a| = \left\{ \begin{array}{l}a\,\,\,neu\,\,\,a \ge 0\\ - a\,\,neu\,\,a\,\, &lt; \,\,0\end{array} \right.\)</p>
+<p>Tương tự như vậy, với đa thức ta cũng có: \(|f(x)| = \left\{ \begin{array}{l}f(x)\,\,\,neu\,\,f(x)\, \ge 0\\ - f(x)\,\,neu\,\,f(x)\, &lt; \,0\end{array} \right.\)</p>
+<p><strong>Ví dụ 1:</strong> Bỏ dấu giá trị tuyệt đối và rút gọn các biểu thức:</p>
+<p>a. \(A = |x - 4| + x - 3\)  khi \(x \ge 4.\)</p>
+<p>b. \(B = 2x + 3 - |1 - 2x|\) khi \(x \ge \frac{1}{2}\)</p>
+<p>c. \(C = |x - 2| + |2x - 3| + 2x + 1\) khi x &gt; 2.</p>
+<p>d. \(D = |x - 1| + 2x - 3.\)</p>
+<p><strong>Giải</strong></p>
+<p>a. Với giả thiết \(x \ge 4\), ta suy ra: x – 4 \(x - 4 \ge 0 \Rightarrow |x - 4| = x - 4\)</p>
+<p>Do đó, A được viết lại: \(A = x - 4 + x - 3 = 2x - 7.\)</p>
+<p>b. Với giả thiết \(x \ge \frac{1}{2}\), ta suy ra: \(1 - 2x \le 0 \Rightarrow |1 - 2x| =  - (1 - 2x)\)</p>
+<p>Do đó, B được viết lại: \(B = 2x + 3 - {\rm{[}} - (1 - 2x){\rm{]}} = 2x + 3 + 1 - 2x = 4\)</p>
+<p>c. Với giả thiết x &gt; 2, ta suy ra: \(x - 2 &gt; 0 \Rightarrow |x - 2| = x - 2\)</p>
+<p>\(2x - 3 &gt; 0 \Rightarrow |2x - 3| = 2x - 3\)</p>
+<p>Do đó, C được viết lại: C = x – 2 + 2x – 3 + 2x +1 = 5x – 4.</p>
+<p>d. Ta đi xét hai trường hợp:</p>
+<p><em>Trường hợp 1:</em> Khi \(x - 1 \ge 0 \Leftrightarrow x \ge 1,\) ta được: \(D{\rm{ }} = {\rm{ }}x - 1{\rm{ }} + {\rm{ }}2x - 3 = 3x - 4\)</p>
+<p><em>Trường hợp 2:</em> Khi \(x - 1 &lt; 0 \Leftrightarrow x &lt; 1\), ta được: \(D =  - (x - 1) + 2x - 3 = x - 2.\)</p>
+<p>Tóm lại: \(D = \left\{ \begin{array}{l}3x - 4\,\,khi\,\,x\, \ge 1\\x - 2\,\,\,\,\,khi\,\,x\,\, &lt; \,1\end{array} \right.\)</p>
+<div id="12">
+<h3>1.2. Giải phương trình chứa dấu giá trị tuyết đối</h3>
+</div>
+<p>Ba dạng phương trình chứa dấu giá trị tuyệt đối, bao gồm:</p>
+<p><em>Dạng 1: </em>Phương trình: |f(x)| =k, với k là hằng số không âm.</p>
+<p><em>Dạng 2: </em>Phương trình: |f(x)| = |g(x)|</p>
+<p><em>Dạng 3: </em>Phương trình: |f(x)| = g(x)</p>
+<p><strong>Bài toán 1:</strong> Giải phương trình: |f(x)=k, với k là hằng số không âm.</p>
+<p><em>Phương pháp giải</em></p>
+<p><em>Bước 1: </em>Đặt điều kiện để f(x) xác định (nếu cần)</p>
+<p>Bước 2: Khi đó: \(\left| {f(x)} \right| = k \Leftrightarrow \,\left[ \begin{array}{l}f(x) = k\\f(x) =  - k\end{array} \right. \Rightarrow \) nghiệm x.</p>
+<p><em>Bước 3: </em>Kiểm tra điều kiện , từ đó đưa ra kết luận nghiệm cho phương trình.</p>
+<hr/>
+<p><strong>Ví dụ 2:</strong> Giải phương trình</p>
+<p>a. \(|2x - 3| = 1\)</p>
+<p>b. \(\left| {\frac{{x + 1}}{x}} \right| - 2 = 0\)</p>
+<p><em><strong>Giải</strong></em></p>
+<p>a. Biến đổi tương đương phương trình: \(|2x - 3| = 1\)</p>
+<p>\( \Leftrightarrow \left[ \begin{array}{l}2x - 3 = 1\\2x - 3 =  - 1\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}2x = 1 + 3\\2x =  - 1 + 3\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x = 2\\x = 1\end{array} \right.\)</p>
+<p>Vậy phương trình có hai nghiệm x = 2 và x = 1</p>
+<p>b. Điều kiện xác định của phương trình là: \(x \ne 0\)</p>
+<p>Biến đổi tương đương phương trình:</p>
+<p>\(\left| {\frac{{x + 1}}{x}} \right| = 2 \Leftrightarrow \left[ \begin{array}{l}\frac{{x + 1}}{x} = 2\\\frac{{x + 1}}{x} =  - 2\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x + 1 = 2x\\x + 1 =  - 2x\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x - 2x =  - 1\\x + 2x =  - 1\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x = 1\\x =  - \frac{1}{3}\end{array} \right.\)</p>
+<p>Vậy phương trình có hai nghiệm x = 1 và \(x =  - \frac{1}{3}.\)</p>
+<hr/>
+<p><strong>Bài toán 2:</strong> Giải phương trình |f(x)| = |g(x)|</p>
+<p><em>Phương pháp giải</em></p>
+<p><em>Bước 1:</em> Đặt điều kiện để f(x) và g(x) xác định (nếu cần).</p>
+<p><em>Bước 2:</em> Khi đó \(|f(x)| = |g(x)| \Leftrightarrow \left[ \begin{array}{l}f(x) = g(x)\\f(x) =  - g(x)\end{array} \right. \Rightarrow \) nghiệm x.</p>
+<p><em>Bước 3:</em> Kiểm tra điều kiện, từ đó đưa ra kết luận nghiệm cho phương trình.</p>
+<hr/>
+<p><strong>Ví dụ 3:</strong> Giải phương trình</p>
+<p>a. |2x + 3| = |x – 3|</p>
+<p>b. \(\left| {\frac{{{x^2} - x + 2}}{{x + 1}}} \right| - |x| = 0\)</p>
+<p><em><strong>Giải</strong></em></p>
+<p>a. Biến đổi tương đương phương trình: |2x + 3| = |x – 3|</p>
+<p>\( \Leftrightarrow \left[ \begin{array}{l}2x + 3 = x - 3\\2x + 3 =  - (x - 3)\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}2x - x =  - 3 - 3\\2x + x = 3 - 3\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x =  - 6\\x = 0\end{array} \right.\)</p>
+<p>Vậy phương trình có hai nghiệm x = -6 và x = 0.</p>
+<p>b. Điều kiện xác định của phương trình là \(x \ne 0\)</p>
+<p>Biến đổi tương đương phương trình</p>
+<p>\(\left| {\frac{{{x^2} - x + 2}}{{x + 1}}} \right| = |x| \Leftrightarrow \left[ \begin{array}{l}\frac{{{x^2} - x + 2}}{{x + 1}} = x\\\frac{{{x^2} - x + 2}}{{x + 1}} =  - x\end{array} \right.\)</p>
+<p>\( \Leftrightarrow \left[ \begin{array}{l}{x^2} - x + 2 = x(x + 1)\\{x^2} - x + 2 =  - x(x + 1)\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}2x = 2\\2{x^2} =  - 2\,\,(VN)\end{array} \right. \Leftrightarrow x = 1\)</p>
+<p>Vậy phương trình có nghiệm x = 1.</p>
+<hr/>
+<p><strong>Bài toán 3:</strong> Giải phương trình |f(x)|=g(x).</p>
+<p>Phương pháp giải</p>
+<p>Ta có thể lựa chọn một trong hai cách sau:</p>
+<p><strong><em>Cách 1: </em></strong><em>(Phá dấu trị tuyệt đối)</em> Thực hiện theo các bước:</p>
+<p><u>Bước 1:</u> Đặt điều kiện để f(x) và g(x) xác định (nếu cần).</p>
+<p> <u>Bước 2:</u> Xét hai trường hợp:</p>
+<p><em>** Trường hợp 1:</em> Nếu \(f(x) \ge 0.\)   (1)</p>
+<p>Phương trình có dạng: \(f(x) = g(x) \Rightarrow \) nghiệm và kiểm tra điều kiện (1).</p>
+<p><em>** Trường hợp 2:</em> Nếu f(x) &lt; 0.   (2)</p>
+<p>Phương trình có dạng: -f(x) = g(x)</p>
+<p>\( \Rightarrow \) nghiệm x và kiểm tra điều kiện (2)</p>
+<p><u>Bước 3:</u> Kết luận nghiệm cho phương trình.</p>
+<p><strong><em>Cách 2:</em></strong> Thực hiện theo các bước:</p>
+<p><u>Bước 1:</u> Đặt điều kiện để f(x) và g(x) xác định (nếu cần) và \(g(x) \ge 0.\)</p>
+<p><u>Bước 2:</u> Khi đó  \(|f(x)| = g(x) \Leftrightarrow \left[ \begin{array}{l}f(x) = g(x)\\f(x) =  - g(x)\end{array} \right. \Rightarrow \) nghiệm x.</p>
+<p><u>Bước 3:</u> Kiểm tra điều kiện, từ đó đưa ra kết luận nghiệm cho phương trình.</p>
+<hr/>
+<p><strong>Ví dụ 4:</strong> Giải phương trình: |x + 4| + 3x = 5.</p>
+<p><em><strong>Giải</strong></em></p>
+<p>Ta có thể lựa chọn một trong hai cách sau:</p>
+<p><em><strong>Cách 1:</strong></em> Xét hai trường hợp:</p>
+<p>       <em>Trường hợp 1:</em> Nếu \(x + 4 \ge 0 \Leftrightarrow x \ge  - 4\)   (1)</p>
+<p>Khi đó, phương trình có dạng:</p>
+<p>\(x + 4 + 3x = 5 \Leftrightarrow 4x = 1 \Leftrightarrow x = \frac{1}{4},\) thoả mãn điều kiện (1)</p>
+<p>     <em>Trường hợp 2:</em> Nếu \(x + 4 &lt; 0 \Leftrightarrow x &lt;  - 4\)   (2)</p>
+<p>Khi đó, phương trình có dạng:</p>
+<p>\( - (x + 4) + 3x = 5 \Leftrightarrow 2x = 9\)</p>
+<p>\( \Leftrightarrow x = \frac{9}{2},\) không thoả mãn điều kiện (2)</p>
+<p>Vậy phương trình có nghiệm \(x = \frac{1}{4}\)</p>
+<p><strong><em>Cách 2:</em></strong> Viết lại phương trình dạng: |x + 4| = 5 – 3x</p>
+<p>Với điều kiện: \(5 - 3x \ge 0 \Leftrightarrow x \le \frac{5}{3}\) (*)</p>
+<p>Khi đó, phương trình được biến đổi: |x + 4| = 5 – 3x</p>
+<p>\( \Leftrightarrow \left[ \begin{array}{l}x + 4 = 5 - 3x\\x + 4 =  - (5 - 3x)\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x = \frac{1}{4}\\x = \frac{9}{2}\,\,(khong\,\,thoa\,\,man\,(*))\end{array} \right.\)</p>
+<p>Vậy phương trình có nghiệm \(x = \frac{1}{4}\)</p> </div>
+</div></div></div></section>
+{% endverbatim %}
+{% endblock %}

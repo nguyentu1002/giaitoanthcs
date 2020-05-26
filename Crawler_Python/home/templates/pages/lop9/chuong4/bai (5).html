@@ -1,0 +1,37 @@
+{% extends "pages/lop9/chuong4/base-lop9-chuong4.html" %}
+{% block title %}Toán 9 Bài 5: Công thức nghiệm thu gọn{% endblock %}
+{% block content %}
+{% verbatim %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 9 Bài 5: Công thức nghiệm thu gọn</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Như bài học trước, các bạn đã được học <strong>công thức tính nghiệm của phương trình bậc hai</strong>, vậy liệu khi chính ta sử dụng <strong>biệt thức delta</strong> ở các bài toán có hệ số a, b, c cao thì sẽ như thế nào, liệu có cách nào để con số đó nhỏ hơn và dễ nhìn hơn?</p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<div id="11">
+<h3>1.1. Công thức nghiệm thu gọn</h3>
+</div>
+<p>Đối với phương trình bậc hai \(ax^2+bx+c=0(a\neq 0)\), trong nhiều trường hợp nếu đặt \(b=2b' (b\vdots 2)\) thì liệu việc tính toán có đơn giản hơn?</p>
+<p>\(b=2b' \Rightarrow \Delta =(2b')^2-4ac=4b'^2-4ac=4(b'^2-ac)\)</p>
+<p>Ta có: \(\Delta '=b'^2-ac\)</p>
+<h4>Từ đó, ta đi đến các kết luận sau đây:</h4>
+<p>Với các phương trình bậc hai \(ax^2+bx+c=0(a\neq 0)\) và \(b=2b'\), \(\Delta '=b'^2-ac\) thì:</p>
+<p>Nếu \(\Delta '&gt;0\) thì phương trình có hai nghiệm phân biệt</p>
+<p>\(x_{1}=\frac{-b'+\sqrt{\Delta '}}{a}; x_{2}=\frac{-b'-\sqrt{\Delta '}}{a}\)</p>
+<p>Nếu \(\Delta '=0\) thì phương trình có nghiệm kép \(x=\frac{-b'}{a}\)</p>
+<p>Nếu \(\Delta '&lt;0\) thì phương trình vô nghiệm.</p>
+<div id="12">
+<h3>1.2. Áp dụng</h3>
+</div>
+<p>Chúng ta sẽ cùng đi vài ví dụ sau:</p>
+<h4>Ví dụ 1:</h4>
+<p>Giải phương trình bằng công thức nghiệm thu gọn: \(3x^2+10x+5=0\)</p>
+<p>Giải: \(\Delta '=5^2-5.3=10&gt;0\Rightarrow \sqrt{\Delta '}=\sqrt{10}\)</p>
+<p>Vậy \(x_{1}=\frac{-5+\sqrt{10}}{3}; x_{2}=\frac{-5-\sqrt{10}}{3}\)</p>
+<h4>Ví dụ 2: </h4>
+<p>Giải phương trình bằng công thức nghiệm thu gọn: \(5x^2-6\sqrt{2}x+1=0\)</p>
+<p>Giải: \(\Delta '=(3\sqrt{2})^2-5.1=13&gt;0\Rightarrow \sqrt{\Delta '}=13\)</p>
+<p>Vậy \(x_{1}=\frac{3\sqrt{2}+\sqrt{13}}{5}; x_{2}=\frac{3\sqrt{2}-\sqrt{13}}{5}\)</p> </div>
+</div></div></div></section>
+{% endverbatim %}
+{% endblock %}

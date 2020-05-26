@@ -1,0 +1,43 @@
+{% extends "pages/lop9/chuong4/base-lop9-chuong4.html" %}
+{% block title %}Toán 9 Bài 4: Công thức nghiệm của phương trình bậc hai{% endblock %}
+{% block content %}
+{% verbatim %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 9 Bài 4: Công thức nghiệm của phương trình bậc hai</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Trong bài trước chúng ta đã được tìm hiểu khái niệm về <strong>phương trình bậc hai</strong>, có phương trình có 1 nghiệm, 2 nghiệm, đôi khi vô nghiệm. Vậy có các <strong>công thức</strong> nào để tính các nghiệm ấy không?</p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<div id="11">
+<h3>1.1. Công thức nghiệm</h3>
+</div>
+<p>Ta có phương trình tổng quát: \(ax^2+bx+c=0 (a\neq 0)\)</p>
+<p>Chuyển hạng tử c sang vế phải, ta có: \(ax^2+bx=-c\)</p>
+<p>Vì \(a\neq 0\) nên chia cả hai vế cho a, ta có: \(x^2+\frac{b}{a}x=-\frac{c}{a}\)</p>
+<p>Biến đổi để thành hằng đẳng thức: \(x^2+2.\frac{1}{2}\frac{b}{a}x+\frac{b^2}{4a}-\frac{b^2}{4a}=-\frac{c}{a}\)</p>
+<p>\(\Leftrightarrow \left ( x+\frac{b}{2a} \right )^2=\frac{b^2-4ac}{4a^2}\)</p>
+<p>Đặt \(\Delta =b^2-4ac\)</p>
+<h4>Ta có các kết luận sau đây:</h4>
+<p>Với phương trình \(ax^2+bx+c=0 (a\neq 0)\) và biệt thức \(\Delta =b^2-4ac\):</p>
+<p>\(\Delta&gt;0\) thì phương trình có 2 nghiệm phân biệt:</p>
+<p>\(x_{1}=\frac{-b+\sqrt{\Delta }}{2a}\); \(x_{2}=\frac{-b-\sqrt{\Delta }}{2a}\)</p>
+<p>\(\Delta=0\) thì phương trình có nghiệm kép \(x=x_{1}=x_{2}=-\frac{b}{2a}\)</p>
+<p>\(\Delta&lt;0\) phương trình vô nghiệm.</p>
+<div id="12">
+<h3>1.2. Áp dụng</h3>
+</div>
+<p>Chúng ta cùng xét các ví dụ sau:</p>
+<h4>Ví dụ 1:</h4>
+<p>Giải phương trình: \(x^2+5x-15=0\)</p>
+<p>Giải: Dễ dàng xác định được hệ số của phương trình trên là: \(a=1;b=5;c=-15\)</p>
+<p>Tính \(\Delta =b^2-4ac=5^2-4.1.(-15)=85&gt;0\)</p>
+<p>Vậy phương trình trên có các nghiệm là: \(x_{1}=\frac{-5+\sqrt{85}}{2}\); \(x_{2}=\frac{-5-\sqrt{85}}{2}\)</p>
+<h4>Ví dụ 2:</h4>
+<p>Không giải phương trình, hãy cho biết phương trình sau có bao nhiêu nghiệm:</p>
+<p>\(9x^2+6x+1=0\)</p>
+<p>Giải: Ta có: \(\Delta =6^2-4.9.1=0\)</p>
+<p>Vậy phương trình trên có 1 nghiệm duy nhất.</p>
+<p> </p> </div>
+</div></div></div></section>
+{% endverbatim %}
+{% endblock %}

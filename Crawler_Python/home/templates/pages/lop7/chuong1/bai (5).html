@@ -1,0 +1,71 @@
+{% extends "pages/lop7/chuong1/base-lop7-chuong1.html" %}
+{% block title %}Toán 7 Bài 5: Lũy thừa của một số hữu tỉ{% endblock %}
+{% block content %}
+{% verbatim %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 7 Bài 5: Lũy thừa của một số hữu tỉ</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Nội dung bài học sẽ cung cấp đến các em Khái niệm<strong> Lũy thừa của một số hữu tỉ</strong> cùng <strong>các dạng toán</strong> liên quan. Đi cùng với phần lý thuyết là hệ thống <strong>ví dụ minh họa</strong> có <strong>hướng dẫn giải chi tiết</strong> sẽ giúp các em dễ dàng làm chủ nội dung kiến thức.</p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<div id="motmot">
+<h3>1.1. Luỹ thừa của một số hữu tỉ</h3>
+</div>
+<p>Cho \(x \in Q\) và \(n \in \mathbb{N}^*\). Luỹ thừa bậc n của x là tích của n thừa số bằng nhau, mỗi thừa số bằng x.</p>
+<p>\({x^n} = \underbrace {x.x.x...x}_{n\,\,\,thua\,\,so}\) với \(x \in Q,n \in \mathbb{N}^*\).</p>
+<p><strong>Chú ý:</strong> Ta quy ước \({x^0} = 1,x \in Q\) và \(x \ne 0.\)</p>
+<div id="mothai">
+<h3>1.2. Tích và thương của hai luỹ thừa cùng cơ số</h3>
+</div>
+<ul>
+<li>\({x^m}.{x^n} = {x^{m + n}}\).</li>
+<li>\({x^m}:{x^n} = {x^{m - n}}\) với \(x \ne 0,\,m \ge n.\)</li>
+</ul>
+<div id="motba">
+<h3>1.3. Luỹ thừa của một tích, một thương một luỹ thừa</h3>
+</div>
+<ul>
+<li>\({(x.y)^n} = {x^n}.{y^n}\)</li>
+<li>\({\left( {\frac{x}{y}} \right)^n} = \frac{{{x^n}}}{{{y^n}}}\) với \(y \ne 0\)</li>
+<li>\({({x^m})^n} = {x^{m.n}}\)</li>
+</ul>
+<p><strong>Chú ý:</strong></p>
+<p>a) Người ta cũng xét các luỹ thừa với số mũ nguyên âm và quy ước:</p>
+<p>\({x^{ - n}} = \frac{1}{{{x^n}}}\,\,\,\,\,\,\,\,\,(x \ne 0)\)</p>
+<p>Trong thực tế, người ta thường sử dụng luỹ thừa nguyên âm của 10 để viết các số nhỏ.</p>
+<p>Ví dụ: \(0,0001 = \frac{1}{{10000}} = \frac{1}{{{{10}^4}}} = {10^{ - 4}}\)</p>
+<p>b) Từ định nghĩa của luỹ thừa và theo quy tắc nhân các số hữu tỉ, ta suy ra:</p>
+<ul>
+<li>Luỹ thừa bậc chẵn của một số hữu tỉ (âm hoặc dương) luôn là một số dương</li>
+<li>Luỹ thừa bậc lẻ của một số hữu tỉ âm là một số âm. Luỹ thừa bậc lẻ của một số hữu tỉ dương là một số dương.</li>
+</ul>
+<hr/>
+<h4><u>Ví dụ 1:</u></h4>
+<p>Tính \(A = {\left[ {{3^2}.{{\left( { - \frac{1}{2}} \right)}^3}} \right]^2}.\)</p>
+<h4><u>Hướng dẫn giải:</u></h4>
+<p>Ta có: \(A = {3^4}.{\left( { - \frac{1}{2}} \right)^6} = 81.\frac{1}{{64}} = \frac{{81}}{{64}}\).</p>
+<p>Hoặc có thể tính như sau:</p>
+<p>\(A = {\left[ {9.\left( { - \frac{1}{8}} \right)} \right]^2} = {\left( { - \frac{9}{8}} \right)^2} = \frac{{81}}{{64}}\).</p>
+<hr/>
+<h4><u>Ví dụ 2:</u></h4>
+<p>Chứng minh đẳng thức \({(a + b)^2} = {a^2} + 2ab + {b^2}\).</p>
+<p>Áp dụng, tính \(A = {(2{x^3} + 3{y^2})^2}.\)</p>
+<h4><u>Hướng dẫn giải:</u></h4>
+<p><strong>Cách 1:</strong> Ta có \({(a + b)^2} = (a + b)(a + b)\)</p>
+<p>Áp dụng tính chất phân phối của phép nhân các số hữu tỉ đối với phép cộng, ta có:</p>
+<p>\((a + b)(a + b) = a(a + b) + b(a + b) = {a^2} + ab + ba + {b^2} = {a^2} + 2ab + {b^2}\).</p>
+<p><strong>Cách 2: </strong>Sử dụng cách đặt thừa số chung và đi từ vế phải, ta có:</p>
+<p>\({a^2} + 2ab + {b^2} = {a^2} + ab + ab + {b^2} = a(a + b) + b(a + b) = (a + b)(a + b) = {(a + b)^2}\)</p>
+<p>Áp dụng: \(A = {(2{x^3} + 3{y^2})^2} = {(2{x^3})^2} + 2(2{x^3})(3{y^2}) + {(3{y^2})^2}\)</p>
+<p>\( \Rightarrow A = 4{x^6} + 12{x^3}{y^2} + 9{y^4}.\)</p>
+<hr/>
+<h4><u>Ví dụ 3:</u></h4>
+<p>Tính \(A = \frac{{0,00018}}{{0,0000012}}.\)</p>
+<h4><u>Hướng dẫn giải:</u></h4>
+<p>Ta sử dụng luỹ thừa với số mũ âm, để có:</p>
+<p>\(0,00018 = {18.10^{ - 5}}\)</p>
+<p>\(0,0000012 = {12.10^{ - 7}}\)</p>
+<p>Và được \(A = \frac{{{{18.10}^{ - 5}}}}{{{{12.10}^{ - 7}}}} = \frac{{18}}{{12}}.({10^{ - 5}}{.10^7}) \Rightarrow A = \frac{{18}}{{12}}{.10^2} = 150.\)</p> </div>
+</div></div></div></section>
+{% endverbatim %}
+{% endblock %}

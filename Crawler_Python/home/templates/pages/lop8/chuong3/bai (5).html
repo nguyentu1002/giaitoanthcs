@@ -1,0 +1,64 @@
+{% extends "pages/lop8/chuong3/base-lop8-chuong3.html" %}
+{% block title %}Toán 8 Bài 5: Phương trình chứa ẩn ở mẫu - Luyện tập{% endblock %}
+{% block content %}
+{% verbatim %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 8 Bài 5: Phương trình chứa ẩn ở mẫu - Luyện tập</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Với bài học này chúng ta sẽ được tìm hiểu về <strong>Phương trình chứa ẩn ở mẫu , </strong>cùng với các ví dụ minh họa có hướng dẫn giải chi tiết sẽ giúp các em dễ dàng làm chủ nội dung bài học.</p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<div id="11">
+<h3>1.1. Đặt vấn đề</h3>
+</div>
+<p>Chúng ta sẽ bắt đầu với việc giải phương trình: \(\frac{{{x^2} - 1}}{{x - 1}} = x\)</p>
+<p>Ta sẽ trình bày theo hai cách để chỉ ra điều cần chú ý:</p>
+<p><strong>1. </strong>Với cách giải: \(\frac{{{x^2} - 1}}{{x - 1}} = x \Leftrightarrow {x^2} - 1 = x(x - 1) \Leftrightarrow {x^2} - 1 = {x^2} - x \Leftrightarrow x = 1\)</p>
+<p>Vậy phương trình có nghiệm x = 1</p>
+<p><strong>2.</strong> Với các giải: \(\frac{{{x^2} - 1}}{{x - 1}} = x \Leftrightarrow \frac{{(x - 1)(x + 1)}}{{x - 1}} = x\)</p>
+<p>\( \Leftrightarrow x + 1 = x \Leftrightarrow 1 = 0\) mâu thuẫn.</p>
+<p>Vậy phương trình vô nghiệm.</p>
+<p><em>⇒ Khi giải phương trình chứa ẩn ở mẫu, ta cần chú ý đến một yếu tố đặc biệt, đó là điều kiện xác định của phương trình. </em></p>
+<div id="12">
+<h3>1.2. Tìm điều kiện xác định của phương trình</h3>
+</div>
+<p>Đối với các phương trình dạng: \(\frac{{{A_1}(x)}}{{{B_1}(x)}} + \frac{{{A_2}(x)}}{{{B_2}(x)}} + ... + \frac{{{A_n}(x)}}{{{B_n}(x)}} = 0\)</p>
+<p>điều kiện xác định của phương trình được cho bởi hệ: \(\left\{ \begin{array}{l}{B_1}(x) \ne 0\\{B_2}(x) \ne 0\\.........\\{B_n}(x) \ne 0\end{array} \right.\)</p>
+<p><strong>Ví dụ 1:</strong> Tìm điều kiện xác định cho phương trình sau: \(\frac{{2{x^2}}}{{{x^2} - 1}} + \frac{{2x - 1}}{{{x^2} - 5x + 4}} = 2.\)</p>
+<p><strong>Giải</strong></p>
+<p>Điều kiện xác định của phương trình là: \(\left\{ \begin{array}{l}{x^2} - 1 \ne 0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(1)\\{x^2} - 5x + 4 \ne 0\,\,\,\,\,\,\,\,\,\,\,(2)\end{array} \right.\)</p>
+<p>Giải (1), ta được: \({x^2} \ne 1 \Leftrightarrow x \ne  \pm 1.\)</p>
+<p>Giải (2): \({x^2} - 5x + 4 \ne 0 \Leftrightarrow {x^2} - x - 4x + 4 \ne 0 \Leftrightarrow x(x - 1) - 4(x - 1) \ne 0\)</p>
+<p>\( \Leftrightarrow (x - 1)(x - 4) \ne 0 \Leftrightarrow \left\{ \begin{array}{l}x - 1 \ne 0\\x - 4 \ne 0\end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}x \ne 1\\x \ne 4\end{array} \right.\)</p>
+<p>Vậy điều kiện xác định của phương trình là: \(\left\{ \begin{array}{l}x \ne  \pm 1\\x \ne 1\\x \ne 4\end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}x \ne  \pm 1\\x \ne 4\end{array} \right.\)</p>
+<div id="13">
+<h3>1.3. Phương pháp giải phương trình chứa ẩn ở mẫu</h3>
+</div>
+<p>Để giải phương trình chứa ẩn ở mẫu, ta thực hiện theo các bước sau:</p>
+<p><em>Bước 1:</em> Tìm điều kiện xác định của phương trình</p>
+<p><em>Bước 2:</em> Quy đồng mẫu hai vế của hai phương trình rồi khử mẫu.</p>
+<p><em>Bước 3:</em> Giải phương trình vừa nhận được.</p>
+<p><em>Bước 4:</em> Trong các giá trị của ẩn tìm được ở bước 3, các giá trị thoả mãn điều kiện xác định chính là nghiệm của phương trình đã cho.</p>
+<p><strong>Ví dụ 2:</strong> Giải phương trình \(\frac{x}{{x - 1}} = \frac{{2x}}{{{x^2} - 1}}\)</p>
+<p><strong>Giải</strong></p>
+<p>Điều kiện xác định của phương trình là: \(\left\{ \begin{array}{l}x - 1 \ne 0\\{x^2} - 1 \ne 0\end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}x \ne 1\\x \ne  \pm 1\end{array} \right. \Leftrightarrow x \ne  \pm 1\)</p>
+<p>Biến đổi phương trình về dạng: \(\frac{{x(x + 1)}}{{(x - 1)(x + 1)}} = \frac{{2x}}{{(x - 1)(x + 1)}}\)</p>
+<p>\( \Leftrightarrow x(x + 1) - 2x = 0 \Leftrightarrow {x^2} + x - 2x = 0 \Leftrightarrow {x^2} - x = 0 \Leftrightarrow x(x - 1) = 0\)</p>
+<p>\( \Leftrightarrow \left[ \begin{array}{l}x = 0\\x - 1 = 0\end{array} \right. \Leftrightarrow \left[ \begin{array}{l}x = 0\\x = 1\end{array} \right.\)</p>
+<p>x = 1 loại vì không thoả mãn điều kiện</p>
+<p>Vậy phương trình có một nghiệm x = 0.</p>
+<hr/>
+<p><strong>Ví dụ 3:</strong> Giải phương trình \(\frac{{x - 5}}{{x - 1}} + \frac{2}{{x - 3}} = 1\)</p>
+<p><strong>Giải</strong></p>
+<p>Điều kiện xác định của phương trình là: \(\left\{ \begin{array}{l}x - 1 \ne 0\\x - 3 \ne 0\end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}x \ne 1\\x \ne 3\end{array} \right.\)</p>
+<p>Biến đổi phương trình về dạng:</p>
+<p>\(\frac{{(x - 5)(x - 3)}}{{(x - 1)(x - 3)}} + \frac{{2(x - 1)}}{{(x - 1)(x - 3)}} = \frac{{(x - 1)(x - 3)}}{{(x - 1)(x - 3)}}\)</p>
+<p>\( \Leftrightarrow (x - 5)(x - 3) + 2(x - 1) = (x - 1)(x - 3)\)</p>
+<p>\( \Leftrightarrow {x^2} - 8x + 15 + 2x - 2 = {x^2} - 4x + 3\)<br>
+\( \Leftrightarrow  - 8x + 2x + 4x = 3 - 15 + 2\)<br/>
+\( \Leftrightarrow  - 2x =  - 10\)<br/>
+\( \Leftrightarrow x = 5\) thoả mãn điều kiện</br></p>
+<p>Vậy phương trình có một nghiệm x = 5.</p> </div>
+</div></div></div></section>
+{% endverbatim %}
+{% endblock %}

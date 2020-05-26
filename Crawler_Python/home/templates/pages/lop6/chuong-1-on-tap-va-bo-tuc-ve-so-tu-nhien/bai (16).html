@@ -1,0 +1,47 @@
+{% extends "pages/lop6/chuong-1-on-tap-va-bo-tuc-ve-so-tu-nhien/base-lop6-chuong1.html" %}
+{% block title %}Toán 6 Bài 16: Ước chung và bội chung{% endblock %}
+{% block content %}
+<section class="wrapbanner"><div class="container"><h1 class="cate-h1">Toán 6 Bài 16: Ước chung và bội chung</h1></div></section>
+<section class="main"><div class="container"><div class="detail-col-left"><div class="box-1"><div class="box-content">
+<br/>
+<p>Ờ các bài trước các em đã được tìm hiểu về khái niệm<strong> ước </strong>và<strong> bội</strong>. Bài học này sẽ tiếp tục giới thiệu đến các em khái niệm <strong>ước chung</strong> và <strong>bội chung</strong>, cùng với đó là phương pháp tìm<strong> ước chung lớn nhất </strong>- <strong>bội chung nhỏ nhất </strong>của hai hay nhiều số trước khi được tìm hiểu sâu hơn ở các bài học sau.</p> </div></div><div class="box-1">
+<div class="box-title-1" id="lythuyet"><h2 class="b-title">Tóm tắt lý thuyết </h2></div>
+<div class="box-content content-fck">
+<div id="11">
+<h3>1.1. Ước chung của hai hay nhiều số là ước của mọi số đó</h3>
+</div>
+<p>Nếu \(\left. \begin{array}{l}a \vdots x\\b \vdots x\\c \vdots x\end{array} \right\} \Rightarrow x \in \) ƯC(a;b;c)</p>
+<p><strong>Ví dụ 1: </strong></p>
+<p>Ư(8) = {1; 2; 4; 8}</p>
+<p>Ư(12) = {1; 2; 3; 4; 12}</p>
+<p>ƯC(8; 12) = {1; 2; 4}</p>
+<p>Nếu biểu diễn tập hợp A = Ư(8) và tập hợp B = Ư(12) thì ƯC (8;12)= \(A \cap B = {\rm{\{ }}1;2;4\} \)</p>
+<p>Trong các ước chung của hai hay nhiều số thì có một số lớn nhất được gọi là số ước chung lớn nhất. Kí hiệu ƯCLN.</p>
+<p>Cách tìm ƯCLN của hai hay nhiều số:</p>
+<p>- Bước 1: Phân tích mỗi số ra thừa số nguyên tố</p>
+<p>- Bước 2: Chọn ra các thừa số nguyên tố chung.</p>
+<p>- Bước 3: Lập một tích các thừa số vừa chọn, mỗi thừa số lấy với số mũ nhỏ nhất.</p>
+<p>Tích tìm được là ƯCLN cần tìm</p>
+<p><strong>Ví dụ 2:</strong> Tìm ƯCLN (48; 168; 360).</p>
+<p>Ta có: \(48 = {2^3}.3,\,\,\,168 = {2^3}.3.7,\,\,360\, = {2^3}{.3^2}.5\)</p>
+<p>ƯCLN (48; 168; 360) = \({2^3}.3 = 24\)</p>
+<div id="12">
+<h3>1.2. Bội chung của hai hay nhiều số là bội tất cả các số đó.</h3>
+</div>
+<p>\(\left. \begin{array}{l}x \vdots a\\x \vdots b\\x \vdots c\end{array} \right\} \Rightarrow x \in BC(a;b;c)\)</p>
+<p><strong>Ví dụ 3: </strong></p>
+<p>B(6) = {0; 6; 12; 18; 24; 30; 36; 42; 48;…}</p>
+<p>B(8) = {0; 8; 16; 24; 32; 40; 48; …}</p>
+<p>BC(6 ;8) = {0; 24; 48; 72;…}</p>
+<p>\(BC(6;8) = B(6)\,\,\, \cap \,\,B(8)\,\, = \,\,{\rm{\{ }}0;\,\,\,24;\,\,\,48;...{\rm{\} }}\)</p>
+<p>Bội chung nhỏ nhất (BCNN) của hai hay nhiều số là số nhỏ nhất khác 0 trong tập hợp các bội của các số đó.</p>
+<p>* Cách tìm BCNN của hai hay nhiều số:</p>
+<p>- Bước 1: Phân tích mỗi thừa số ra thừa số nguyên tố.</p>
+<p>- Bước 2: Chọn các thừa số chung và riêng.</p>
+<p>- Bước 3: Lập tích các thừa số đã chọn, mỗi thừa số lấy số mũ lớn nhất.</p>
+<p>Tích tìm được là BCNN cần tìm.</p>
+<p><strong>Ví dụ 4: </strong></p>
+<p>\(\begin{array}{l}84 = {2^2}.3.7\\140 = {2^2}.5.7\\360 = {2^3}{.3^2}.5\end{array}\)</p>
+<p>\(BCNN = {2^3}{.3^2}.5.7 = 2520.\)</p> </div>
+</div></div></div></section>
+{% endblock %}
